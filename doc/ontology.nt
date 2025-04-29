@@ -1,12 +1,13 @@
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2000/01/rdf-schema#> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2002/07/owl#> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/shacl#> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://purl.org/dc/terms/creator> "DigiChecks" .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://purl.org/dc/terms/date> "2024-06-10T17:27:04.485561856" .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://purl.org/dc/terms/description> "The top-level permit ontology contains the relevant terminology related to permitting processes. It contains the core terminology for DigiChecks services to communicate unambiguously about a permitting process." .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Top-level permit ontology" .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "digichecks-internal-review_20240610" .
+<https://data.digichecks.eu/def/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.digichecks.eu/def/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2000/01/rdf-schema#> .
+<https://data.digichecks.eu/def/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2002/07/owl#> .
+<https://data.digichecks.eu/def/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/shacl#> .
+<https://data.digichecks.eu/def/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/sml/def#> .
+<https://data.digichecks.eu/def/> <http://purl.org/dc/terms/creator> "DigiChecks" .
+<https://data.digichecks.eu/def/> <http://purl.org/dc/terms/date> "2024-06-10T17:27:04.485561856" .
+<https://data.digichecks.eu/def/> <http://purl.org/dc/terms/description> "The top-level permit ontology contains the relevant terminology related to permitting processes. Based on Semantic Modelling and Linking (SML, EN 17632),  it contains the core terminology for DigiChecks services to communicate unambiguously about a permitting process." .
+<https://data.digichecks.eu/def/> <http://www.w3.org/2000/01/rdf-schema#label> "Permit ontology based on the SML framework" .
+<https://data.digichecks.eu/def/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
 # 
 # 
 # #################################################################
@@ -366,389 +367,43 @@
 # #################################################################
 # 
 # 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca> <http://www.w3.org/2004/02/skos/core#prefLabel> "outcomes for Decision for permits" .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid1 .
-_:genid1 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
-<https://w3id.org/sml/def#isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid1 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
-<https://w3id.org/idsa/core/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid2 .
-_:genid2 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/wasDescribedBy> .
-<https://data.digichecks.eu/def/wasDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid2 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid3 .
-_:genid3 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid3 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid4 .
-_:genid4 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid4 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#TopConcept> .
-<https://w3id.org/sml/def#TopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#property> _:genid5 .
-_:genid5 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid5 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid5 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isAllocationfor> .
-<https://data.digichecks.eu/def/isAllocationfor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid5 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#property> _:genid6 .
-_:genid6 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid6 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid6 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> .
-<https://w3id.org/sml/def#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid6 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> .
-<https://w3id.org/sml/def#Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#property> _:genid7 .
-_:genid7 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isVerifiedIn> .
-<https://data.digichecks.eu/def/isVerifiedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid7 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Verification> .
-<https://data.digichecks.eu/def/Verification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Allocation> .
-<https://data.digichecks.eu/def/Allocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid8 .
-_:genid8 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasAsOutput> .
-<https://data.digichecks.eu/def/hasAsOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid8 <http://www.w3.org/ns/shacl#or> _:genid9 .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid10 .
-_:genid10 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid10 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid10 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> .
-<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid10 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
-<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid11 .
-_:genid11 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid11 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isInputFor> .
-<https://data.digichecks.eu/def/isInputFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid11 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Decision> .
-<https://data.digichecks.eu/def/Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid12 .
-_:genid12 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid12 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid12 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasVerificationMethod> .
-<https://data.digichecks.eu/def/hasVerificationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid12 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/VerificationMethod> .
-<https://data.digichecks.eu/def/VerificationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Verification> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#property> _:genid13 .
-_:genid13 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
-<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid13 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#property> _:genid14 .
-_:genid14 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid14 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#property> _:genid15 .
-_:genid15 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid15 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Agent> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid16 .
-_:genid16 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#atLocation> .
-<http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid16 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
-<http://www.w3.org/ns/prov#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid17 .
-_:genid17 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasPermitRequest> .
-<https://data.digichecks.eu/def/hasPermitRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid17 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> .
-<https://data.digichecks.eu/def/PermitRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid18 .
-_:genid18 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/subject> .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid18 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid19 .
-_:genid19 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid19 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#qualifiedAssociation> .
-<http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid19 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Association> .
-<http://www.w3.org/ns/prov#Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Project> .
-<https://data.digichecks.eu/def/Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid20 .
-_:genid20 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
-<https://w3id.org/sml/def#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid20 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid21 .
-_:genid21 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasSource> .
-<https://data.digichecks.eu/def/hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid21 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Document> .
-<https://data.digichecks.eu/def/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid22 .
-_:genid22 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isExpressedAs> .
-<https://data.digichecks.eu/def/isExpressedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid22 <http://www.w3.org/ns/shacl#or> _:genid23 .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid24 .
-_:genid24 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid24 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/logicalOperator> .
-<https://data.digichecks.eu/def/logicalOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid24 <http://www.w3.org/ns/shacl#in> <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#Requirement> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid25 .
-_:genid25 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid25 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> .
-_:genid25 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid26 .
-_:genid26 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid26 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
-_:genid26 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid27 .
-_:genid27 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid27 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isPermitFor> .
-<https://data.digichecks.eu/def/isPermitFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid27 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid28 .
-_:genid28 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
-_:genid28 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Permit> .
-<https://data.digichecks.eu/def/Permit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Permit> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#property> _:genid29 .
-_:genid29 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid29 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid29 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> .
-_:genid29 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#property> _:genid30 .
-_:genid30 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid30 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid30 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isDecisionFor> .
-<https://data.digichecks.eu/def/isDecisionFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid30 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#property> _:genid31 .
-_:genid31 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid31 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/decisionOutcome> .
-<https://data.digichecks.eu/def/decisionOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid31 <http://www.w3.org/ns/shacl#in> <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Decision> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid32 .
-_:genid32 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid32 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid33 .
-_:genid33 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid33 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasAddress> .
-<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid33 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2006/vcard/ns#Address> .
-<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid34 .
-_:genid34 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid34 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid35 .
-_:genid35 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid35 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasParcel> .
-<https://data.digichecks.eu/def/hasParcel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid35 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Parcel> .
-<https://data.digichecks.eu/def/Parcel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid36 .
-_:genid36 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid36 <http://www.w3.org/ns/shacl#path> <http://www.opengis.net/ont/geosparql#hasGeometry> .
-<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid36 <http://www.w3.org/ns/shacl#class> <http://www.opengis.net/ont/geosparql#Geometry> .
-<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Location> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Document> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid37 .
-_:genid37 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid37 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid38 .
-_:genid38 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid38 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid39 .
-_:genid39 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/wasDescribedBy> .
-_:genid39 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid40 .
-_:genid40 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
-_:genid40 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#NodeShape> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/ns/shacl#property> _:genid41 .
-_:genid41 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid41 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid41 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#agent> .
-<http://www.w3.org/ns/prov#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid41 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/ns/shacl#property> _:genid42 .
-_:genid42 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/role> .
-<https://data.digichecks.eu/def/role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Association> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid43 .
-_:genid43 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid43 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isRequestForPermit> .
-<https://data.digichecks.eu/def/isRequestForPermit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid43 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Permit> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid44 .
-_:genid44 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid44 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isSubmittedBy> .
-<https://data.digichecks.eu/def/isSubmittedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid44 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid45 .
-_:genid45 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isControlledBy> .
-<https://data.digichecks.eu/def/isControlledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid45 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid46 .
-_:genid46 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid46 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isPermitForRequest> .
-<https://data.digichecks.eu/def/isPermitForRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid46 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Project> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/PermitRequest> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#property> _:genid47 .
-_:genid47 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid47 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#property> _:genid48 .
-_:genid48 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid48 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#property> _:genid49 .
-_:genid49 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
-_:genid49 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#ValidationReport> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#property> _:genid50 .
-_:genid50 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid50 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid50 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isGeometryOf> .
-<https://data.digichecks.eu/def/isGeometryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid50 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#property> _:genid51 .
-_:genid51 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid51 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#property> _:genid52 .
-_:genid52 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid52 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#targetClass> <http://www.opengis.net/ont/geosparql#Geometry> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#property> _:genid53 .
-_:genid53 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid53 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid53 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isParcelFor> .
-<https://data.digichecks.eu/def/isParcelFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid53 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#property> _:genid54 .
-_:genid54 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid54 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#property> _:genid55 .
-_:genid55 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid55 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Parcel> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/ns/shacl#property> _:genid56 .
-_:genid56 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid56 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/ns/shacl#property> _:genid57 .
-_:genid57 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid57 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/idsa/core/Resource> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#property> _:genid58 .
-_:genid58 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-_:genid58 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#property> _:genid59 .
-_:genid59 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:genid59 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#property> _:genid60 .
-_:genid60 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid60 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid60 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isAddressFor> .
-<https://data.digichecks.eu/def/isAddressFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2006/vcard/ns#Address> .
-# 
-# http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e> <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical operator list for requirements" .
-# 
 # http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/dc/terms/subject> <http://www.w3.org/2004/02/skos/core#prefLabel> "subject" .
 # 
 # http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geometry" .
 # 
 # http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2004/02/skos/core#prefLabel> "has geometry" .
 # 
 # http://www.w3.org/2000/01/rdf-schema#comment
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2004/02/skos/core#prefLabel> "comment" .
 # 
 # http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2004/02/skos/core#prefLabel> "pref label" .
 # 
 # http://www.w3.org/2006/vcard/ns#Address
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2004/02/skos/core#prefLabel> "Address" .
 # 
 # http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2004/02/skos/core#prefLabel> "has address" .
 # 
 # http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agent" .
 # 
 # http://www.w3.org/ns/prov#Association
+<http://www.w3.org/ns/prov#Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#Association> <http://www.w3.org/2004/02/skos/core#prefLabel> "Association" .
 # 
 # http://www.w3.org/ns/prov#Location
+<http://www.w3.org/ns/prov#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#Location> <http://www.w3.org/2004/02/skos/core#prefLabel> "Location" .
 # 
 # http://www.w3.org/ns/prov#Organization
@@ -760,18 +415,23 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <http://www.w3.org/ns/prov#Person> <http://www.w3.org/2004/02/skos/core#prefLabel> "Person" .
 # 
 # http://www.w3.org/ns/prov#actedOnBehalfOf
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2004/02/skos/core#prefLabel> "acted on behalf of" .
 # 
 # http://www.w3.org/ns/prov#agent
+<http://www.w3.org/ns/prov#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#agent> <http://www.w3.org/2004/02/skos/core#prefLabel> "agent" .
 # 
 # http://www.w3.org/ns/prov#atLocation
+<http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2004/02/skos/core#prefLabel> "at location" .
 # 
 # http://www.w3.org/ns/prov#qualifiedAssociation
+<http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/2004/02/skos/core#prefLabel> "qualified association" .
 # 
 # http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2004/02/skos/core#prefLabel> "was associated with" .
 # 
 # http://www.w3.org/ns/shacl#NodeShape
@@ -781,12 +441,15 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <http://www.w3.org/ns/shacl#ValidationReport> <http://www.w3.org/2004/02/skos/core#prefLabel> "Validation Report" .
 # 
 # https://data.digichecks.eu/def/Allocation
+<https://data.digichecks.eu/def/Allocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/Allocation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Allocation" .
 # 
 # https://data.digichecks.eu/def/Decision
+<https://data.digichecks.eu/def/Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/Decision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Decision" .
 # 
 # https://data.digichecks.eu/def/Document
+<https://data.digichecks.eu/def/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/Document> <http://www.w3.org/2004/02/skos/core#prefLabel> "Document" .
 # 
 # https://data.digichecks.eu/def/GenericRequirement
@@ -798,15 +461,19 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <https://data.digichecks.eu/def/MachineReadableRule> <http://www.w3.org/2004/02/skos/core#prefLabel> "Machine readable rule" .
 # 
 # https://data.digichecks.eu/def/Parcel
+<https://data.digichecks.eu/def/Parcel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/Parcel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Parcel" .
 # 
 # https://data.digichecks.eu/def/Permit
+<https://data.digichecks.eu/def/Permit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/Permit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Permit" .
 # 
 # https://data.digichecks.eu/def/PermitRequest
+<https://data.digichecks.eu/def/PermitRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/PermitRequest> <http://www.w3.org/2004/02/skos/core#prefLabel> "Permit request" .
 # 
 # https://data.digichecks.eu/def/Project
+<https://data.digichecks.eu/def/Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/Project> <http://www.w3.org/2004/02/skos/core#prefLabel> "Project" .
 # 
 # https://data.digichecks.eu/def/ProjectRequirement
@@ -814,33 +481,43 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <https://data.digichecks.eu/def/ProjectRequirement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Project Requirement" .
 # 
 # https://data.digichecks.eu/def/Verification
+<https://data.digichecks.eu/def/Verification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/Verification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Verification" .
 # 
 # https://data.digichecks.eu/def/VerificationMethod
+<https://data.digichecks.eu/def/VerificationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/VerificationMethod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Verification method" .
 # 
 # https://data.digichecks.eu/def/decisionOutcome
+<https://data.digichecks.eu/def/decisionOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/decisionOutcome> <http://www.w3.org/2004/02/skos/core#prefLabel> "decision outcome" .
 # 
 # https://data.digichecks.eu/def/hasAsOutput
+<https://data.digichecks.eu/def/hasAsOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/hasAsOutput> <http://www.w3.org/2004/02/skos/core#prefLabel> "has as output" .
 # 
 # https://data.digichecks.eu/def/hasParcel
+<https://data.digichecks.eu/def/hasParcel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/hasParcel> <http://www.w3.org/2004/02/skos/core#prefLabel> "has parcel" .
 # 
 # https://data.digichecks.eu/def/hasPermitRequest
+<https://data.digichecks.eu/def/hasPermitRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/hasPermitRequest> <http://www.w3.org/2004/02/skos/core#prefLabel> "has permit request" .
 # 
 # https://data.digichecks.eu/def/hasSource
+<https://data.digichecks.eu/def/hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/hasSource> <http://www.w3.org/2004/02/skos/core#prefLabel> "has source" .
 # 
 # https://data.digichecks.eu/def/hasVerificationMethod
+<https://data.digichecks.eu/def/hasVerificationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/hasVerificationMethod> <http://www.w3.org/2004/02/skos/core#prefLabel> "has verification method" .
 # 
 # https://data.digichecks.eu/def/isAddressFor
+<https://data.digichecks.eu/def/isAddressFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isAddressFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is address for" .
 # 
 # https://data.digichecks.eu/def/isAllocationfor
+<https://data.digichecks.eu/def/isAllocationfor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isAllocationfor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is allocation for" .
 # 
 # https://data.digichecks.eu/def/isCollectedIn
@@ -848,9 +525,11 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <https://data.digichecks.eu/def/isCollectedIn> <http://www.w3.org/2004/02/skos/core#prefLabel> "is collected in" .
 # 
 # https://data.digichecks.eu/def/isControlledBy
+<https://data.digichecks.eu/def/isControlledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isControlledBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "is controlled by" .
 # 
 # https://data.digichecks.eu/def/isDecisionFor
+<https://data.digichecks.eu/def/isDecisionFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isDecisionFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is decision for" .
 # 
 # https://data.digichecks.eu/def/isDerivedIn
@@ -858,12 +537,15 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <https://data.digichecks.eu/def/isDerivedIn> <http://www.w3.org/2004/02/skos/core#prefLabel> "is derived in" .
 # 
 # https://data.digichecks.eu/def/isExpressedAs
+<https://data.digichecks.eu/def/isExpressedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isExpressedAs> <http://www.w3.org/2004/02/skos/core#prefLabel> "is expressed as" .
 # 
 # https://data.digichecks.eu/def/isGeometryOf
+<https://data.digichecks.eu/def/isGeometryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isGeometryOf> <http://www.w3.org/2004/02/skos/core#prefLabel> "is geometry of" .
 # 
 # https://data.digichecks.eu/def/isInputFor
+<https://data.digichecks.eu/def/isInputFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isInputFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is input for" .
 # 
 # https://data.digichecks.eu/def/isMadeBy
@@ -871,27 +553,35 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <https://data.digichecks.eu/def/isMadeBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "is made by" .
 # 
 # https://data.digichecks.eu/def/isParcelFor
+<https://data.digichecks.eu/def/isParcelFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isParcelFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is parcel for" .
 # 
 # https://data.digichecks.eu/def/isPermitFor
+<https://data.digichecks.eu/def/isPermitFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isPermitFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is permit for" .
 # 
 # https://data.digichecks.eu/def/isPermitForRequest
+<https://data.digichecks.eu/def/isPermitForRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isPermitForRequest> <http://www.w3.org/2004/02/skos/core#prefLabel> "is permit for request" .
 # 
 # https://data.digichecks.eu/def/isRequestForPermit
+<https://data.digichecks.eu/def/isRequestForPermit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isRequestForPermit> <http://www.w3.org/2004/02/skos/core#prefLabel> "is request for permit" .
 # 
 # https://data.digichecks.eu/def/isSubmittedBy
+<https://data.digichecks.eu/def/isSubmittedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isSubmittedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "is submitted by" .
 # 
 # https://data.digichecks.eu/def/isVerifiedIn
+<https://data.digichecks.eu/def/isVerifiedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/isVerifiedIn> <http://www.w3.org/2004/02/skos/core#prefLabel> "is verified in" .
 # 
 # https://data.digichecks.eu/def/logicalOperator
+<https://data.digichecks.eu/def/logicalOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/logicalOperator> <http://www.w3.org/2004/02/skos/core#prefLabel> "logical operator" .
 # 
 # https://data.digichecks.eu/def/role
+<https://data.digichecks.eu/def/role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/role> <http://www.w3.org/2004/02/skos/core#prefLabel> "role" .
 # 
 # https://data.digichecks.eu/def/shallBeCompliantWith
@@ -899,7 +589,318 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 <https://data.digichecks.eu/def/shallBeCompliantWith> <http://www.w3.org/2004/02/skos/core#prefLabel> "shall be compliant with" .
 # 
 # https://data.digichecks.eu/def/wasDescribedBy
+<https://data.digichecks.eu/def/wasDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://data.digichecks.eu/def/wasDescribedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "was described by" .
+# 
+# https://data.digichecks.eu/def/34e82a97-fdd5-3176-ab61-f75c778939ca
+<https://data.digichecks.eu/def/34e82a97-fdd5-3176-ab61-f75c778939ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/34e82a97-fdd5-3176-ab61-f75c778939ca> <http://www.w3.org/2004/02/skos/core#prefLabel> "outcomes for Decision for permits" .
+# 
+# https://data.digichecks.eu/def/64b000ca27b0605cddb2d646
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid1 .
+_:genid1 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid1 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid2 .
+_:genid2 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/wasDescribedBy> .
+_:genid2 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
+<https://w3id.org/idsa/core/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid3 .
+_:genid3 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
+<https://w3id.org/sml/def#isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid3 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#property> _:genid4 .
+_:genid4 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid4 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#TopConcept> .
+<https://w3id.org/sml/def#TopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://data.digichecks.eu/def/64b000d827b0605cddb2d64c
+<https://data.digichecks.eu/def/64b000d827b0605cddb2d64c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64b000d827b0605cddb2d64c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#property> _:genid5 .
+_:genid5 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isVerifiedIn> .
+_:genid5 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Verification> .
+<https://data.digichecks.eu/def/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#property> _:genid6 .
+_:genid6 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isAllocationfor> .
+_:genid6 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> .
+<https://data.digichecks.eu/def/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#property> _:genid7 .
+_:genid7 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> .
+<https://w3id.org/sml/def#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid7 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> .
+<https://w3id.org/sml/def#Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64b000d827b0605cddb2d64c> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Allocation> .
+# 
+# https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid8 .
+_:genid8 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid8 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid8 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasVerificationMethod> .
+_:genid8 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/VerificationMethod> .
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid9 .
+_:genid9 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid9 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid10 .
+_:genid10 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isInputFor> .
+_:genid10 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Decision> .
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#property> _:genid11 .
+_:genid11 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasAsOutput> .
+_:genid11 <http://www.w3.org/ns/shacl#or> _:genid12 .
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Verification> .
+# 
+# https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100
+<https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#property> _:genid13 .
+_:genid13 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid13 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#property> _:genid14 .
+_:genid14 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid14 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#property> _:genid15 .
+_:genid15 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
+_:genid15 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
+<https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Agent> .
+# 
+# https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid16 .
+_:genid16 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/subject> .
+_:genid16 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> .
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid17 .
+_:genid17 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#qualifiedAssociation> .
+_:genid17 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Association> .
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid18 .
+_:genid18 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#atLocation> .
+_:genid18 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#property> _:genid19 .
+_:genid19 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasPermitRequest> .
+_:genid19 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> .
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Project> .
+# 
+# https://data.digichecks.eu/def/64da320fec98ce2e4c41a220
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid20 .
+_:genid20 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasSource> .
+_:genid20 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Document> .
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid21 .
+_:genid21 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isExpressedAs> .
+_:genid21 <http://www.w3.org/ns/shacl#or> _:genid22 .
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid23 .
+_:genid23 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/logicalOperator> .
+_:genid23 <http://www.w3.org/ns/shacl#in> <https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e> .
+<https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#property> _:genid24 .
+_:genid24 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
+<https://w3id.org/sml/def#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid24 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> .
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#Requirement> .
+# 
+# https://data.digichecks.eu/def/64da327fec98ce2e4c41a229
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid25 .
+_:genid25 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> .
+_:genid25 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> .
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid26 .
+_:genid26 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
+_:genid26 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Permit> .
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid27 .
+_:genid27 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isPermitFor> .
+_:genid27 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> .
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#property> _:genid28 .
+_:genid28 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
+_:genid28 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Permit> .
+# 
+# https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232
+<https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#property> _:genid29 .
+_:genid29 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid29 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
+<https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#property> _:genid30 .
+_:genid30 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isDecisionFor> .
+_:genid30 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> .
+<https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#property> _:genid31 .
+_:genid31 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/decisionOutcome> .
+_:genid31 <http://www.w3.org/ns/shacl#in> <https://data.digichecks.eu/def/34e82a97-fdd5-3176-ab61-f75c778939ca> .
+<https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Decision> .
+# 
+# https://data.digichecks.eu/def/64ddde554ef5931bfc406a34
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid32 .
+_:genid32 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid32 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasParcel> .
+_:genid32 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Parcel> .
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid33 .
+_:genid33 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://www.w3.org/ns/shacl#path> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid33 <http://www.w3.org/ns/shacl#class> <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid34 .
+_:genid34 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid34 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid35 .
+_:genid35 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid35 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasAddress> .
+_:genid35 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2006/vcard/ns#Address> .
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#property> _:genid36 .
+_:genid36 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid36 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Location> .
+# 
+# https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64
+<https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Document> .
+# 
+# https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid37 .
+_:genid37 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/wasDescribedBy> .
+_:genid37 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid38 .
+_:genid38 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
+_:genid38 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid39 .
+_:genid39 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid39 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#property> _:genid40 .
+_:genid40 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid40 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc
+<https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/ns/shacl#property> _:genid41 .
+_:genid41 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid41 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid41 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#agent> .
+_:genid41 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
+<https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/ns/shacl#property> _:genid42 .
+_:genid42 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/role> .
+<https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Association> .
+# 
+# https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid43 .
+_:genid43 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid43 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isPermitForRequest> .
+_:genid43 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Project> .
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid44 .
+_:genid44 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid44 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isSubmittedBy> .
+_:genid44 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid45 .
+_:genid45 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isControlledBy> .
+_:genid45 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> .
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#property> _:genid46 .
+_:genid46 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid46 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isRequestForPermit> .
+_:genid46 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Permit> .
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/PermitRequest> .
+# 
+# https://data.digichecks.eu/def/6606a7ae965733652c7f6783
+<https://data.digichecks.eu/def/6606a7ae965733652c7f6783> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/6606a7ae965733652c7f6783> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#property> _:genid47 .
+_:genid47 <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
+_:genid47 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> .
+<https://data.digichecks.eu/def/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#property> _:genid48 .
+_:genid48 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid48 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#property> _:genid49 .
+_:genid49 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid49 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/6606a7ae965733652c7f6783> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#ValidationReport> .
+# 
+# https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4
+<https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#property> _:genid50 .
+_:genid50 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid50 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid50 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isGeometryOf> .
+_:genid50 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
+<https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#property> _:genid51 .
+_:genid51 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid51 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#property> _:genid52 .
+_:genid52 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid52 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4> <http://www.w3.org/ns/shacl#targetClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+# 
+# https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4
+<https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#property> _:genid53 .
+_:genid53 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid53 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid53 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isParcelFor> .
+_:genid53 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
+<https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#property> _:genid54 .
+_:genid54 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid54 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#property> _:genid55 .
+_:genid55 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid55 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4> <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Parcel> .
+# 
+# https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc
+<https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/ns/shacl#property> _:genid56 .
+_:genid56 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid56 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/ns/shacl#property> _:genid57 .
+_:genid57 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid57 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/idsa/core/Resource> .
+# 
+# https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a
+<https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#property> _:genid58 .
+_:genid58 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid58 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid58 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isAddressFor> .
+_:genid58 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> .
+<https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#property> _:genid59 .
+_:genid59 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid59 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#property> _:genid60 .
+_:genid60 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid60 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2006/vcard/ns#Address> .
+# 
+# https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e
+<https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e> <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical operator list for requirements" .
 # 
 # https://w3id.org/idsa/core/Resource
 <https://w3id.org/idsa/core/Resource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Resource" .
@@ -995,10 +996,10 @@ _:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location
 # https://w3id.org/sml/def#isDescribedBy
 <https://w3id.org/sml/def#isDescribedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "is described by" .
 # 
-_:genid61 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/MachineReadableRule> .
-_:genid62 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#NodeShape> .
-_:genid63 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#ValidationReport> .
-_:genid64 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Document> .
+_:genid61 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#NodeShape> .
+_:genid62 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/MachineReadableRule> .
+_:genid63 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Document> .
+_:genid64 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#ValidationReport> .
 # 
 # 
 # #################################################################

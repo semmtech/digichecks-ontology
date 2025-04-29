@@ -1,20 +1,21 @@
-@prefix : <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> .
+@prefix : <https://data.digichecks.eu/def/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> .
+@base <https://data.digichecks.eu/def/> .
 
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> rdf:type owl:Ontology ;
-                                                                                  owl:imports rdfs: ,
-                                                                                              owl: ,
-                                                                                              <http://www.w3.org/ns/shacl#> ;
-                                                                                  <http://purl.org/dc/terms/creator> "DigiChecks" ;
-                                                                                  <http://purl.org/dc/terms/date> "2024-06-10T17:27:04.485561856" ;
-                                                                                  <http://purl.org/dc/terms/description> "The top-level permit ontology contains the relevant terminology related to permitting processes. It contains the core terminology for DigiChecks services to communicate unambiguously about a permitting process." ;
-                                                                                  rdfs:label "Top-level permit ontology" ;
-                                                                                  owl:versionInfo "digichecks-internal-review_20240610" .
+<https://data.digichecks.eu/def/> rdf:type owl:Ontology ;
+                                   owl:imports rdfs: ,
+                                               owl: ,
+                                               <http://www.w3.org/ns/shacl#> ,
+                                               <https://w3id.org/sml/def#> ;
+                                   <http://purl.org/dc/terms/creator> "DigiChecks" ;
+                                   <http://purl.org/dc/terms/date> "2024-06-10T17:27:04.485561856" ;
+                                   <http://purl.org/dc/terms/description> "The top-level permit ontology contains the relevant terminology related to permitting processes. Based on Semantic Modelling and Linking (SML, EN 17632),  it contains the core terminology for DigiChecks services to communicate unambiguously about a permitting process." ;
+                                   rdfs:label "Permit ontology based on the SML framework" ;
+                                   owl:versionInfo "1.0" .
 
 #################################################################
 #    Annotation properties
@@ -73,110 +74,110 @@
 
 
 ###  https://data.digichecks.eu/def/decisionOutcome
-<https://data.digichecks.eu/def/decisionOutcome> rdf:type owl:ObjectProperty ;
-                                                 rdfs:range xsd:enumeration .
+:decisionOutcome rdf:type owl:ObjectProperty ;
+                 rdfs:range xsd:enumeration .
 
 
 ###  https://data.digichecks.eu/def/hasAsOutput
-<https://data.digichecks.eu/def/hasAsOutput> rdf:type owl:ObjectProperty .
+:hasAsOutput rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/hasParcel
-<https://data.digichecks.eu/def/hasParcel> rdf:type owl:ObjectProperty .
+:hasParcel rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/hasPermitRequest
-<https://data.digichecks.eu/def/hasPermitRequest> rdf:type owl:ObjectProperty .
+:hasPermitRequest rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/hasSource
-<https://data.digichecks.eu/def/hasSource> rdf:type owl:ObjectProperty .
+:hasSource rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/hasVerificationMethod
-<https://data.digichecks.eu/def/hasVerificationMethod> rdf:type owl:ObjectProperty .
+:hasVerificationMethod rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isAddressFor
-<https://data.digichecks.eu/def/isAddressFor> rdf:type owl:ObjectProperty ;
-                                              owl:inverseOf <http://www.w3.org/2006/vcard/ns#hasAddress> .
+:isAddressFor rdf:type owl:ObjectProperty ;
+              owl:inverseOf <http://www.w3.org/2006/vcard/ns#hasAddress> .
 
 
 ###  https://data.digichecks.eu/def/isAllocationfor
-<https://data.digichecks.eu/def/isAllocationfor> rdf:type owl:ObjectProperty .
+:isAllocationfor rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isCollectedIn
-<https://data.digichecks.eu/def/isCollectedIn> rdf:type owl:ObjectProperty .
+:isCollectedIn rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isControlledBy
-<https://data.digichecks.eu/def/isControlledBy> rdf:type owl:ObjectProperty .
+:isControlledBy rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isDecisionFor
-<https://data.digichecks.eu/def/isDecisionFor> rdf:type owl:ObjectProperty .
+:isDecisionFor rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isDerivedIn
-<https://data.digichecks.eu/def/isDerivedIn> rdf:type owl:ObjectProperty .
+:isDerivedIn rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isExpressedAs
-<https://data.digichecks.eu/def/isExpressedAs> rdf:type owl:ObjectProperty .
+:isExpressedAs rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isGeometryOf
-<https://data.digichecks.eu/def/isGeometryOf> rdf:type owl:ObjectProperty ;
-                                              owl:inverseOf <http://www.opengis.net/ont/geosparql#hasGeometry> .
+:isGeometryOf rdf:type owl:ObjectProperty ;
+              owl:inverseOf <http://www.opengis.net/ont/geosparql#hasGeometry> .
 
 
 ###  https://data.digichecks.eu/def/isInputFor
-<https://data.digichecks.eu/def/isInputFor> rdf:type owl:ObjectProperty .
+:isInputFor rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isMadeBy
-<https://data.digichecks.eu/def/isMadeBy> rdf:type owl:ObjectProperty .
+:isMadeBy rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isParcelFor
-<https://data.digichecks.eu/def/isParcelFor> rdf:type owl:ObjectProperty ;
-                                             owl:inverseOf <https://data.digichecks.eu/def/hasParcel> .
+:isParcelFor rdf:type owl:ObjectProperty ;
+             owl:inverseOf :hasParcel .
 
 
 ###  https://data.digichecks.eu/def/isPermitFor
-<https://data.digichecks.eu/def/isPermitFor> rdf:type owl:ObjectProperty ;
-                                             owl:inverseOf <https://data.digichecks.eu/def/isRequestForPermit> .
+:isPermitFor rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isRequestForPermit .
 
 
 ###  https://data.digichecks.eu/def/isPermitForRequest
-<https://data.digichecks.eu/def/isPermitForRequest> rdf:type owl:ObjectProperty ;
-                                                    owl:inverseOf <https://data.digichecks.eu/def/hasPermitRequest> .
+:isPermitForRequest rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :hasPermitRequest .
 
 
 ###  https://data.digichecks.eu/def/isRequestForPermit
-<https://data.digichecks.eu/def/isRequestForPermit> rdf:type owl:ObjectProperty .
+:isRequestForPermit rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isSubmittedBy
-<https://data.digichecks.eu/def/isSubmittedBy> rdf:type owl:ObjectProperty .
+:isSubmittedBy rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/isVerifiedIn
-<https://data.digichecks.eu/def/isVerifiedIn> rdf:type owl:ObjectProperty .
+:isVerifiedIn rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/logicalOperator
-<https://data.digichecks.eu/def/logicalOperator> rdf:type owl:ObjectProperty ;
-                                                 rdfs:range xsd:enumeration .
+:logicalOperator rdf:type owl:ObjectProperty ;
+                 rdfs:range xsd:enumeration .
 
 
 ###  https://data.digichecks.eu/def/shallBeCompliantWith
-<https://data.digichecks.eu/def/shallBeCompliantWith> rdf:type owl:ObjectProperty .
+:shallBeCompliantWith rdf:type owl:ObjectProperty .
 
 
 ###  https://data.digichecks.eu/def/wasDescribedBy
-<https://data.digichecks.eu/def/wasDescribedBy> rdf:type owl:ObjectProperty .
+:wasDescribedBy rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/sml/def#hasPart
@@ -206,15 +207,15 @@ rdfs:comment rdf:type owl:DatatypeProperty ;
 
 
 ###  https://data.digichecks.eu/def/decisionOutcome
-<https://data.digichecks.eu/def/decisionOutcome> rdf:type owl:DatatypeProperty .
+:decisionOutcome rdf:type owl:DatatypeProperty .
 
 
 ###  https://data.digichecks.eu/def/logicalOperator
-<https://data.digichecks.eu/def/logicalOperator> rdf:type owl:DatatypeProperty .
+:logicalOperator rdf:type owl:DatatypeProperty .
 
 
 ###  https://data.digichecks.eu/def/role
-<https://data.digichecks.eu/def/role> rdf:type owl:DatatypeProperty .
+:role rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -270,62 +271,62 @@ xsd:enumeration rdf:type owl:Class .
 
 
 ###  https://data.digichecks.eu/def/Allocation
-<https://data.digichecks.eu/def/Allocation> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
+:Allocation rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
 
 
 ###  https://data.digichecks.eu/def/Decision
-<https://data.digichecks.eu/def/Decision> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://w3id.org/sml/def#Activity> .
+:Decision rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/sml/def#Activity> .
 
 
 ###  https://data.digichecks.eu/def/Document
-<https://data.digichecks.eu/def/Document> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
+:Document rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
 
 
 ###  https://data.digichecks.eu/def/GenericRequirement
-<https://data.digichecks.eu/def/GenericRequirement> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/sml/def#Requirement> .
+:GenericRequirement rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/sml/def#Requirement> .
 
 
 ###  https://data.digichecks.eu/def/MachineReadableRule
-<https://data.digichecks.eu/def/MachineReadableRule> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
+:MachineReadableRule rdf:type owl:Class ;
+                     rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
 
 
 ###  https://data.digichecks.eu/def/Parcel
-<https://data.digichecks.eu/def/Parcel> rdf:type owl:Class .
+:Parcel rdf:type owl:Class .
 
 
 ###  https://data.digichecks.eu/def/Permit
-<https://data.digichecks.eu/def/Permit> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
+:Permit rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
 
 
 ###  https://data.digichecks.eu/def/PermitRequest
-<https://data.digichecks.eu/def/PermitRequest> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
+:PermitRequest rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/sml/def#InformationObject> .
 
 
 ###  https://data.digichecks.eu/def/Project
-<https://data.digichecks.eu/def/Project> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/sml/def#Entity> .
+:Project rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/sml/def#Entity> .
 
 
 ###  https://data.digichecks.eu/def/ProjectRequirement
-<https://data.digichecks.eu/def/ProjectRequirement> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/sml/def#Requirement> .
+:ProjectRequirement rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/sml/def#Requirement> .
 
 
 ###  https://data.digichecks.eu/def/Verification
-<https://data.digichecks.eu/def/Verification> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/sml/def#Activity> .
+:Verification rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/sml/def#Activity> .
 
 
 ###  https://data.digichecks.eu/def/VerificationMethod
-<https://data.digichecks.eu/def/VerificationMethod> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/sml/def#Activity> .
+:VerificationMethod rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/sml/def#Activity> .
 
 
 ###  https://w3id.org/idsa/core/Resource
@@ -440,388 +441,6 @@ xsd:enumeration rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca> rdf:type owl:NamedIndividual ;
-                                                                                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "outcomes for Decision for permits" .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid1 ,
-                                                                                                                                               _:genid2 ,
-                                                                                                                                               _:genid3 ,
-                                                                                                                                               _:genid4 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#TopConcept> .
-
-_:genid1 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
-          <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
-
-_:genid2 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
-          <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/wasDescribedBy> .
-
-_:genid3 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-          <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-_:genid4 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-          <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid5 ,
-                                                                                                                                               _:genid6 ,
-                                                                                                                                               _:genid7 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Allocation> .
-
-_:genid5 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> ;
-          <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isAllocationfor> ;
-          <http://www.w3.org/ns/shacl#maxCount> 1 ;
-          <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid6 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
-          <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> ;
-          <http://www.w3.org/ns/shacl#maxCount> 1 ;
-          <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid7 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Verification> ;
-          <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isVerifiedIn> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid8 ,
-                                                                                                                                               _:genid10 ,
-                                                                                                                                               _:genid11 ,
-                                                                                                                                               _:genid12 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Verification> .
-
-_:genid8 <http://www.w3.org/ns/shacl#or> [ ] ;
-<http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasAsOutput> .
-
-_:genid10 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid11 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Decision> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isInputFor> ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid12 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/VerificationMethod> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasVerificationMethod> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid13 ,
-                                                                                                                                               _:genid14 ,
-                                                                                                                                               _:genid15 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Agent> .
-
-_:genid13 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
-
-_:genid14 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-_:genid15 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid16 ,
-                                                                                                                                               _:genid17 ,
-                                                                                                                                               _:genid18 ,
-                                                                                                                                               _:genid19 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Project> .
-
-_:genid16 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#atLocation> .
-
-_:genid17 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasPermitRequest> .
-
-_:genid18 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> ;
-           <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/subject> .
-
-_:genid19 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Association> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#qualifiedAssociation> ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid20 ,
-                                                                                                                                               _:genid21 ,
-                                                                                                                                               _:genid22 ,
-                                                                                                                                               _:genid24 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#Requirement> .
-
-_:genid20 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
-           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
-
-_:genid21 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Document> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasSource> .
-
-_:genid22 <http://www.w3.org/ns/shacl#or> [ ] ;
-<http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isExpressedAs> .
-
-_:genid24 <http://www.w3.org/ns/shacl#in> <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/logicalOperator> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid25 ,
-                                                                                                                                               _:genid26 ,
-                                                                                                                                               _:genid27 ,
-                                                                                                                                               _:genid28 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Permit> .
-
-_:genid25 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
-           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid26 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
-           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid27 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isPermitFor> ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid28 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Permit> ;
-           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid29 ,
-                                                                                                                                               _:genid30 ,
-                                                                                                                                               _:genid31 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Decision> .
-
-_:genid29 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid30 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/PermitRequest> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isDecisionFor> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid31 <http://www.w3.org/ns/shacl#in> <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/decisionOutcome> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid32 ,
-                                                                                                                                               _:genid33 ,
-                                                                                                                                               _:genid34 ,
-                                                                                                                                               _:genid35 ,
-                                                                                                                                               _:genid36 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Location> .
-
-_:genid32 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-_:genid33 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2006/vcard/ns#Address> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasAddress> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 .
-
-_:genid34 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-_:genid35 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Parcel> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/hasParcel> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 .
-
-_:genid36 <http://www.w3.org/ns/shacl#class> <http://www.opengis.net/ont/geosparql#Geometry> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.opengis.net/ont/geosparql#hasGeometry> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Document> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid37 ,
-                                                                                                                                               _:genid38 ,
-                                                                                                                                               _:genid39 ,
-                                                                                                                                               _:genid40 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#NodeShape> .
-
-_:genid37 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-_:genid38 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-_:genid39 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/wasDescribedBy> .
-
-_:genid40 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
-           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid41 ,
-                                                                                                                                               _:genid42 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Association> .
-
-_:genid41 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#agent> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid42 <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/role> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid43 ,
-                                                                                                                                               _:genid44 ,
-                                                                                                                                               _:genid45 ,
-                                                                                                                                               _:genid46 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/PermitRequest> .
-
-_:genid43 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Permit> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isRequestForPermit> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 .
-
-_:genid44 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isSubmittedBy> ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid45 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isControlledBy> .
-
-_:genid46 <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Project> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isPermitForRequest> ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid47 ,
-                                                                                                                                               _:genid48 ,
-                                                                                                                                               _:genid49 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#ValidationReport> .
-
-_:genid47 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-_:genid48 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-_:genid49 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
-           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid50 ,
-                                                                                                                                               _:genid51 ,
-                                                                                                                                               _:genid52 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <http://www.opengis.net/ont/geosparql#Geometry> .
-
-_:genid50 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isGeometryOf> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid51 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-_:genid52 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid53 ,
-                                                                                                                                               _:genid54 ,
-                                                                                                                                               _:genid55 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://data.digichecks.eu/def/Parcel> .
-
-_:genid53 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isParcelFor> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid54 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-_:genid55 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid56 ,
-                                                                                                                                               _:genid57 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/idsa/core/Resource> .
-
-_:genid56 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-_:genid57 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a> rdf:type owl:NamedIndividual ,
-                                                                                                                  <http://www.w3.org/ns/shacl#NodeShape> ;
-                                                                                                         <http://www.w3.org/ns/shacl#property> _:genid58 ,
-                                                                                                                                               _:genid59 ,
-                                                                                                                                               _:genid60 ;
-                                                                                                         <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2006/vcard/ns#Address> .
-
-_:genid58 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
-
-_:genid59 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-_:genid60 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
-           <http://www.w3.org/ns/shacl#path> <https://data.digichecks.eu/def/isAddressFor> ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-
-###  http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e
-<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e> rdf:type owl:NamedIndividual ;
-                                                                                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical operator list for requirements" .
-
-
 ###  http://purl.org/dc/terms/subject
 <http://purl.org/dc/terms/subject> rdf:type owl:NamedIndividual ;
                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "subject" .
@@ -915,193 +534,575 @@ rdfs:comment <http://www.w3.org/2004/02/skos/core#prefLabel> "comment" .
 
 
 ###  https://data.digichecks.eu/def/Allocation
-<https://data.digichecks.eu/def/Allocation> rdf:type owl:NamedIndividual ;
-                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Allocation" .
+:Allocation rdf:type owl:NamedIndividual ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Allocation" .
 
 
 ###  https://data.digichecks.eu/def/Decision
-<https://data.digichecks.eu/def/Decision> rdf:type owl:NamedIndividual ;
-                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Decision" .
+:Decision rdf:type owl:NamedIndividual ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Decision" .
 
 
 ###  https://data.digichecks.eu/def/Document
-<https://data.digichecks.eu/def/Document> rdf:type owl:NamedIndividual ;
-                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Document" .
+:Document rdf:type owl:NamedIndividual ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Document" .
 
 
 ###  https://data.digichecks.eu/def/GenericRequirement
-<https://data.digichecks.eu/def/GenericRequirement> rdf:type owl:NamedIndividual ;
-                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Generic Requirement" .
+:GenericRequirement rdf:type owl:NamedIndividual ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Generic Requirement" .
 
 
 ###  https://data.digichecks.eu/def/MachineReadableRule
-<https://data.digichecks.eu/def/MachineReadableRule> rdf:type owl:NamedIndividual ;
-                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Machine readable rule" .
+:MachineReadableRule rdf:type owl:NamedIndividual ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Machine readable rule" .
 
 
 ###  https://data.digichecks.eu/def/Parcel
-<https://data.digichecks.eu/def/Parcel> rdf:type owl:NamedIndividual ;
-                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Parcel" .
+:Parcel rdf:type owl:NamedIndividual ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Parcel" .
 
 
 ###  https://data.digichecks.eu/def/Permit
-<https://data.digichecks.eu/def/Permit> rdf:type owl:NamedIndividual ;
-                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Permit" .
+:Permit rdf:type owl:NamedIndividual ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Permit" .
 
 
 ###  https://data.digichecks.eu/def/PermitRequest
-<https://data.digichecks.eu/def/PermitRequest> rdf:type owl:NamedIndividual ;
-                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Permit request" .
+:PermitRequest rdf:type owl:NamedIndividual ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Permit request" .
 
 
 ###  https://data.digichecks.eu/def/Project
-<https://data.digichecks.eu/def/Project> rdf:type owl:NamedIndividual ;
-                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Project" .
+:Project rdf:type owl:NamedIndividual ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Project" .
 
 
 ###  https://data.digichecks.eu/def/ProjectRequirement
-<https://data.digichecks.eu/def/ProjectRequirement> rdf:type owl:NamedIndividual ;
-                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Project Requirement" .
+:ProjectRequirement rdf:type owl:NamedIndividual ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Project Requirement" .
 
 
 ###  https://data.digichecks.eu/def/Verification
-<https://data.digichecks.eu/def/Verification> rdf:type owl:NamedIndividual ;
-                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Verification" .
+:Verification rdf:type owl:NamedIndividual ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Verification" .
 
 
 ###  https://data.digichecks.eu/def/VerificationMethod
-<https://data.digichecks.eu/def/VerificationMethod> rdf:type owl:NamedIndividual ;
-                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Verification method" .
+:VerificationMethod rdf:type owl:NamedIndividual ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Verification method" .
 
 
 ###  https://data.digichecks.eu/def/decisionOutcome
-<https://data.digichecks.eu/def/decisionOutcome> rdf:type owl:NamedIndividual ;
-                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "decision outcome" .
+:decisionOutcome rdf:type owl:NamedIndividual ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "decision outcome" .
 
 
 ###  https://data.digichecks.eu/def/hasAsOutput
-<https://data.digichecks.eu/def/hasAsOutput> rdf:type owl:NamedIndividual ;
-                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "has as output" .
+:hasAsOutput rdf:type owl:NamedIndividual ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "has as output" .
 
 
 ###  https://data.digichecks.eu/def/hasParcel
-<https://data.digichecks.eu/def/hasParcel> rdf:type owl:NamedIndividual ;
-                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "has parcel" .
+:hasParcel rdf:type owl:NamedIndividual ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "has parcel" .
 
 
 ###  https://data.digichecks.eu/def/hasPermitRequest
-<https://data.digichecks.eu/def/hasPermitRequest> rdf:type owl:NamedIndividual ;
-                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "has permit request" .
+:hasPermitRequest rdf:type owl:NamedIndividual ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "has permit request" .
 
 
 ###  https://data.digichecks.eu/def/hasSource
-<https://data.digichecks.eu/def/hasSource> rdf:type owl:NamedIndividual ;
-                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "has source" .
+:hasSource rdf:type owl:NamedIndividual ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "has source" .
 
 
 ###  https://data.digichecks.eu/def/hasVerificationMethod
-<https://data.digichecks.eu/def/hasVerificationMethod> rdf:type owl:NamedIndividual ;
-                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "has verification method" .
+:hasVerificationMethod rdf:type owl:NamedIndividual ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "has verification method" .
 
 
 ###  https://data.digichecks.eu/def/isAddressFor
-<https://data.digichecks.eu/def/isAddressFor> rdf:type owl:NamedIndividual ;
-                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "is address for" .
+:isAddressFor rdf:type owl:NamedIndividual ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "is address for" .
 
 
 ###  https://data.digichecks.eu/def/isAllocationfor
-<https://data.digichecks.eu/def/isAllocationfor> rdf:type owl:NamedIndividual ;
-                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "is allocation for" .
+:isAllocationfor rdf:type owl:NamedIndividual ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "is allocation for" .
 
 
 ###  https://data.digichecks.eu/def/isCollectedIn
-<https://data.digichecks.eu/def/isCollectedIn> rdf:type owl:NamedIndividual ;
-                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "is collected in" .
+:isCollectedIn rdf:type owl:NamedIndividual ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "is collected in" .
 
 
 ###  https://data.digichecks.eu/def/isControlledBy
-<https://data.digichecks.eu/def/isControlledBy> rdf:type owl:NamedIndividual ;
-                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "is controlled by" .
+:isControlledBy rdf:type owl:NamedIndividual ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "is controlled by" .
 
 
 ###  https://data.digichecks.eu/def/isDecisionFor
-<https://data.digichecks.eu/def/isDecisionFor> rdf:type owl:NamedIndividual ;
-                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "is decision for" .
+:isDecisionFor rdf:type owl:NamedIndividual ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "is decision for" .
 
 
 ###  https://data.digichecks.eu/def/isDerivedIn
-<https://data.digichecks.eu/def/isDerivedIn> rdf:type owl:NamedIndividual ;
-                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "is derived in" .
+:isDerivedIn rdf:type owl:NamedIndividual ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "is derived in" .
 
 
 ###  https://data.digichecks.eu/def/isExpressedAs
-<https://data.digichecks.eu/def/isExpressedAs> rdf:type owl:NamedIndividual ;
-                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "is expressed as" .
+:isExpressedAs rdf:type owl:NamedIndividual ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "is expressed as" .
 
 
 ###  https://data.digichecks.eu/def/isGeometryOf
-<https://data.digichecks.eu/def/isGeometryOf> rdf:type owl:NamedIndividual ;
-                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "is geometry of" .
+:isGeometryOf rdf:type owl:NamedIndividual ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "is geometry of" .
 
 
 ###  https://data.digichecks.eu/def/isInputFor
-<https://data.digichecks.eu/def/isInputFor> rdf:type owl:NamedIndividual ;
-                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "is input for" .
+:isInputFor rdf:type owl:NamedIndividual ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "is input for" .
 
 
 ###  https://data.digichecks.eu/def/isMadeBy
-<https://data.digichecks.eu/def/isMadeBy> rdf:type owl:NamedIndividual ;
-                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "is made by" .
+:isMadeBy rdf:type owl:NamedIndividual ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "is made by" .
 
 
 ###  https://data.digichecks.eu/def/isParcelFor
-<https://data.digichecks.eu/def/isParcelFor> rdf:type owl:NamedIndividual ;
-                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "is parcel for" .
+:isParcelFor rdf:type owl:NamedIndividual ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "is parcel for" .
 
 
 ###  https://data.digichecks.eu/def/isPermitFor
-<https://data.digichecks.eu/def/isPermitFor> rdf:type owl:NamedIndividual ;
-                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "is permit for" .
+:isPermitFor rdf:type owl:NamedIndividual ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "is permit for" .
 
 
 ###  https://data.digichecks.eu/def/isPermitForRequest
-<https://data.digichecks.eu/def/isPermitForRequest> rdf:type owl:NamedIndividual ;
-                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "is permit for request" .
+:isPermitForRequest rdf:type owl:NamedIndividual ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "is permit for request" .
 
 
 ###  https://data.digichecks.eu/def/isRequestForPermit
-<https://data.digichecks.eu/def/isRequestForPermit> rdf:type owl:NamedIndividual ;
-                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "is request for permit" .
+:isRequestForPermit rdf:type owl:NamedIndividual ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "is request for permit" .
 
 
 ###  https://data.digichecks.eu/def/isSubmittedBy
-<https://data.digichecks.eu/def/isSubmittedBy> rdf:type owl:NamedIndividual ;
-                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "is submitted by" .
+:isSubmittedBy rdf:type owl:NamedIndividual ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "is submitted by" .
 
 
 ###  https://data.digichecks.eu/def/isVerifiedIn
-<https://data.digichecks.eu/def/isVerifiedIn> rdf:type owl:NamedIndividual ;
-                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "is verified in" .
+:isVerifiedIn rdf:type owl:NamedIndividual ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "is verified in" .
 
 
 ###  https://data.digichecks.eu/def/logicalOperator
-<https://data.digichecks.eu/def/logicalOperator> rdf:type owl:NamedIndividual ;
-                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "logical operator" .
+:logicalOperator rdf:type owl:NamedIndividual ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "logical operator" .
 
 
 ###  https://data.digichecks.eu/def/role
-<https://data.digichecks.eu/def/role> rdf:type owl:NamedIndividual ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "role" .
+:role rdf:type owl:NamedIndividual ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "role" .
 
 
 ###  https://data.digichecks.eu/def/shallBeCompliantWith
-<https://data.digichecks.eu/def/shallBeCompliantWith> rdf:type owl:NamedIndividual ;
-                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "shall be compliant with" .
+:shallBeCompliantWith rdf:type owl:NamedIndividual ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "shall be compliant with" .
 
 
 ###  https://data.digichecks.eu/def/wasDescribedBy
-<https://data.digichecks.eu/def/wasDescribedBy> rdf:type owl:NamedIndividual ;
-                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "was described by" .
+:wasDescribedBy rdf:type owl:NamedIndividual ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "was described by" .
+
+
+###  https://data.digichecks.eu/def/34e82a97-fdd5-3176-ab61-f75c778939ca
+<https://data.digichecks.eu/def/34e82a97-fdd5-3176-ab61-f75c778939ca> rdf:type owl:NamedIndividual ;
+                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "outcomes for Decision for permits" .
+
+
+###  https://data.digichecks.eu/def/64b000ca27b0605cddb2d646
+<https://data.digichecks.eu/def/64b000ca27b0605cddb2d646> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid1 ,
+                                                                                                _:genid2 ,
+                                                                                                _:genid3 ,
+                                                                                                _:genid4 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#TopConcept> .
+
+_:genid1 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+          <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid2 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+          <http://www.w3.org/ns/shacl#path> :wasDescribedBy .
+
+_:genid3 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+          <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
+
+_:genid4 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+          <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+
+###  https://data.digichecks.eu/def/64b000d827b0605cddb2d64c
+<https://data.digichecks.eu/def/64b000d827b0605cddb2d64c> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid5 ,
+                                                                                                _:genid6 ,
+                                                                                                _:genid7 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :Allocation .
+
+_:genid5 <http://www.w3.org/ns/shacl#class> :Verification ;
+          <http://www.w3.org/ns/shacl#path> :isVerifiedIn .
+
+_:genid6 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> ;
+          <http://www.w3.org/ns/shacl#path> :isAllocationfor ;
+          <http://www.w3.org/ns/shacl#maxCount> 1 ;
+          <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid7 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
+          <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> ;
+          <http://www.w3.org/ns/shacl#maxCount> 1 ;
+          <http://www.w3.org/ns/shacl#minCount> 1 .
+
+
+###  https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d
+<https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid8 ,
+                                                                                                _:genid9 ,
+                                                                                                _:genid10 ,
+                                                                                                _:genid11 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :Verification .
+
+_:genid8 <http://www.w3.org/ns/shacl#class> :VerificationMethod ;
+          <http://www.w3.org/ns/shacl#path> :hasVerificationMethod ;
+          <http://www.w3.org/ns/shacl#maxCount> 1 ;
+          <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid9 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+          <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+          <http://www.w3.org/ns/shacl#maxCount> 1 ;
+          <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid10 <http://www.w3.org/ns/shacl#class> :Decision ;
+           <http://www.w3.org/ns/shacl#path> :isInputFor ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid11 <http://www.w3.org/ns/shacl#or> [ ] ;
+<http://www.w3.org/ns/shacl#path> :hasAsOutput .
+
+
+###  https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100
+<https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid13 ,
+                                                                                                _:genid14 ,
+                                                                                                _:genid15 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Agent> .
+
+_:genid13 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid14 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+_:genid15 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
+
+
+###  https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b
+<https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid16 ,
+                                                                                                _:genid17 ,
+                                                                                                _:genid18 ,
+                                                                                                _:genid19 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :Project .
+
+_:genid16 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#TopConcept> ;
+           <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/subject> .
+
+_:genid17 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Association> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#qualifiedAssociation> ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid18 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#atLocation> .
+
+_:genid19 <http://www.w3.org/ns/shacl#class> :PermitRequest ;
+           <http://www.w3.org/ns/shacl#path> :hasPermitRequest .
+
+
+###  https://data.digichecks.eu/def/64da320fec98ce2e4c41a220
+<https://data.digichecks.eu/def/64da320fec98ce2e4c41a220> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid20 ,
+                                                                                                _:genid21 ,
+                                                                                                _:genid23 ,
+                                                                                                _:genid24 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#Requirement> .
+
+_:genid20 <http://www.w3.org/ns/shacl#class> :Document ;
+           <http://www.w3.org/ns/shacl#path> :hasSource .
+
+_:genid21 <http://www.w3.org/ns/shacl#or> [ ] ;
+<http://www.w3.org/ns/shacl#path> :isExpressedAs .
+
+_:genid23 <http://www.w3.org/ns/shacl#in> <https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e> ;
+           <http://www.w3.org/ns/shacl#path> :logicalOperator ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 .
+
+_:genid24 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
+           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
+
+
+###  https://data.digichecks.eu/def/64da327fec98ce2e4c41a229
+<https://data.digichecks.eu/def/64da327fec98ce2e4c41a229> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid25 ,
+                                                                                                _:genid26 ,
+                                                                                                _:genid27 ,
+                                                                                                _:genid28 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :Permit .
+
+_:genid25 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
+           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid26 <http://www.w3.org/ns/shacl#class> :Permit ;
+           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
+
+_:genid27 <http://www.w3.org/ns/shacl#class> :PermitRequest ;
+           <http://www.w3.org/ns/shacl#path> :isPermitFor ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid28 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+
+###  https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232
+<https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid29 ,
+                                                                                                _:genid30 ,
+                                                                                                _:genid31 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :Decision .
+
+_:genid29 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid30 <http://www.w3.org/ns/shacl#class> :PermitRequest ;
+           <http://www.w3.org/ns/shacl#path> :isDecisionFor ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid31 <http://www.w3.org/ns/shacl#in> <https://data.digichecks.eu/def/34e82a97-fdd5-3176-ab61-f75c778939ca> ;
+           <http://www.w3.org/ns/shacl#path> :decisionOutcome ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 .
+
+
+###  https://data.digichecks.eu/def/64ddde554ef5931bfc406a34
+<https://data.digichecks.eu/def/64ddde554ef5931bfc406a34> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid32 ,
+                                                                                                _:genid33 ,
+                                                                                                _:genid34 ,
+                                                                                                _:genid35 ,
+                                                                                                _:genid36 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Location> .
+
+_:genid32 <http://www.w3.org/ns/shacl#class> :Parcel ;
+           <http://www.w3.org/ns/shacl#path> :hasParcel ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 .
+
+_:genid33 <http://www.w3.org/ns/shacl#class> <http://www.opengis.net/ont/geosparql#Geometry> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 .
+
+_:genid34 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid35 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2006/vcard/ns#Address> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasAddress> ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 .
+
+_:genid36 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+
+###  https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64
+<https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :Document .
+
+
+###  https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914
+<https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid37 ,
+                                                                                                _:genid38 ,
+                                                                                                _:genid39 ,
+                                                                                                _:genid40 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#NodeShape> .
+
+_:genid37 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+           <http://www.w3.org/ns/shacl#path> :wasDescribedBy .
+
+_:genid38 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
+
+_:genid39 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid40 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+
+###  https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc
+<https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid41 ,
+                                                                                                _:genid42 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Association> .
+
+_:genid41 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#agent> ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid42 <http://www.w3.org/ns/shacl#path> :role .
+
+
+###  https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb
+<https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid43 ,
+                                                                                                _:genid44 ,
+                                                                                                _:genid45 ,
+                                                                                                _:genid46 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :PermitRequest .
+
+_:genid43 <http://www.w3.org/ns/shacl#class> :Project ;
+           <http://www.w3.org/ns/shacl#path> :isPermitForRequest ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid44 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+           <http://www.w3.org/ns/shacl#path> :isSubmittedBy ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid45 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+           <http://www.w3.org/ns/shacl#path> :isControlledBy .
+
+_:genid46 <http://www.w3.org/ns/shacl#class> :Permit ;
+           <http://www.w3.org/ns/shacl#path> :isRequestForPermit ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 .
+
+
+###  https://data.digichecks.eu/def/6606a7ae965733652c7f6783
+<https://data.digichecks.eu/def/6606a7ae965733652c7f6783> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid47 ,
+                                                                                                _:genid48 ,
+                                                                                                _:genid49 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/shacl#ValidationReport> .
+
+_:genid47 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
+
+_:genid48 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid49 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+
+###  https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4
+<https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid50 ,
+                                                                                                _:genid51 ,
+                                                                                                _:genid52 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+
+_:genid50 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
+           <http://www.w3.org/ns/shacl#path> :isGeometryOf ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid51 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid52 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+
+###  https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4
+<https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid53 ,
+                                                                                                _:genid54 ,
+                                                                                                _:genid55 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> :Parcel .
+
+_:genid53 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
+           <http://www.w3.org/ns/shacl#path> :isParcelFor ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid54 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid55 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+
+###  https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc
+<https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid56 ,
+                                                                                                _:genid57 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/idsa/core/Resource> .
+
+_:genid56 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+_:genid57 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+
+###  https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a
+<https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                          <http://www.w3.org/ns/shacl#property> _:genid58 ,
+                                                                                                _:genid59 ,
+                                                                                                _:genid60 ;
+                                                          <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2006/vcard/ns#Address> .
+
+_:genid58 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
+           <http://www.w3.org/ns/shacl#path> :isAddressFor ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid59 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+_:genid60 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+
+###  https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e
+<https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e> rdf:type owl:NamedIndividual ;
+                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical operator list for requirements" .
 
 
 ###  https://w3id.org/idsa/core/Resource
@@ -1229,134 +1230,134 @@ rdfs:comment <http://www.w3.org/2004/02/skos/core#prefLabel> "comment" .
                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "is described by" .
 
 
-[ <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/MachineReadableRule>
+[ <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#NodeShape>
 ] .
 
-[ <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#NodeShape>
+[ <http://www.w3.org/ns/shacl#class> :MachineReadableRule
+ ] .
+
+[ <http://www.w3.org/ns/shacl#class> :Document
  ] .
 
 [ <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#ValidationReport>
- ] .
-
-[ <http://www.w3.org/ns/shacl#class> <https://data.digichecks.eu/def/Document>
  ] .
 
 #################################################################
 #    Annotations
 #################################################################
 
-<https://data.digichecks.eu/def/Allocation> <http://www.w3.org/2004/02/skos/core#definition> "An explicit relation between subject and requirement that shows that the subject needs to fulfill the stated requirement."@en .
+:Allocation <http://www.w3.org/2004/02/skos/core#definition> "An explicit relation between subject and requirement that shows that the subject needs to fulfill the stated requirement."@en .
 
 
-<https://data.digichecks.eu/def/Decision> <http://www.w3.org/2004/02/skos/core#definition> "A decision is an activity of making a choice or judgement based on the available resources."@en .
+:Decision <http://www.w3.org/2004/02/skos/core#definition> "A decision is an activity of making a choice or judgement based on the available resources."@en .
 
 
-<https://data.digichecks.eu/def/Document> <http://www.w3.org/2004/02/skos/core#definition> "A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record or acts as a reference."@en .
+:Document <http://www.w3.org/2004/02/skos/core#definition> "A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record or acts as a reference."@en .
 
 
-<https://data.digichecks.eu/def/GenericRequirement> <http://www.w3.org/2004/02/skos/core#definition> "A requirement that is not specific for any projects / use case."@en .
+:GenericRequirement <http://www.w3.org/2004/02/skos/core#definition> "A requirement that is not specific for any projects / use case."@en .
 
 
-<https://data.digichecks.eu/def/MachineReadableRule> <http://www.w3.org/2004/02/skos/core#definition> "A set of instructions or guidelines that are structured in a format that can be easily interpreted and processed by a computer or software program. The term \"rule\" refers here to checking rules specifically and is not to be confused with inferencing rules for deriving knowledge."@en .
+:MachineReadableRule <http://www.w3.org/2004/02/skos/core#definition> "A set of instructions or guidelines that are structured in a format that can be easily interpreted and processed by a computer or software program. The term \"rule\" refers here to checking rules specifically and is not to be confused with inferencing rules for deriving knowledge."@en .
 
 
-<https://data.digichecks.eu/def/Parcel> <http://www.w3.org/2004/02/skos/core#definition> "Any quantity of land capable of being described with such definiteness that its locations and boundaries may be established."@en .
+:Parcel <http://www.w3.org/2004/02/skos/core#definition> "Any quantity of land capable of being described with such definiteness that its locations and boundaries may be established."@en .
 
 
-<https://data.digichecks.eu/def/Permit> <http://www.w3.org/2004/02/skos/core#definition> "A permit is a written permission or authorisation delivered by a competent authority, entity, or person, that is legally delegated to allow someone to do something or to go somewhere."@en .
+:Permit <http://www.w3.org/2004/02/skos/core#definition> "A permit is a written permission or authorisation delivered by a competent authority, entity, or person, that is legally delegated to allow someone to do something or to go somewhere."@en .
 
 
-<https://data.digichecks.eu/def/PermitRequest> <http://www.w3.org/2004/02/skos/core#definition> "A permit request is a written appeal or application made to obtain official approval for something from a designated authority."@en .
+:PermitRequest <http://www.w3.org/2004/02/skos/core#definition> "A permit request is a written appeal or application made to obtain official approval for something from a designated authority."@en .
 
 
-<https://data.digichecks.eu/def/Project> <http://www.w3.org/2004/02/skos/core#definition> "A temporary process undertaken to solve a well-defined goal or objective with clearly defined start and end times, a set of clearly defined tasks, and a budget."@en .
+:Project <http://www.w3.org/2004/02/skos/core#definition> "A temporary process undertaken to solve a well-defined goal or objective with clearly defined start and end times, a set of clearly defined tasks, and a budget."@en .
 
 
-<https://data.digichecks.eu/def/ProjectRequirement> <http://www.w3.org/2004/02/skos/core#definition> "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases."@en .
+:ProjectRequirement <http://www.w3.org/2004/02/skos/core#definition> "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases."@en .
 
 
-<https://data.digichecks.eu/def/Verification> <http://www.w3.org/2004/02/skos/core#definition> "A Verification is an activity that checks if a subject is compliant with a requirement."@en .
+:Verification <http://www.w3.org/2004/02/skos/core#definition> "A Verification is an activity that checks if a subject is compliant with a requirement."@en .
 
 
-<https://data.digichecks.eu/def/VerificationMethod> <http://www.w3.org/2004/02/skos/core#definition> "A set of procedures to check if the subject is compliant with requirement."@en .
+:VerificationMethod <http://www.w3.org/2004/02/skos/core#definition> "A set of procedures to check if the subject is compliant with requirement."@en .
 
 
-<https://data.digichecks.eu/def/decisionOutcome> <http://www.w3.org/2004/02/skos/core#definition> "Provides a list of possible decision outcomes which impact the permit request."@en .
+:decisionOutcome <http://www.w3.org/2004/02/skos/core#definition> "Provides a list of possible decision outcomes which impact the permit request."@en .
 
 
-<https://data.digichecks.eu/def/hasAsOutput> <http://www.w3.org/2004/02/skos/core#definition> "Is an involvement in an occurrence that indicates that the involved object has been operated upon by the occurrence."@en .
+:hasAsOutput <http://www.w3.org/2004/02/skos/core#definition> "Is an involvement in an occurrence that indicates that the involved object has been operated upon by the occurrence."@en .
 
 
-<https://data.digichecks.eu/def/hasParcel> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the link between location and parcel."@en .
+:hasParcel <http://www.w3.org/2004/02/skos/core#definition> "Indicates the link between location and parcel."@en .
 
 
-<https://data.digichecks.eu/def/hasPermitRequest> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the link from a project to a / multiple permit requests."@en .
+:hasPermitRequest <http://www.w3.org/2004/02/skos/core#definition> "Indicates the link from a project to a / multiple permit requests."@en .
 
 
-<https://data.digichecks.eu/def/hasSource> <http://www.w3.org/2004/02/skos/core#definition> "Is a relation that indicates the involved object has a origin or source from another object."@en .
+:hasSource <http://www.w3.org/2004/02/skos/core#definition> "Is a relation that indicates the involved object has a origin or source from another object."@en .
 
 
-<https://data.digichecks.eu/def/hasVerificationMethod> <http://www.w3.org/2004/02/skos/core#definition> "Is an association that indicates a method to verify if the verification object has a method linked to it."@en .
+:hasVerificationMethod <http://www.w3.org/2004/02/skos/core#definition> "Is an association that indicates a method to verify if the verification object has a method linked to it."@en .
 
 
-<https://data.digichecks.eu/def/isAddressFor> <http://www.w3.org/2004/02/skos/core#definition> "Relation to check if the address is linked to a location."@en .
+:isAddressFor <http://www.w3.org/2004/02/skos/core#definition> "Relation to check if the address is linked to a location."@en .
 
 
-<https://data.digichecks.eu/def/isAllocationfor> <http://www.w3.org/2004/02/skos/core#definition> "Is an association to ensure that the involved object has an allocation to the corresponding requirement."@en .
+:isAllocationfor <http://www.w3.org/2004/02/skos/core#definition> "Is an association to ensure that the involved object has an allocation to the corresponding requirement."@en .
 
 
-<https://data.digichecks.eu/def/isCollectedIn> <http://www.w3.org/2004/02/skos/core#definition> "Is a relation between a single thing and a plurality that indicates that the collected object is element of the collection of objects, under the constraint that the element may not be the same object as the plural object. In other words a collection cannot be an element of itself."@en .
+:isCollectedIn <http://www.w3.org/2004/02/skos/core#definition> "Is a relation between a single thing and a plurality that indicates that the collected object is element of the collection of objects, under the constraint that the element may not be the same object as the plural object. In other words a collection cannot be an element of itself."@en .
 
 
-<https://data.digichecks.eu/def/isControlledBy> <http://www.w3.org/2004/02/skos/core#definition> "Is an involvement in an occurrence that indicates that the involved object has a role as controller of the occurrence."@en .
+:isControlledBy <http://www.w3.org/2004/02/skos/core#definition> "Is an involvement in an occurrence that indicates that the involved object has a role as controller of the occurrence."@en .
 
 
-<https://data.digichecks.eu/def/isDecisionFor> <http://www.w3.org/2004/02/skos/core#definition> "Is a relation indicating the choice or judgment made based on available resources."@en .
+:isDecisionFor <http://www.w3.org/2004/02/skos/core#definition> "Is a relation indicating the choice or judgment made based on available resources."@en .
 
 
-<https://data.digichecks.eu/def/isDerivedIn> <http://www.w3.org/2004/02/skos/core#definition> "Is an association that indicates that the object has been derived in the source object."@en .
+:isDerivedIn <http://www.w3.org/2004/02/skos/core#definition> "Is an association that indicates that the object has been derived in the source object."@en .
 
 
-<https://data.digichecks.eu/def/isExpressedAs> <http://www.w3.org/2004/02/skos/core#definition> "Is a relation that determines how an object is represented similar to a target object"@en .
+:isExpressedAs <http://www.w3.org/2004/02/skos/core#definition> "Is a relation that determines how an object is represented similar to a target object"@en .
 
 
-<https://data.digichecks.eu/def/isGeometryOf> <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a geometry has a location linked to it."@en .
+:isGeometryOf <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a geometry has a location linked to it."@en .
 
 
-<https://data.digichecks.eu/def/isInputFor> <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a / multiple verifications where carried out as a foundation for certain decision taken."@en .
+:isInputFor <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a / multiple verifications where carried out as a foundation for certain decision taken."@en .
 
 
-<https://data.digichecks.eu/def/isMadeBy> <http://www.w3.org/2004/02/skos/core#definition> "Is an involvement in an occurrence that indicates that the involved object has a role as performer of the occurrence."@en .
+:isMadeBy <http://www.w3.org/2004/02/skos/core#definition> "Is an involvement in an occurrence that indicates that the involved object has a role as performer of the occurrence."@en .
 
 
-<https://data.digichecks.eu/def/isParcelFor> <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a parcel is located at a certain location."@en .
+:isParcelFor <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a parcel is located at a certain location."@en .
 
 
-<https://data.digichecks.eu/def/isPermitFor> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the link between a permit and corresponding permit request that are / were made to obtain certain permit"@en .
+:isPermitFor <http://www.w3.org/2004/02/skos/core#definition> "Indicates the link between a permit and corresponding permit request that are / were made to obtain certain permit"@en .
 
 
-<https://data.digichecks.eu/def/isPermitForRequest> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the relation between a permit and the related request for it"@en .
+:isPermitForRequest <http://www.w3.org/2004/02/skos/core#definition> "Indicates the relation between a permit and the related request for it"@en .
 
 
-<https://data.digichecks.eu/def/isRequestForPermit> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the relation between a request and the specific permit it was requesting."@en .
+:isRequestForPermit <http://www.w3.org/2004/02/skos/core#definition> "Indicates the relation between a request and the specific permit it was requesting."@en .
 
 
-<https://data.digichecks.eu/def/isSubmittedBy> <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a permit request was made by appropriate associated person / organization that is authorized to make the specific request."@en .
+:isSubmittedBy <http://www.w3.org/2004/02/skos/core#definition> "Indicates that a permit request was made by appropriate associated person / organization that is authorized to make the specific request."@en .
 
 
-<https://data.digichecks.eu/def/isVerifiedIn> <http://www.w3.org/2004/02/skos/core#definition> "Is an association that indicates that the representer object represents the represented object."@en .
+:isVerifiedIn <http://www.w3.org/2004/02/skos/core#definition> "Is an association that indicates that the representer object represents the represented object."@en .
 
 
-<https://data.digichecks.eu/def/logicalOperator> <http://www.w3.org/2004/02/skos/core#definition> "Provides the possibility to indicate if certain conditions are complementary (AND) or supplementary (OR)."@en .
+:logicalOperator <http://www.w3.org/2004/02/skos/core#definition> "Provides the possibility to indicate if certain conditions are complementary (AND) or supplementary (OR)."@en .
 
 
-<https://data.digichecks.eu/def/role> <http://www.w3.org/2004/02/skos/core#definition> "Indicates in what capacity someone/something is linked to a project, permit, ..."@en .
+:role <http://www.w3.org/2004/02/skos/core#definition> "Indicates in what capacity someone/something is linked to a project, permit, ..."@en .
 
 
-<https://data.digichecks.eu/def/shallBeCompliantWith> <http://www.w3.org/2004/02/skos/core#definition> "Is a conceptual requirement for compliancy to a criterion that indicates that a member of the class shall be conformant to a qualitative requirement. Typically an item, story or document of a kind that should be conform to the content of a document."@en .
+:shallBeCompliantWith <http://www.w3.org/2004/02/skos/core#definition> "Is a conceptual requirement for compliancy to a criterion that indicates that a member of the class shall be conformant to a qualitative requirement. Typically an item, story or document of a kind that should be conform to the content of a document."@en .
 
 
-<https://data.digichecks.eu/def/wasDescribedBy> <http://www.w3.org/2004/02/skos/core#definition> "Relation that is used to indicate that a concept was linked to certain resource in the past. this is meant to keep track of different versions of resources, keep history on all links ever made from concept to resource."@en .
+:wasDescribedBy <http://www.w3.org/2004/02/skos/core#definition> "Relation that is used to indicate that a concept was linked to certain resource in the past. this is meant to keep track of different versions of resources, keep history on all links ever made from concept to resource."@en .
 
 
 <https://w3id.org/sml/def#Requirement> <http://www.w3.org/2004/02/skos/core#definition> "A rule that should hold for something, defined via its attributes or relations"@en .
