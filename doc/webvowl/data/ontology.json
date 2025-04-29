@@ -152,7 +152,7 @@
     "id" : "237",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "238",
+    "id" : "239",
     "type" : "owl:Class"
   }, {
     "id" : "193",
@@ -837,7 +837,7 @@
         "en" : "Literal"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#BlankNode",
+      "iri" : "http://www.w3.org/ns/shacl#IRIOrLiteral",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -848,8 +848,8 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "BlankNode",
-        "en" : "Blank node"
+        "IRI-based" : "IRIOrLiteral",
+        "en" : "IRI or literal"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI",
@@ -867,7 +867,7 @@
         "en" : "Blank node or IRI"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#IRIOrLiteral",
+      "iri" : "http://www.w3.org/ns/shacl#BlankNode",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -878,8 +878,8 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "IRIOrLiteral",
-        "en" : "IRI or literal"
+        "IRI-based" : "BlankNode",
+        "en" : "Blank node"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#BlankNodeOrLiteral",
@@ -1211,7 +1211,7 @@
       "IRI-based" : "Decision"
     },
     "attributes" : [ "external" ],
-    "id" : "238",
+    "id" : "239",
     "superClasses" : [ "80" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -1498,7 +1498,7 @@
   }, {
     "instances" : 0,
     "union" : [ "257", "258" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "256"
   }, {
     "iri" : "https://w3id.org/sml/def#ConcreteConcept",
@@ -1855,16 +1855,16 @@
         "IRI-based" : "64d5f40dec98ce2e4c41a100"
       }
     }, {
-      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4",
-      "baseIri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology",
-      "labels" : {
-        "IRI-based" : "661525d6fd34eb2f8e03f5b4"
-      }
-    }, {
       "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783",
       "baseIri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology",
       "labels" : {
         "IRI-based" : "6606a7ae965733652c7f6783"
+      }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4",
+      "baseIri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology",
+      "labels" : {
+        "IRI-based" : "661525d6fd34eb2f8e03f5b4"
       }
     }, {
       "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646",
@@ -2247,20 +2247,6 @@
         "IRI-based" : "PatternConstraintComponent-flags"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#DisjointConstraintComponent-disjoint",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "DisjointConstraintComponent-disjoint"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#OrConstraintComponent-or",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -2273,6 +2259,20 @@
       },
       "labels" : {
         "IRI-based" : "OrConstraintComponent-or"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#DisjointConstraintComponent-disjoint",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DisjointConstraintComponent-disjoint"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent-qualifiedValueShapesDisjoint",
@@ -2373,20 +2373,6 @@
         "IRI-based" : "UniqueLangConstraintComponent-uniqueLang"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#MinLengthConstraintComponent-minLength",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MinLengthConstraintComponent-minLength"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#ClosedConstraintComponent-closed",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -2399,6 +2385,20 @@
       },
       "labels" : {
         "IRI-based" : "ClosedConstraintComponent-closed"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#MinLengthConstraintComponent-minLength",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MinLengthConstraintComponent-minLength"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#MaxCountConstraintComponent-maxCount",
@@ -2429,20 +2429,6 @@
         "IRI-based" : "QualifiedMaxCountConstraintComponent-qualifiedMaxCount"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#ClassConstraintComponent-class",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ClassConstraintComponent-class"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#MinExclusiveConstraintComponent-minExclusive",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -2457,7 +2443,7 @@
         "IRI-based" : "MinExclusiveConstraintComponent-minExclusive"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#NotConstraintComponent-not",
+      "iri" : "http://www.w3.org/ns/shacl#ClassConstraintComponent-class",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -2468,7 +2454,7 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "NotConstraintComponent-not"
+        "IRI-based" : "ClassConstraintComponent-class"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent-minInclusive",
@@ -2497,6 +2483,20 @@
       },
       "labels" : {
         "IRI-based" : "XoneConstraintComponent-xone"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#NotConstraintComponent-not",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NotConstraintComponent-not"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#ClosedConstraintComponent-ignoredProperties",
@@ -2541,20 +2541,6 @@
         "IRI-based" : "MaxInclusiveConstraintComponent-maxInclusive"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#LessThanConstraintComponent-lessThan",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "LessThanConstraintComponent-lessThan"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#NodeKindConstraintComponent-nodeKind",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -2567,6 +2553,20 @@
       },
       "labels" : {
         "IRI-based" : "NodeKindConstraintComponent-nodeKind"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#LessThanConstraintComponent-lessThan",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LessThanConstraintComponent-lessThan"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedMinCount",
@@ -2597,20 +2597,6 @@
         "IRI-based" : "PropertyConstraintComponent-property"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent-qualifiedValueShape",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -2623,6 +2609,20 @@
       },
       "labels" : {
         "IRI-based" : "QualifiedMaxCountConstraintComponent-qualifiedValueShape"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#MaxExclusiveConstraintComponent-maxExclusive",
@@ -2730,7 +2730,7 @@
     "label" : {
       "IRI-based" : "Activity"
     },
-    "subClasses" : [ "284", "238", "133" ],
+    "subClasses" : [ "284", "239", "133" ],
     "attributes" : [ "external" ],
     "id" : "80",
     "superClasses" : [ "4" ]
@@ -3763,21 +3763,6 @@
         "en" : "Node constraint component"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#MinLengthConstraintComponent",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MinLengthConstraintComponent",
-        "en" : "Min-length constraint component"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#NotConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -3793,7 +3778,7 @@
         "en" : "Not constraint component"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent",
+      "iri" : "http://www.w3.org/ns/shacl#MinLengthConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -3804,8 +3789,8 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "MaxInclusiveConstraintComponent",
-        "en" : "Max-inclusive constraint component"
+        "IRI-based" : "MinLengthConstraintComponent",
+        "en" : "Min-length constraint component"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#LanguageInConstraintComponent",
@@ -3821,6 +3806,21 @@
       "labels" : {
         "IRI-based" : "LanguageInConstraintComponent",
         "en" : "Language-in constraint component"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MaxInclusiveConstraintComponent",
+        "en" : "Max-inclusive constraint component"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#ClosedConstraintComponent",
@@ -3898,21 +3898,6 @@
         "en" : "Pattern constraint component"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#MaxExclusiveConstraintComponent",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MaxExclusiveConstraintComponent",
-        "en" : "Max-exclusive constraint component"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -3926,6 +3911,21 @@
       "labels" : {
         "IRI-based" : "MinInclusiveConstraintComponent",
         "en" : "Min-inclusive constraint component"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#MaxExclusiveConstraintComponent",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MaxExclusiveConstraintComponent",
+        "en" : "Max-exclusive constraint component"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#XoneConstraintComponent",
@@ -3973,21 +3973,6 @@
         "en" : "Min-exclusive constraint component"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "QualifiedMaxCountConstraintComponent",
-        "en" : "Qualified-max-count constraint component"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#MaxLengthConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -4001,6 +3986,21 @@
       "labels" : {
         "IRI-based" : "MaxLengthConstraintComponent",
         "en" : "Max-length constraint component"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "QualifiedMaxCountConstraintComponent",
+        "en" : "Qualified-max-count constraint component"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#JSConstraintComponent",
@@ -4410,7 +4410,7 @@
     "id" : "236",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "239",
+    "id" : "238",
     "type" : "owl:objectProperty"
   }, {
     "id" : "242",
@@ -4920,42 +4920,42 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "7",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "5"
   }, {
     "range" : "7",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
   }, {
     "range" : "12",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "10"
   }, {
     "range" : "12",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "13"
   }, {
     "range" : "12",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "15"
   }, {
     "range" : "12",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
     "iri" : "https://data.digichecks.eu/def/isRequestForPermit",
@@ -4973,7 +4973,7 @@
       "IRI-based" : "isRequestForPermit"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "19"
   }, {
     "iri" : "https://w3id.org/sml/def#hasPart",
@@ -4983,7 +4983,7 @@
       "IRI-based" : "hasPart"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "21"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#node",
@@ -5002,7 +5002,7 @@
       "en" : "node"
     },
     "domain" : "23",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "22"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -5021,7 +5021,7 @@
       "undefined" : "topObjectProperty"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "25"
   }, {
     "iri" : "http://www.w3.org/ns/prov#atLocation",
@@ -5031,47 +5031,47 @@
       "IRI-based" : "atLocation"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "29"
   }, {
     "range" : "35",
     "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "33"
   }, {
     "range" : "2",
     "domain" : "37",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
     "range" : "42",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
     "range" : "42",
     "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "43"
   }, {
     "range" : "42",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "45"
   }, {
     "range" : "49",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "47"
   }, {
     "range" : "49",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "50"
   }, {
     "range" : "49",
     "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#someValuesFrom",
@@ -5090,7 +5090,7 @@
       "undefined" : "someValuesFrom"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "53"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#jsLibraryURL",
@@ -5109,22 +5109,22 @@
       "en" : "JavaScript library URL"
     },
     "domain" : "57",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "56"
   }, {
     "range" : "61",
     "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
     "range" : "61",
     "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
     "range" : "35",
     "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#qualifiedMaxCount",
@@ -5143,7 +5143,7 @@
       "en" : "qualified max count"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "68"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#targetObjectsOf",
@@ -5162,7 +5162,7 @@
       "en" : "target objects of"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "70"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#maxQualifiedCardinality",
@@ -5181,7 +5181,7 @@
       "undefined" : "maxQualifiedCardinality"
     },
     "domain" : "54",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "72"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#or",
@@ -5200,7 +5200,7 @@
       "en" : "or"
     },
     "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "75"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#and",
@@ -5219,12 +5219,12 @@
       "en" : "and"
     },
     "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "78"
   }, {
     "range" : "71",
     "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "82"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#prefLabel",
@@ -5234,7 +5234,7 @@
       "IRI-based" : "prefLabel"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "87"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#onProperties",
@@ -5253,7 +5253,7 @@
       "undefined" : "onProperties"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "93"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#oneOf",
@@ -5272,7 +5272,7 @@
       "undefined" : "oneOf"
     },
     "domain" : "55",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "96"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#qualifiedValueShape",
@@ -5291,7 +5291,7 @@
       "en" : "qualified value shape"
     },
     "domain" : "98",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "97"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#inversePath",
@@ -5310,7 +5310,7 @@
       "en" : "inverse path"
     },
     "domain" : "100",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "99"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#minCardinality",
@@ -5329,7 +5329,7 @@
       "undefined" : "minCardinality"
     },
     "domain" : "54",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "101"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#sourceShape",
@@ -5348,7 +5348,7 @@
       "en" : "source shape"
     },
     "domain" : "104",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "103"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#nodeKind",
@@ -5367,7 +5367,7 @@
       "en" : "node kind"
     },
     "domain" : "106",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "105"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#zeroOrOnePath",
@@ -5386,7 +5386,7 @@
       "en" : "zero or one path"
     },
     "domain" : "100",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "108"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
@@ -5405,7 +5405,7 @@
       "undefined" : "topDataProperty"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "109"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#domain",
@@ -5424,27 +5424,27 @@
       "undefined" : "domain"
     },
     "domain" : "12",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "111"
   }, {
     "range" : "114",
     "domain" : "113",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "112"
   }, {
     "range" : "114",
     "domain" : "117",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "116"
   }, {
     "range" : "83",
     "domain" : "119",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "118"
   }, {
     "range" : "122",
     "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "120"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#closed",
@@ -5463,7 +5463,7 @@
       "en" : "closed"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "123"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#bottomDataProperty",
@@ -5482,7 +5482,7 @@
       "undefined" : "bottomDataProperty"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "128"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#allValuesFrom",
@@ -5501,17 +5501,17 @@
       "undefined" : "allValuesFrom"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "130"
   }, {
     "range" : "114",
     "domain" : "132",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "131"
   }, {
     "range" : "114",
     "domain" : "135",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "134"
   }, {
     "iri" : "https://data.digichecks.eu/def/isDerivedIn",
@@ -5529,12 +5529,12 @@
       "IRI-based" : "isDerivedIn"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "136"
   }, {
     "range" : "114",
     "domain" : "138",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#ask",
@@ -5553,7 +5553,7 @@
       "en" : "ask"
     },
     "domain" : "28",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "139"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#targetSubjectsOf",
@@ -5572,47 +5572,47 @@
       "en" : "target subjects of"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "141"
   }, {
     "range" : "114",
     "domain" : "143",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "142"
   }, {
     "range" : "114",
     "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "144"
   }, {
     "range" : "114",
     "domain" : "147",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "146"
   }, {
     "range" : "30",
     "domain" : "149",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "148"
   }, {
     "range" : "30",
     "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "150"
   }, {
     "range" : "30",
     "domain" : "107",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "151"
   }, {
     "range" : "153",
     "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "152"
   }, {
     "range" : "156",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "154"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#annotationVarName",
@@ -5631,7 +5631,7 @@
       "en" : "annotation variable name"
     },
     "domain" : "74",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "157"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#jsFunctionName",
@@ -5650,7 +5650,7 @@
       "en" : "JavaScript function name"
     },
     "domain" : "86",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "160"
   }, {
     "iri" : "https://data.digichecks.eu/def/hasParcel",
@@ -5668,7 +5668,7 @@
       "IRI-based" : "hasParcel"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "162"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#qualifiedValueShapesDisjoint",
@@ -5687,37 +5687,37 @@
       "en" : "qualified value shapes disjoint"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "163"
   }, {
     "range" : "30",
     "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "165"
   }, {
     "range" : "30",
     "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "166"
   }, {
     "range" : "30",
     "domain" : "168",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "167"
   }, {
     "range" : "30",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "169"
   }, {
     "range" : "30",
     "domain" : "172",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "171"
   }, {
     "range" : "30",
     "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "173"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#propertyValidator",
@@ -5736,32 +5736,32 @@
       "en" : "property validator"
     },
     "domain" : "52",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "174"
   }, {
     "range" : "30",
     "domain" : "176",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "175"
   }, {
     "range" : "30",
     "domain" : "179",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "178"
   }, {
     "range" : "30",
     "domain" : "181",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "180"
   }, {
     "range" : "30",
     "domain" : "183",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "182"
   }, {
     "range" : "30",
     "domain" : "185",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "184"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
@@ -5780,7 +5780,7 @@
       "undefined" : "qualifiedCardinality"
     },
     "domain" : "54",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "187"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#hasSelf",
@@ -5799,7 +5799,7 @@
       "undefined" : "hasSelf"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "189"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#datatypeComplementOf",
@@ -5818,12 +5818,12 @@
       "undefined" : "datatypeComplementOf"
     },
     "domain" : "156",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "190"
   }, {
     "range" : "30",
     "domain" : "145",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "191"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#namespace",
@@ -5842,12 +5842,12 @@
       "en" : "namespace"
     },
     "domain" : "185",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "192"
   }, {
     "range" : "30",
     "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "194"
   }, {
     "iri" : "https://data.digichecks.eu/def/hasPermitRequest",
@@ -5865,42 +5865,42 @@
       "IRI-based" : "hasPermitRequest"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "195"
   }, {
     "range" : "30",
     "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "196"
   }, {
     "range" : "30",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "197"
   }, {
     "range" : "30",
     "domain" : "199",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "198"
   }, {
     "range" : "30",
     "domain" : "104",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "200"
   }, {
     "range" : "30",
     "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "202"
   }, {
     "range" : "30",
     "domain" : "186",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "205"
   }, {
     "range" : "30",
     "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "206"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#prefix",
@@ -5919,17 +5919,17 @@
       "en" : "prefix"
     },
     "domain" : "185",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "207"
   }, {
     "range" : "30",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "209"
   }, {
     "range" : "30",
     "domain" : "211",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "210"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#propertyDisjointWith",
@@ -5948,7 +5948,7 @@
       "undefined" : "propertyDisjointWith"
     },
     "domain" : "12",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "212"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#onDatatype",
@@ -5967,7 +5967,7 @@
       "undefined" : "onDatatype"
     },
     "domain" : "156",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "213"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
@@ -5986,7 +5986,7 @@
       "undefined" : "subPropertyOf"
     },
     "domain" : "12",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "214"
   }, {
     "iri" : "https://data.digichecks.eu/def/isPermitForRequest",
@@ -6005,7 +6005,7 @@
       "IRI-based" : "isPermitForRequest"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "217"
   }, {
     "iri" : "https://data.digichecks.eu/def/isPermitFor",
@@ -6024,7 +6024,7 @@
       "IRI-based" : "isPermitFor"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "218"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#annotatedProperty",
@@ -6043,7 +6043,7 @@
       "undefined" : "annotatedProperty"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "219"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#languageIn",
@@ -6062,22 +6062,22 @@
       "en" : "language in"
     },
     "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "220"
   }, {
     "range" : "12",
     "domain" : "223",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "222"
   }, {
     "range" : "12",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "224"
   }, {
     "range" : "12",
     "domain" : "226",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "225"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#withRestrictions",
@@ -6096,7 +6096,7 @@
       "undefined" : "withRestrictions"
     },
     "domain" : "156",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "227"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#cardinality",
@@ -6115,7 +6115,7 @@
       "undefined" : "cardinality"
     },
     "domain" : "54",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "228"
   }, {
     "iri" : "https://data.digichecks.eu/def/logicalOperator",
@@ -6133,7 +6133,7 @@
       "IRI-based" : "logicalOperator"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "230"
   }, {
     "iri" : "https://data.digichecks.eu/def/isCollectedIn",
@@ -6151,7 +6151,7 @@
       "IRI-based" : "isCollectedIn"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "232"
   }, {
     "iri" : "https://data.digichecks.eu/def/isMadeBy",
@@ -6169,7 +6169,7 @@
       "IRI-based" : "isMadeBy"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "233"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#hasValue",
@@ -6188,7 +6188,7 @@
       "undefined" : "hasValue"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "235"
   }, {
     "iri" : "http://purl.org/dc/terms/subject",
@@ -6198,7 +6198,7 @@
       "IRI-based" : "subject"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "236"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
@@ -6208,8 +6208,8 @@
       "IRI-based" : "wasAssociatedWith"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
-    "id" : "239"
+    "attributes" : [ "object", "external" ],
+    "id" : "238"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#returnType",
     "baseIri" : "http://www.w3.org/ns/shacl",
@@ -6227,7 +6227,7 @@
       "en" : "return type"
     },
     "domain" : "48",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "242"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#pattern",
@@ -6246,7 +6246,7 @@
       "en" : "pattern"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "246"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#flags",
@@ -6265,7 +6265,7 @@
       "en" : "flags"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "247"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#filterShape",
@@ -6284,7 +6284,7 @@
       "en" : "filter shape"
     },
     "domain" : "98",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "249"
   }, {
     "iri" : "https://data.digichecks.eu/def/isControlledBy",
@@ -6302,7 +6302,7 @@
       "IRI-based" : "isControlledBy"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "251"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#group",
@@ -6321,7 +6321,7 @@
       "en" : "group"
     },
     "domain" : "83",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "255"
   }, {
     "iri" : "https://data.digichecks.eu/def/hasVerificationMethod",
@@ -6339,17 +6339,17 @@
       "IRI-based" : "hasVerificationMethod"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "259"
   }, {
     "range" : "27",
     "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "260"
   }, {
     "range" : "27",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "261"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#propertyChainAxiom",
@@ -6368,7 +6368,7 @@
       "undefined" : "propertyChainAxiom"
     },
     "domain" : "122",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "262"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#onDataRange",
@@ -6387,7 +6387,7 @@
       "undefined" : "onDataRange"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "265"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#annotationProperty",
@@ -6406,7 +6406,7 @@
       "en" : "annotation property"
     },
     "domain" : "74",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "272"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#range",
@@ -6425,7 +6425,7 @@
       "undefined" : "range"
     },
     "domain" : "12",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "274"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#datatype",
@@ -6444,32 +6444,32 @@
       "en" : "datatype"
     },
     "domain" : "269",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "275"
   }, {
     "range" : "91",
     "domain" : "281",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "280"
   }, {
     "range" : "91",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "282"
   }, {
     "range" : "80",
     "domain" : "284",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "283"
   }, {
     "range" : "91",
     "domain" : "90",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "285"
   }, {
     "range" : "94",
     "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "286"
   }, {
     "iri" : "https://data.digichecks.eu/def/isVerifiedIn",
@@ -6487,7 +6487,7 @@
       "IRI-based" : "isVerifiedIn"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "287"
   }, {
     "iri" : "http://www.w3.org/ns/prov#agent",
@@ -6497,7 +6497,7 @@
       "IRI-based" : "agent"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "288"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#js",
@@ -6516,52 +6516,52 @@
       "en" : "JavaScript constraint"
     },
     "domain" : "264",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "289"
   }, {
     "range" : "28",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "291"
   }, {
     "range" : "28",
     "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "292"
   }, {
     "range" : "84",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "293"
   }, {
     "range" : "4",
     "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "294"
   }, {
     "range" : "28",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "295"
   }, {
     "range" : "28",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "296"
   }, {
     "range" : "39",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "297"
   }, {
     "range" : "39",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "298"
   }, {
     "range" : "4",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "299"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#declare",
@@ -6580,12 +6580,12 @@
       "en" : "declare"
     },
     "domain" : "145",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "300"
   }, {
     "range" : "4",
     "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "301"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#maxCount",
@@ -6604,7 +6604,7 @@
       "en" : "max count"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "302"
   }, {
     "iri" : "https://data.digichecks.eu/def/isAddressFor",
@@ -6623,17 +6623,17 @@
       "IRI-based" : "isAddressFor"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "303"
   }, {
     "range" : "86",
     "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "305"
   }, {
     "range" : "86",
     "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "306"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#nodeValidator",
@@ -6652,12 +6652,12 @@
       "en" : "shape validator"
     },
     "domain" : "52",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "307"
   }, {
     "range" : "86",
     "domain" : "290",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "308"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#conforms",
@@ -6676,17 +6676,17 @@
       "en" : "conforms"
     },
     "domain" : "186",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "309"
   }, {
     "range" : "86",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "310"
   }, {
     "range" : "27",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "311"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#disjointWith",
@@ -6705,52 +6705,52 @@
       "undefined" : "disjointWith"
     },
     "domain" : "153",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "312"
   }, {
     "range" : "86",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "313"
   }, {
     "range" : "86",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "314"
   }, {
     "range" : "85",
     "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "315"
   }, {
     "range" : "85",
     "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "316"
   }, {
     "range" : "85",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "317"
   }, {
     "range" : "85",
     "domain" : "159",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "318"
   }, {
     "range" : "55",
     "domain" : "153",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "319"
   }, {
     "range" : "48",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "320"
   }, {
     "range" : "48",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "321"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#target",
@@ -6769,57 +6769,57 @@
       "en" : "target"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "322"
   }, {
     "range" : "55",
     "domain" : "156",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "324"
   }, {
     "range" : "203",
     "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "325"
   }, {
     "range" : "55",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "326"
   }, {
     "range" : "55",
     "domain" : "328",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "327"
   }, {
     "range" : "65",
     "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "329"
   }, {
     "range" : "65",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "330"
   }, {
     "range" : "203",
     "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "331"
   }, {
     "range" : "65",
     "domain" : "177",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "332"
   }, {
     "range" : "65",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "333"
   }, {
     "range" : "65",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "334"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#validator",
@@ -6838,7 +6838,7 @@
       "en" : "validator"
     },
     "domain" : "52",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "335"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#in",
@@ -6857,32 +6857,32 @@
       "en" : "in"
     },
     "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "336"
   }, {
     "range" : "125",
     "domain" : "127",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "337"
   }, {
     "range" : "80",
     "domain" : "133",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "338"
   }, {
     "range" : "80",
-    "domain" : "238",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "239",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "339"
   }, {
     "range" : "125",
     "domain" : "126",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "340"
   }, {
     "range" : "104",
     "domain" : "115",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "342"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#oneOrMorePath",
@@ -6901,7 +6901,7 @@
       "en" : "one or more path"
     },
     "domain" : "100",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "343"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#result",
@@ -6920,7 +6920,7 @@
       "en" : "result"
     },
     "domain" : "186",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "344"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#detail",
@@ -6939,7 +6939,7 @@
       "en" : "detail"
     },
     "domain" : "104",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "345"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#equivalentClass",
@@ -6958,7 +6958,7 @@
       "undefined" : "equivalentClass"
     },
     "domain" : "55",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "346"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#resultPath",
@@ -6977,7 +6977,7 @@
       "en" : "result path"
     },
     "domain" : "104",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "347"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#deactivated",
@@ -6996,7 +6996,7 @@
       "en" : "deactivated"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "348"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -7015,7 +7015,7 @@
       "undefined" : "comment"
     },
     "domain" : "30",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "349"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#unionOf",
@@ -7034,7 +7034,7 @@
       "undefined" : "unionOf"
     },
     "domain" : "55",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "350"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#path",
@@ -7053,22 +7053,22 @@
       "en" : "path"
     },
     "domain" : "83",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "351"
   }, {
     "range" : "117",
     "domain" : "273",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "352"
   }, {
     "range" : "117",
     "domain" : "354",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "353"
   }, {
     "range" : "71",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "355"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#disjoint",
@@ -7087,7 +7087,7 @@
       "en" : "disjoint"
     },
     "domain" : "271",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "357"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#jsLibrary",
@@ -7106,7 +7106,7 @@
       "en" : "JavaScript library"
     },
     "domain" : "268",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "358"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#hasKey",
@@ -7125,7 +7125,7 @@
       "undefined" : "hasKey"
     },
     "domain" : "153",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "359"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#optional",
@@ -7144,7 +7144,7 @@
       "en" : "optional"
     },
     "domain" : "119",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "360"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#uniqueLang",
@@ -7163,7 +7163,7 @@
       "en" : "unique languages"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "361"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#distinctMembers",
@@ -7182,7 +7182,7 @@
       "undefined" : "distinctMembers"
     },
     "domain" : "176",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "363"
   }, {
     "iri" : "https://data.digichecks.eu/def/isInputFor",
@@ -7200,7 +7200,7 @@
       "IRI-based" : "isInputFor"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "364"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#differentFrom",
@@ -7219,7 +7219,7 @@
       "undefined" : "differentFrom"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "365"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#targetClass",
@@ -7238,7 +7238,7 @@
       "en" : "target class"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "366"
   }, {
     "iri" : "https://data.digichecks.eu/def/hasSource",
@@ -7256,7 +7256,7 @@
       "IRI-based" : "hasSource"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "367"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#entailment",
@@ -7275,7 +7275,7 @@
       "en" : "entailment"
     },
     "domain" : "145",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "368"
   }, {
     "iri" : "https://data.digichecks.eu/def/isDecisionFor",
@@ -7293,7 +7293,7 @@
       "IRI-based" : "isDecisionFor"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "369"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#alternativePath",
@@ -7312,7 +7312,7 @@
       "en" : "alternative path"
     },
     "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "370"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#shapesGraph",
@@ -7331,7 +7331,7 @@
       "en" : "shapes graph"
     },
     "domain" : "145",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "371"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#condition",
@@ -7350,7 +7350,7 @@
       "en" : "condition"
     },
     "domain" : "42",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "372"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#sparql",
@@ -7369,7 +7369,7 @@
       "en" : "constraint (in SPARQL)"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "373"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#sourceConstraintComponent",
@@ -7388,7 +7388,7 @@
       "en" : "source constraint component"
     },
     "domain" : "104",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "374"
   }, {
     "iri" : "https://w3id.org/sml/def#hasRequirement",
@@ -7398,7 +7398,7 @@
       "IRI-based" : "hasRequirement"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "375"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#qualifiedMinCount",
@@ -7417,7 +7417,7 @@
       "en" : "qualified min count"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "376"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#zeroOrMorePath",
@@ -7436,7 +7436,7 @@
       "en" : "zero or more path"
     },
     "domain" : "100",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "377"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#resultSeverity",
@@ -7455,7 +7455,7 @@
       "en" : "result severity"
     },
     "domain" : "104",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "378"
   }, {
     "iri" : "https://data.digichecks.eu/def/isExpressedAs",
@@ -7473,7 +7473,7 @@
       "IRI-based" : "isExpressedAs"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "379"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#sourceIndividual",
@@ -7492,7 +7492,7 @@
       "undefined" : "sourceIndividual"
     },
     "domain" : "149",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "381"
   }, {
     "iri" : "https://data.digichecks.eu/def/isSubmittedBy",
@@ -7510,7 +7510,7 @@
       "IRI-based" : "isSubmittedBy"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "382"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#assertionProperty",
@@ -7529,7 +7529,7 @@
       "undefined" : "assertionProperty"
     },
     "domain" : "149",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "383"
   }, {
     "iri" : "http://www.w3.org/2006/vcard/ns#hasAddress",
@@ -7539,7 +7539,7 @@
       "IRI-based" : "hasAddress"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "304"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#onProperty",
@@ -7558,7 +7558,7 @@
       "undefined" : "onProperty"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "384"
   }, {
     "iri" : "https://data.digichecks.eu/def/hasAsOutput",
@@ -7576,7 +7576,7 @@
       "IRI-based" : "hasAsOutput"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "385"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#prefixes",
@@ -7595,7 +7595,7 @@
       "en" : "prefixes"
     },
     "domain" : "85",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "386"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#maxLength",
@@ -7614,7 +7614,7 @@
       "en" : "max length"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "387"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#parameter",
@@ -7633,7 +7633,7 @@
       "en" : "parameter"
     },
     "domain" : "49",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "388"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#annotatedSource",
@@ -7652,7 +7652,7 @@
       "undefined" : "annotatedSource"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "389"
   }, {
     "iri" : "https://data.digichecks.eu/def/decisionOutcome",
@@ -7670,7 +7670,7 @@
       "IRI-based" : "decisionOutcome"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "390"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#member",
@@ -7689,7 +7689,7 @@
       "undefined" : "member"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "392"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#bottomObjectProperty",
@@ -7708,7 +7708,7 @@
       "undefined" : "bottomObjectProperty"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "393"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#update",
@@ -7727,7 +7727,7 @@
       "en" : "update"
     },
     "domain" : "159",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "394"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#rule",
@@ -7746,7 +7746,7 @@
       "en" : "rule"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "395"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#targetValue",
@@ -7765,7 +7765,7 @@
       "undefined" : "targetValue"
     },
     "domain" : "149",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "396"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#minCount",
@@ -7784,7 +7784,7 @@
       "en" : "min count"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "397"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#inverseOf",
@@ -7803,7 +7803,7 @@
       "undefined" : "inverseOf"
     },
     "domain" : "122",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "399"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#not",
@@ -7822,7 +7822,7 @@
       "en" : "not"
     },
     "domain" : "98",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "400"
   }, {
     "iri" : "https://data.digichecks.eu/def/wasDescribedBy",
@@ -7840,7 +7840,7 @@
       "IRI-based" : "wasDescribedBy"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "401"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#intersectionOf",
@@ -7859,7 +7859,7 @@
       "undefined" : "intersectionOf"
     },
     "domain" : "55",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "402"
   }, {
     "iri" : "https://w3id.org/sml/def#isDescribedBy",
@@ -7877,7 +7877,7 @@
       "IRI-based" : "isDescribedBy"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "403"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#onClass",
@@ -7896,7 +7896,7 @@
       "undefined" : "onClass"
     },
     "domain" : "54",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "404"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#sameAs",
@@ -7915,7 +7915,7 @@
       "undefined" : "sameAs"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "405"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#annotatedTarget",
@@ -7934,7 +7934,7 @@
       "undefined" : "annotatedTarget"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "406"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#complementOf",
@@ -7953,7 +7953,7 @@
       "undefined" : "complementOf"
     },
     "domain" : "153",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "407"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#construct",
@@ -7972,17 +7972,17 @@
       "en" : "construct"
     },
     "domain" : "84",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "408"
   }, {
     "range" : "81",
     "domain" : "114",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "409"
   }, {
     "range" : "81",
     "domain" : "341",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "410"
   }, {
     "iri" : "https://data.digichecks.eu/def/shallBeCompliantWith",
@@ -8000,7 +8000,7 @@
       "IRI-based" : "shallBeCompliantWith"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "411"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#minLength",
@@ -8019,7 +8019,7 @@
       "en" : "min length"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "412"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
@@ -8038,7 +8038,7 @@
       "undefined" : "subClassOf"
     },
     "domain" : "55",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "413"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#equals",
@@ -8057,7 +8057,7 @@
       "en" : "equals"
     },
     "domain" : "271",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "414"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#shapesGraphWellFormed",
@@ -8076,7 +8076,7 @@
       "en" : "shapes graph well-formed"
     },
     "domain" : "186",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "415"
   }, {
     "iri" : "https://data.digichecks.eu/def/role",
@@ -8094,7 +8094,7 @@
       "IRI-based" : "role"
     },
     "domain" : "20",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "416"
   }, {
     "iri" : "https://data.digichecks.eu/def/isParcelFor",
@@ -8113,7 +8113,7 @@
       "IRI-based" : "isParcelFor"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "417"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#property",
@@ -8132,7 +8132,7 @@
       "en" : "property"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "418"
   }, {
     "iri" : "https://data.digichecks.eu/def/isAllocationfor",
@@ -8150,42 +8150,42 @@
       "IRI-based" : "isAllocationfor"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "419"
   }, {
     "range" : "122",
     "domain" : "398",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "420"
   }, {
     "range" : "122",
     "domain" : "380",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "421"
   }, {
     "range" : "122",
     "domain" : "356",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "422"
   }, {
     "range" : "122",
     "domain" : "170",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "423"
   }, {
     "range" : "122",
     "domain" : "391",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "424"
   }, {
     "range" : "204",
     "domain" : "203",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "425"
   }, {
     "range" : "204",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "426"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#suggestedShapesGraph",
@@ -8204,7 +8204,7 @@
       "en" : "suggested shapes graph"
     },
     "domain" : "145",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "427"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#lessThanOrEquals",
@@ -8223,7 +8223,7 @@
       "en" : "less than or equals"
     },
     "domain" : "271",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "428"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedAssociation",
@@ -8233,7 +8233,7 @@
       "IRI-based" : "qualifiedAssociation"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "429"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#disjointUnionOf",
@@ -8252,7 +8252,7 @@
       "undefined" : "disjointUnionOf"
     },
     "domain" : "153",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "430"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#targetIndividual",
@@ -8271,7 +8271,7 @@
       "undefined" : "targetIndividual"
     },
     "domain" : "149",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "431"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#resultAnnotation",
@@ -8290,7 +8290,7 @@
       "en" : "result annotation"
     },
     "domain" : "31",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "432"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
@@ -8300,7 +8300,7 @@
       "IRI-based" : "hasGeometry"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "433"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#lessThan",
@@ -8319,7 +8319,7 @@
       "en" : "less than"
     },
     "domain" : "271",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "434"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#ignoredProperties",
@@ -8338,7 +8338,7 @@
       "en" : "ignored properties"
     },
     "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "436"
   }, {
     "iri" : "http://www.w3.org/ns/prov#actedOnBehalfOf",
@@ -8348,7 +8348,7 @@
       "IRI-based" : "actedOnBehalfOf"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "437"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#maxCardinality",
@@ -8367,7 +8367,7 @@
       "undefined" : "maxCardinality"
     },
     "domain" : "54",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "439"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality",
@@ -8386,7 +8386,7 @@
       "undefined" : "minQualifiedCardinality"
     },
     "domain" : "54",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "441"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#equivalentProperty",
@@ -8405,7 +8405,7 @@
       "undefined" : "equivalentProperty"
     },
     "domain" : "12",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "442"
   }, {
     "iri" : "https://data.digichecks.eu/def/isGeometryOf",
@@ -8424,7 +8424,7 @@
       "IRI-based" : "isGeometryOf"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "443"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#select",
@@ -8443,7 +8443,7 @@
       "en" : "select"
     },
     "domain" : "65",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "444"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#members",
@@ -8462,7 +8462,7 @@
       "undefined" : "members"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "445"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#xone",
@@ -8481,7 +8481,7 @@
       "en" : "exactly one"
     },
     "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "446"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#class",
@@ -8500,7 +8500,7 @@
       "en" : "class"
     },
     "domain" : "267",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "447"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#severity",
@@ -8519,7 +8519,7 @@
       "en" : "severity"
     },
     "domain" : "71",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "448"
   } ]
 }
