@@ -1,0 +1,671 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+sh:NodeShape a owl:Class;
+  skos:prefLabel "Node Shape" .
+
+skos:prefLabel a owl:DatatypeProperty;
+  rdfs:range xsd:string;
+  skos:prefLabel "pref label" .
+
+rdfs:comment a owl:DatatypeProperty;
+  rdfs:range xsd:string;
+  skos:prefLabel "comment" .
+
+<http://www.opengis.net/ont/geosparql#hasGeometry> a owl:ObjectProperty;
+  skos:prefLabel "has geometry" .
+
+<http://www.opengis.net/ont/geosparql#Geometry> a owl:Class;
+  skos:prefLabel "Geometry" .
+
+<http://www.w3.org/ns/prov#Agent> a owl:Class;
+  rdfs:subClassOf <http://w3id.org/gaia-x/participant#Participant>;
+  skos:prefLabel "Agent" .
+
+<http://www.w3.org/ns/prov#Location> a owl:Class;
+  skos:prefLabel "Location" .
+
+<http://www.w3.org/ns/prov#atLocation> a owl:ObjectProperty;
+  skos:prefLabel "at location" .
+
+<http://www.w3.org/ns/prov#agent> a owl:ObjectProperty;
+  skos:prefLabel "agent" .
+
+<http://www.w3.org/ns/prov#Association> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Association" .
+
+<http://www.w3.org/ns/prov#wasAssociatedWith> a owl:ObjectProperty;
+  skos:prefLabel "was associated with" .
+
+<http://www.w3.org/ns/prov#actedOnBehalfOf> a owl:ObjectProperty;
+  skos:prefLabel "acted on behalf of" .
+
+<http://www.w3.org/ns/prov#qualifiedAssociation> a owl:ObjectProperty;
+  skos:prefLabel "qualified association" .
+
+<http://www.w3.org/ns/prov#Organization> a owl:Class;
+  rdfs:subClassOf <http://www.w3.org/ns/prov#Agent>;
+  skos:prefLabel "Organization" .
+
+<http://www.w3.org/ns/prov#Person> a owl:Class;
+  rdfs:subClassOf <http://www.w3.org/ns/prov#Agent>;
+  skos:prefLabel "Person" .
+
+dcterms:subject a owl:ObjectProperty;
+  skos:prefLabel "subject" .
+
+sh:ValidationReport a owl:Class;
+  skos:prefLabel "Validation Report" .
+
+<https://w3id.org/sml/def#RelationReference> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Objectification>;
+  skos:prefLabel "Relation Reference" .
+
+<https://w3id.org/sml/def#QuantityValue> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Objectification>;
+  skos:prefLabel "Quantity Value" .
+
+<https://w3id.org/sml/def#InformationObject> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Object>;
+  skos:prefLabel "Information Object" .
+
+<https://w3id.org/sml/def#Object> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Entity>;
+  skos:prefLabel "Object" .
+
+<https://w3id.org/sml/def#Activity> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Entity>;
+  skos:prefLabel "Activity" .
+
+<https://w3id.org/sml/def#Entity> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#ConcreteConcept>;
+  skos:prefLabel "Entitiy" .
+
+<https://w3id.org/sml/def#Representation> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Representation" .
+
+<https://w3id.org/sml/def#AbstractConcept> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#TopConcept>;
+  skos:prefLabel "Abstract Concept" .
+
+<https://w3id.org/sml/def#GeometricEntity> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Representation>;
+  skos:prefLabel "Geometric Entity" .
+
+<https://data.digichecks.eu/def/hasVerificationMethod> a owl:ObjectProperty;
+  skos:prefLabel "has verification method";
+  skos:definition "Is an association that indicates a method to verify if the verification object has a method linked to it."@en .
+
+<https://w3id.org/sml/def#QualityValue> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Objectification>;
+  skos:prefLabel "Quality Value" .
+
+<https://w3id.org/sml/def#TopConcept> a owl:Class;
+  skos:prefLabel "Top Concept" .
+
+<https://data.digichecks.eu/def/Project> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Entity>;
+  skos:prefLabel "Project";
+  skos:definition "A temporary process undertaken to solve a well-defined goal or objective with clearly defined start and end times, a set of clearly defined tasks, and a budget."@en .
+
+<https://w3id.org/sml/def#ConcreteConcept> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#TopConcept>;
+  skos:prefLabel "Concrete Concept" .
+
+<https://data.digichecks.eu/def/isDecisionFor> a owl:ObjectProperty;
+  skos:prefLabel "is decision for";
+  skos:definition "Is a relation indicating the choice or judgment made based on available resources."@en .
+
+<https://w3id.org/idsa/core/Resource> a owl:Class;
+  skos:prefLabel "Resource" .
+
+<https://data.digichecks.eu/def/Verification> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Activity>;
+  skos:prefLabel "Verification";
+  skos:definition "A Verification is an activity that checks if a subject is compliant with a requirement."@en .
+
+<https://data.digichecks.eu/def/shallBeCompliantWith> a owl:ObjectProperty;
+  skos:prefLabel "shall be compliant with";
+  skos:definition "Is a conceptual requirement for compliancy to a criterion that indicates that a member of the class shall be conformant to a qualitative requirement. Typically an item, story or document of a kind that should be conform to the content of a document."@en .
+
+<https://data.digichecks.eu/def/isAllocationfor> a owl:ObjectProperty;
+  skos:prefLabel "is allocation for";
+  skos:definition "Is an association to ensure that the involved object has an allocation to the corresponding requirement."@en .
+
+<https://data.digichecks.eu/def/Allocation> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Allocation";
+  skos:definition "An explicit relation between subject and requirement that shows that the subject needs to fulfill the stated requirement."@en .
+
+<https://data.digichecks.eu/def/isCollectedIn> a owl:ObjectProperty;
+  skos:prefLabel "is collected in";
+  skos:definition "Is a relation between a single thing and a plurality that indicates that the collected object is element of the collection of objects, under the constraint that the element may not be the same object as the plural object. In other words a collection cannot be an element of itself."@en .
+
+<https://w3id.org/sml/def#EnumerationType> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Type>;
+  skos:prefLabel "Enumeration Type" .
+
+<https://data.digichecks.eu/def/isDerivedIn> a owl:ObjectProperty;
+  skos:prefLabel "is derived in";
+  skos:definition "Is an association that indicates that the object has been derived in the source object."@en .
+
+<https://w3id.org/sml/def#TemporalEntity> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Representation>;
+  skos:prefLabel "Temporal Entity" .
+
+<https://w3id.org/sml/def#ConceptType> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Type>;
+  skos:prefLabel "Concept Type" .
+
+<https://data.digichecks.eu/def/isControlledBy> a owl:ObjectProperty;
+  skos:prefLabel "is controlled by";
+  skos:definition "Is an involvement in an occurrence that indicates that the involved object has a role as controller of the occurrence."@en .
+
+<https://w3id.org/sml/def#hasPart> a owl:ObjectProperty;
+  skos:prefLabel "has part" .
+
+<https://data.digichecks.eu/def/Permit> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Permit";
+  skos:definition "A permit is a written permission or authorisation delivered by a competent authority, entity, or person, that is legally delegated to allow someone to do something or to go somewhere."@en .
+
+<https://data.digichecks.eu/def/Decision> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Activity>;
+  skos:prefLabel "Decision";
+  skos:definition "A decision is an activity of making a choice or judgement based on the available resources."@en .
+
+<https://data.digichecks.eu/def/MachineReadableRule> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Machine readable rule";
+  skos:definition "A set of instructions or guidelines that are structured in a format that can be easily interpreted and processed by a computer or software program. The term \"rule\" refers here to checking rules specifically and is not to be confused with inferencing rules for deriving knowledge."@en .
+
+<https://data.digichecks.eu/def/VerificationMethod> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Activity>;
+  skos:prefLabel "Verification method";
+  skos:definition "A set of procedures to check if the subject is compliant with requirement."@en .
+
+<https://data.digichecks.eu/def/hasAsOutput> a owl:ObjectProperty;
+  skos:prefLabel "has as output";
+  skos:definition "Is an involvement in an occurrence that indicates that the involved object has been operated upon by the occurrence."@en .
+
+<https://data.digichecks.eu/def/isExpressedAs> a owl:ObjectProperty;
+  skos:prefLabel "is expressed as";
+  skos:definition "Is a relation that determines how an object is represented similar to a target object"@en .
+
+<https://w3id.org/sml/def#Event> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#ConcreteConcept>;
+  skos:prefLabel "Event" .
+
+<https://data.digichecks.eu/def/hasSource> a owl:ObjectProperty;
+  skos:prefLabel "has source";
+  skos:definition "Is a relation that indicates the involved object has a origin or source from another object."@en .
+
+<https://w3id.org/sml/def#State> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#ConcreteConcept>;
+  skos:prefLabel "State" .
+
+<https://w3id.org/sml/def#Objectification> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#AbstractConcept>;
+  skos:prefLabel "Objectification" .
+
+<https://w3id.org/sml/def#Type> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#AbstractConcept>;
+  skos:prefLabel "Type" .
+
+<https://w3id.org/sml/def#PhysicalObject> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Object>;
+  skos:prefLabel "Physical Object" .
+
+<https://w3id.org/sml/def#isDescribedBy> a owl:ObjectProperty;
+  skos:prefLabel "is described by";
+  skos:definition "Relation that is used to link various concepts to a resource. Many concepts require to be linked to certain proof documents / descriptions. This relation is set on Top Concept level."@en .
+
+<http://www.w3.org/2006/vcard/ns#Address> a owl:Class;
+  skos:prefLabel "Address" .
+
+<https://data.digichecks.eu/def/PermitRequest> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Permit request";
+  skos:definition "A permit request is a written appeal or application made to obtain official approval for something from a designated authority."@en .
+
+<https://data.digichecks.eu/def/Document> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Document";
+  skos:definition "A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record or acts as a reference."@en .
+
+<https://data.digichecks.eu/def/isRequestForPermit> a owl:ObjectProperty;
+  skos:prefLabel "is request for permit";
+  skos:definition "Indicates the relation between a request and the specific permit it was requesting."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc>
+  a sh:NodeShape;
+  sh:targetClass <https://w3id.org/idsa/core/Resource>;
+  sh:property [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/Allocation>;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/isVerifiedIn>;
+      sh:class <https://data.digichecks.eu/def/Verification>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isAllocationfor>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <https://w3id.org/sml/def#TopConcept>
+    ], [
+      sh:path <https://w3id.org/sml/def#hasRequirement>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <https://w3id.org/sml/def#Requirement>
+    ] .
+
+<https://data.digichecks.eu/def/isVerifiedIn> a owl:ObjectProperty;
+  skos:prefLabel "is verified in";
+  skos:definition "Is an association that indicates that the representer object represents the represented object."@en .
+
+<https://w3id.org/sml/def#Requirement> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#InformationObject>;
+  skos:prefLabel "Requirement";
+  skos:definition "A rule that should hold for something, defined via its attributes or relations"@en .
+
+<https://w3id.org/sml/def#hasRequirement> a owl:ObjectProperty;
+  skos:prefLabel "has requirement" .
+
+<https://data.digichecks.eu/def/logicalOperator> a owl:DatatypeProperty;
+  rdfs:range xsd:enumeration;
+  skos:prefLabel "logical operator";
+  skos:definition "Provides the possibility to indicate if certain conditions are complementary (AND) or supplementary (OR)."@en .
+
+<https://data.digichecks.eu/def/role> a owl:DatatypeProperty;
+  skos:prefLabel "role";
+  skos:definition "Indicates in what capacity someone/something is linked to a project, permit, ..."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e>
+  a rdf:List;
+  rdf:first "OR";
+  skos:prefLabel "Logical operator list for requirements";
+  rdf:rest ("AND") .
+
+<https://data.digichecks.eu/def/ProjectRequirement> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Requirement>;
+  skos:prefLabel "Project Requirement";
+  skos:definition "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases."@en .
+
+<https://data.digichecks.eu/def/hasParcel> a owl:ObjectProperty;
+  skos:prefLabel "has parcel";
+  skos:definition "Indicates the link between location and parcel."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a>
+  a sh:NodeShape;
+  sh:targetClass <http://www.w3.org/2006/vcard/ns#Address>;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/isAddressFor>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Location>
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<https://data.digichecks.eu/def/isAddressFor> a owl:ObjectProperty;
+  owl:inverseOf <http://www.w3.org/2006/vcard/ns#hasAddress>;
+  skos:prefLabel "is address for";
+  skos:definition "Relation to check if the address is linked to a location."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646>
+  a sh:NodeShape;
+  sh:targetClass <https://w3id.org/sml/def#TopConcept>;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#isDescribedBy>;
+      sh:class <https://w3id.org/idsa/core/Resource>
+    ], [
+      sh:path <https://data.digichecks.eu/def/wasDescribedBy>;
+      sh:class <https://w3id.org/idsa/core/Resource>
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<https://data.digichecks.eu/def/wasDescribedBy> a owl:ObjectProperty;
+  skos:prefLabel "was described by";
+  skos:definition "Relation that is used to indicate that a concept was linked to certain resource in the past. this is meant to keep track of different versions of resources, keep history on all links ever made from concept to resource."@en .
+
+<http://www.w3.org/2006/vcard/ns#hasAddress> a owl:ObjectProperty;
+  skos:prefLabel "has address" .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/Verification>;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/hasVerificationMethod>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <https://data.digichecks.eu/def/VerificationMethod>
+    ], [
+      sh:path <http://www.w3.org/ns/prov#wasAssociatedWith>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Agent>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isInputFor>;
+      sh:minCount 1;
+      sh:class <https://data.digichecks.eu/def/Decision>
+    ], [
+      sh:path <https://data.digichecks.eu/def/hasAsOutput>;
+      sh:or ([
+            sh:class <https://data.digichecks.eu/def/Document>
+          ] [
+            sh:class sh:ValidationReport
+          ])
+    ] .
+
+<https://data.digichecks.eu/def/isInputFor> a owl:ObjectProperty;
+  skos:prefLabel "is input for";
+  skos:definition "Indicates that a / multiple verifications where carried out as a foundation for certain decision taken."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca>
+  a rdf:List;
+  rdf:first "approved";
+  skos:prefLabel "outcomes for Decision for permits";
+  rdf:rest ("rejected" "approved with reservations") .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100>
+  a sh:NodeShape;
+  sh:targetClass <http://www.w3.org/ns/prov#Agent>;
+  sh:property [
+      sh:path <http://www.w3.org/ns/prov#actedOnBehalfOf>;
+      sh:class <http://www.w3.org/ns/prov#Agent>
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ] .
+
+<https://data.digichecks.eu/def/GenericRequirement> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#Requirement>;
+  skos:prefLabel "Generic Requirement";
+  skos:definition "A requirement that is not specific for any projects / use case."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/Permit>;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasPart>;
+      sh:class <https://data.digichecks.eu/def/Permit>
+    ], [
+      sh:path <https://w3id.org/sml/def#isDescribedBy>;
+      sh:minCount 1;
+      sh:class <https://w3id.org/idsa/core/Resource>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isPermitFor>;
+      sh:minCount 1;
+      sh:class <https://data.digichecks.eu/def/PermitRequest>
+    ], [
+      sh:path <https://w3id.org/sml/def#hasRequirement>;
+      sh:minCount 1;
+      sh:class <https://w3id.org/sml/def#Requirement>
+    ] .
+
+<https://data.digichecks.eu/def/isPermitFor> a owl:ObjectProperty;
+  owl:inverseOf <https://data.digichecks.eu/def/isRequestForPermit>;
+  skos:prefLabel "is permit for";
+  skos:definition "Indicates the link between a permit and corresponding permit request that are / were made to obtain certain permit"@en .
+
+<https://data.digichecks.eu/def/hasPermitRequest> a owl:ObjectProperty;
+  skos:prefLabel "has permit request";
+  skos:definition "Indicates the link from a project to a / multiple permit requests."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34>
+  a sh:NodeShape;
+  sh:targetClass <http://www.w3.org/ns/prov#Location>;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/hasParcel>;
+      sh:maxCount 1;
+      sh:class <https://data.digichecks.eu/def/Parcel>
+    ], [
+      sh:path <http://www.opengis.net/ont/geosparql#hasGeometry>;
+      sh:maxCount 1;
+      sh:class <http://www.opengis.net/ont/geosparql#Geometry>
+    ], [
+      sh:path <http://www.w3.org/2006/vcard/ns#hasAddress>;
+      sh:maxCount 1;
+      sh:class <http://www.w3.org/2006/vcard/ns#Address>
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<https://data.digichecks.eu/def/Parcel> a owl:Class;
+  skos:prefLabel "Parcel";
+  skos:definition "Any quantity of land capable of being described with such definiteness that its locations and boundaries may be established."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/PermitRequest>;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/isPermitForRequest>;
+      sh:minCount 1;
+      sh:class <https://data.digichecks.eu/def/Project>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isSubmittedBy>;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Agent>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isControlledBy>;
+      sh:class <http://www.w3.org/ns/prov#Agent>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isRequestForPermit>;
+      sh:maxCount 1;
+      sh:class <https://data.digichecks.eu/def/Permit>
+    ] .
+
+<https://data.digichecks.eu/def/isPermitForRequest> a owl:ObjectProperty;
+  owl:inverseOf <https://data.digichecks.eu/def/hasPermitRequest>;
+  skos:prefLabel "is permit for request";
+  skos:definition "Indicates the relation between a permit and the related request for it"@en .
+
+<https://data.digichecks.eu/def/isSubmittedBy> a owl:ObjectProperty;
+  skos:prefLabel "is submitted by";
+  skos:definition "Indicates that a permit request was made by appropriate associated person / organization that is authorized to make the specific request."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914>
+  a sh:NodeShape;
+  sh:targetClass sh:NodeShape;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/wasDescribedBy>;
+      sh:class <https://w3id.org/idsa/core/Resource>
+    ], [
+      sh:path <https://w3id.org/sml/def#isDescribedBy>;
+      sh:class <https://w3id.org/idsa/core/Resource>
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<https://data.digichecks.eu/def/isParcelFor> a owl:ObjectProperty;
+  owl:inverseOf <https://data.digichecks.eu/def/hasParcel>;
+  skos:prefLabel "is parcel for";
+  skos:definition "Indicates that a parcel is located at a certain location."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/Parcel>;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/isParcelFor>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Location>
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4>
+  a sh:NodeShape;
+  sh:targetClass <http://www.opengis.net/ont/geosparql#Geometry>;
+  sh:property [
+      sh:path <https://data.digichecks.eu/def/isGeometryOf>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Location>
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<https://data.digichecks.eu/def/isGeometryOf> a owl:ObjectProperty;
+  owl:inverseOf <http://www.opengis.net/ont/geosparql#hasGeometry>;
+  skos:prefLabel "is geometry of";
+  skos:definition "Indicates that a geometry has a location linked to it."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc>
+  a sh:NodeShape;
+  sh:targetClass <http://www.w3.org/ns/prov#Association>;
+  sh:property [
+      sh:path <http://www.w3.org/ns/prov#agent>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Agent>
+    ], [
+      sh:path <https://data.digichecks.eu/def/role>
+    ] .
+
+<https://data.digichecks.eu/def/isMadeBy> a owl:ObjectProperty;
+  skos:prefLabel "is made by";
+  skos:definition "Is an involvement in an occurrence that indicates that the involved object has a role as performer of the occurrence."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/> a
+    owl:Ontology;
+  owl:versionInfo "digichecks-internal-review_20240610";
+  owl:imports <http://www.w3.org/ns/shacl#>, <http://www.w3.org/2002/07/owl#>, <http://www.w3.org/2000/01/rdf-schema#>;
+  dcterms:creator "DigiChecks";
+  rdfs:label "Top-level permit ontology";
+  dcterms:description "The top-level permit ontology contains the relevant terminology related to permitting processes. It contains the core terminology for DigiChecks services to communicate unambiguously about a permitting process.";
+  dcterms:date "2024-06-10T17:27:04.485561856" .
+
+<https://data.digichecks.eu/def/decisionOutcome> a owl:DatatypeProperty;
+  rdfs:range xsd:enumeration;
+  skos:prefLabel "decision outcome";
+  skos:definition "Provides a list of possible decision outcomes which impact the permit request."@en .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/Document> .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783>
+  a sh:NodeShape;
+  sh:targetClass sh:ValidationReport;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#isDescribedBy>;
+      sh:class <https://w3id.org/idsa/core/Resource>
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path rdfs:comment;
+      sh:datatype xsd:string
+    ] .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/Project>;
+  sh:property [
+      sh:path dcterms:subject;
+      sh:class <https://w3id.org/sml/def#TopConcept>
+    ], [
+      sh:path <http://www.w3.org/ns/prov#qualifiedAssociation>;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Association>
+    ], [
+      sh:path <http://www.w3.org/ns/prov#atLocation>;
+      sh:class <http://www.w3.org/ns/prov#Location>
+    ], [
+      sh:path <https://data.digichecks.eu/def/hasPermitRequest>;
+      sh:class <https://data.digichecks.eu/def/PermitRequest>
+    ] .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232>
+  a sh:NodeShape;
+  sh:targetClass <https://data.digichecks.eu/def/Decision>;
+  sh:property [
+      sh:path <http://www.w3.org/ns/prov#wasAssociatedWith>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <http://www.w3.org/ns/prov#Agent>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isDecisionFor>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:class <https://data.digichecks.eu/def/PermitRequest>
+    ], [
+      sh:path <https://data.digichecks.eu/def/decisionOutcome>;
+      sh:maxCount 1;
+      sh:in <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/34e82a97-fdd5-3176-ab61-f75c778939ca>
+    ] .
+
+<http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220>
+  a sh:NodeShape;
+  sh:targetClass <https://w3id.org/sml/def#Requirement>;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasPart>;
+      sh:class <https://w3id.org/sml/def#Requirement>
+    ], [
+      sh:path <https://data.digichecks.eu/def/hasSource>;
+      sh:class <https://data.digichecks.eu/def/Document>
+    ], [
+      sh:path <https://data.digichecks.eu/def/isExpressedAs>;
+      sh:or ([
+            sh:class sh:NodeShape
+          ] [
+            sh:class <https://data.digichecks.eu/def/MachineReadableRule>
+          ])
+    ], [
+      sh:path <https://data.digichecks.eu/def/logicalOperator>;
+      sh:maxCount 1;
+      sh:in <http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/95414b38-5a62-3cf9-beed-42cbc73f4b9e>
+    ] .
