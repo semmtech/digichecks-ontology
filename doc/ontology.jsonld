@@ -4,7 +4,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
   } ]
 }, {
   "@id" : "_:genid10",
@@ -28,11 +28,11 @@
   } ]
 }, {
   "@id" : "_:genid13",
-  "http://www.w3.org/ns/shacl#datatype" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    "@id" : "http://www.w3.org/ns/prov#actedOnBehalfOf"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -44,14 +44,30 @@
   } ]
 }, {
   "@id" : "_:genid15",
-  "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "http://www.w3.org/ns/prov#Agent"
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/ns/prov#actedOnBehalfOf"
+    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
   } ]
 }, {
   "@id" : "_:genid16",
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Location"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/ns/prov#atLocation"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://data.digichecks.eu/def/PermitRequest"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://data.digichecks.eu/def/hasPermitRequest"
+  } ]
+}, {
+  "@id" : "_:genid18",
   "http://www.w3.org/ns/shacl#class" : [ {
     "@id" : "https://w3id.org/sml/def#TopConcept"
   } ],
@@ -59,7 +75,7 @@
     "@id" : "http://purl.org/dc/terms/subject"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid19",
   "http://www.w3.org/ns/shacl#class" : [ {
     "@id" : "http://www.w3.org/ns/prov#Association"
   } ],
@@ -71,47 +87,15 @@
     "@id" : "http://www.w3.org/ns/prov#qualifiedAssociation"
   } ]
 }, {
-  "@id" : "_:genid18",
-  "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "http://www.w3.org/ns/prov#Location"
-  } ],
-  "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/ns/prov#atLocation"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "https://data.digichecks.eu/def/PermitRequest"
-  } ],
-  "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://data.digichecks.eu/def/hasPermitRequest"
-  } ]
-}, {
   "@id" : "_:genid2",
   "http://www.w3.org/ns/shacl#class" : [ {
     "@id" : "https://w3id.org/idsa/core/Resource"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://data.digichecks.eu/def/wasDescribedBy"
+    "@id" : "https://w3id.org/sml/def#isDescribedBy"
   } ]
 }, {
   "@id" : "_:genid20",
-  "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "https://data.digichecks.eu/def/Document"
-  } ],
-  "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://data.digichecks.eu/def/hasSource"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "http://www.w3.org/ns/shacl#or" : [ {
-    "@id" : "_:genid22"
-  } ],
-  "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://data.digichecks.eu/def/isExpressedAs"
-  } ]
-}, {
-  "@id" : "_:genid23",
   "http://www.w3.org/ns/shacl#in" : [ {
     "@id" : "https://data.digichecks.eu/def/95414b38-5a62-3cf9-beed-42cbc73f4b9e"
   } ],
@@ -123,7 +107,15 @@
     "@id" : "https://data.digichecks.eu/def/logicalOperator"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid21",
+  "http://www.w3.org/ns/shacl#or" : [ {
+    "@id" : "_:genid22"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://data.digichecks.eu/def/isExpressedAs"
+  } ]
+}, {
+  "@id" : "_:genid23",
   "http://www.w3.org/ns/shacl#class" : [ {
     "@id" : "https://w3id.org/sml/def#Requirement"
   } ],
@@ -131,24 +123,32 @@
     "@id" : "https://w3id.org/sml/def#hasPart"
   } ]
 }, {
+  "@id" : "_:genid24",
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://data.digichecks.eu/def/Document"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://data.digichecks.eu/def/hasSource"
+  } ]
+}, {
   "@id" : "_:genid25",
   "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "https://w3id.org/sml/def#Requirement"
+    "@id" : "https://data.digichecks.eu/def/Permit"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://w3id.org/sml/def#hasPart"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://w3id.org/idsa/core/Resource"
   } ],
   "http://www.w3.org/ns/shacl#minCount" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://w3id.org/sml/def#hasRequirement"
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "https://data.digichecks.eu/def/Permit"
-  } ],
-  "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://w3id.org/sml/def#hasPart"
+    "@id" : "https://w3id.org/sml/def#isDescribedBy"
   } ]
 }, {
   "@id" : "_:genid27",
@@ -165,14 +165,14 @@
 }, {
   "@id" : "_:genid28",
   "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "https://w3id.org/idsa/core/Resource"
+    "@id" : "https://w3id.org/sml/def#Requirement"
   } ],
   "http://www.w3.org/ns/shacl#minCount" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://w3id.org/sml/def#isDescribedBy"
+    "@id" : "https://w3id.org/sml/def#hasRequirement"
   } ]
 }, {
   "@id" : "_:genid29",
@@ -196,7 +196,7 @@
     "@id" : "https://w3id.org/idsa/core/Resource"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://w3id.org/sml/def#isDescribedBy"
+    "@id" : "https://data.digichecks.eu/def/wasDescribedBy"
   } ]
 }, {
   "@id" : "_:genid30",
@@ -228,6 +228,14 @@
   } ]
 }, {
   "@id" : "_:genid32",
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "_:genid33",
   "http://www.w3.org/ns/shacl#class" : [ {
     "@id" : "https://data.digichecks.eu/def/Parcel"
   } ],
@@ -239,7 +247,7 @@
     "@id" : "https://data.digichecks.eu/def/hasParcel"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid34",
   "http://www.w3.org/ns/shacl#class" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
   } ],
@@ -249,14 +257,6 @@
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "http://www.w3.org/ns/shacl#datatype" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
   } ]
 }, {
   "@id" : "_:genid35",
@@ -276,7 +276,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
   } ]
 }, {
   "@id" : "_:genid37",
@@ -308,7 +308,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
   } ]
 }, {
   "@id" : "_:genid40",
@@ -385,14 +385,6 @@
   } ]
 }, {
   "@id" : "_:genid47",
-  "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "https://w3id.org/idsa/core/Resource"
-  } ],
-  "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://w3id.org/sml/def#isDescribedBy"
-  } ]
-}, {
-  "@id" : "_:genid48",
   "http://www.w3.org/ns/shacl#datatype" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
@@ -400,12 +392,20 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid48",
   "http://www.w3.org/ns/shacl#datatype" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://w3id.org/idsa/core/Resource"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://w3id.org/sml/def#isDescribedBy"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -497,19 +497,11 @@
   } ]
 }, {
   "@id" : "_:genid58",
-  "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "http://www.w3.org/ns/prov#Location"
-  } ],
-  "http://www.w3.org/ns/shacl#maxCount" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/ns/shacl#minCount" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "https://data.digichecks.eu/def/isAddressFor"
+    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
   } ]
 }, {
   "@id" : "_:genid59",
@@ -517,7 +509,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -537,16 +529,24 @@
   } ]
 }, {
   "@id" : "_:genid60",
-  "http://www.w3.org/ns/shacl#datatype" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Location"
+  } ],
+  "http://www.w3.org/ns/shacl#maxCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/ns/shacl#minCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
   } ],
   "http://www.w3.org/ns/shacl#path" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    "@id" : "https://data.digichecks.eu/def/isAddressFor"
   } ]
 }, {
   "@id" : "_:genid61",
   "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+    "@id" : "https://data.digichecks.eu/def/Document"
   } ]
 }, {
   "@id" : "_:genid62",
@@ -556,12 +556,12 @@
 }, {
   "@id" : "_:genid63",
   "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "https://data.digichecks.eu/def/Document"
+    "@id" : "http://www.w3.org/ns/shacl#ValidationReport"
   } ]
 }, {
   "@id" : "_:genid64",
   "http://www.w3.org/ns/shacl#class" : [ {
-    "@id" : "http://www.w3.org/ns/shacl#ValidationReport"
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
   } ]
 }, {
   "@id" : "_:genid7",
