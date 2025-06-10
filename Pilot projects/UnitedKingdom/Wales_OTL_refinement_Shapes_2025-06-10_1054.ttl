@@ -15,6 +15,43 @@
 @prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
 @prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
 @prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+@prefix sml: <http://w3id.org/sml#> .
+
+<http://example.org/Requirement001> a sml:Requirement; 
+  rdf:value "The installation density for pitfall traps (in the case of surveying the Great Crested Newt) needs to be at least 1 every 10 meters, but at most 2."
+  skos:notation "REQ-GCN-001"; 
+  skos:closeMatch <http://example.org/PitfallTrapShape> . 
+
+<http://example.org/Requirement002> a sml:Requirement; 
+  rdf:value "Every pitfall trap needs to have a ladder designed for Mammals" ; 
+  skos:notation "REQ-GCN-002" ; 
+  skos:closeMatch <http://example.org/PitfallTrapShape> . 
+
+<http://example.org/Requirement003> a sml:Requirement; 
+  rdf:value "Every pitfall trap needs to have a flotation device" ; 
+  skos:notation "REQ-GCN-003" ; 
+  skos:closeMatch <http://example.org/PitfallTrapShape> . 
+
+<http://example.org/Requirement011> a sml:Requirement; 
+  rdf:value "The installation density for carpet traps (in the case of surveying the Great Crested Newt) has to be 1 every 10 meters. "
+  skos:notation "REQ-GCN-011"; 
+  skos:closeMatch <http://example.org/PitfallTrapShape> . 
+
+<http://example.org/Requirement100> a sml:Requirement; 
+  rdf:value "The only allowed method for population monitoring of the Great crested Newt is the Torching method"; 
+  skos:notation "REQ-GCN-100"; 
+  skos:closeMatch  <http://example.org/PopulationMonitoringShape> . 
+
+<http://example.org/Requirement101> a sml:Requirement; 
+  rdf:value "The documentation of a fence inspection contains the required information according to the OTL" ; 
+  skos:notation "REQ-GCN-101"; 
+  skos:closeMatch <http://example.org/FenceInspectionShape> .
+
+<http://example.org/Requirement102> a sml:Requirement; 
+    rdf:value "The documentation of the design for a pond contains the required information according to the OTL" ; 
+  skos:notation "REQ-GCN-102"; 
+  skos:closeMatch <http://example.org/PondDesignShape> .
+
 
 <http://example.org/PitfallTrapShape> a sh:NodeShape;
   sh:targetClass <http://example.org/PitfallTrap>;
