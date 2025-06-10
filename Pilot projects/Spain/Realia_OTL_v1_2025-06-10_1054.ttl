@@ -1,0 +1,501 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<https://w3id.org/sml/def#InformationObject> a owl:Class;
+  skos:prefLabel "informatieobject"@nl, "information object"@en .
+
+<https://w3id.org/sml/def#Activity> a owl:Class;
+  skos:prefLabel "activity"@en, "activiteit"@nl .
+
+<https://w3id.org/sml/def#EnumerationType> a owl:Class;
+  skos:prefLabel "enumeratietype"@nl, "enumeration type"@en .
+
+<https://w3id.org/sml/def#hasPart> a owl:ObjectProperty;
+  skos:prefLabel "has part"@en, "heeft onderdeel"@nl .
+
+<https://w3id.org/sml/def#Event> a owl:Class;
+  skos:prefLabel "event"@en, "gebeurtenis"@nl .
+
+<https://w3id.org/sml/def#State> a owl:Class;
+  skos:prefLabel "state"@en, "toestand"@nl .
+
+<https://w3id.org/sml/def#PhysicalObject> a owl:Class;
+  skos:prefLabel "physical object"@en, "fysiek object"@nl .
+
+<https://w3id.org/sml/def#FunctionalEntity> a owl:Class;
+  skos:prefLabel "Spatial region"@en, "Ruimtelijk gebied"@nl .
+
+<https://w3id.org/sml/def#SpatialEntity> a owl:Class;
+  skos:prefLabel "Geometric entity"@en, "geometrische entiteit"@nl .
+
+<http://realia.es/realia-otl/RealiaProject> a owl:Class;
+  rdfs:subClassOf <https://data.digichecks.eu/def/Project>;
+  skos:prefLabel "Realia Project";
+  skos:definition "This is a specialization of the Project concept from the DigiChecks top-level ontology, containing properties specific for the Spanish Electrical Permit context." .
+
+<http://realia.es/realia-otl/totalChargingPointPower> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Total Charging Point Power" .
+
+<http://realia.es/realia-otl/neededChargingPointPower> a owl:ObjectProperty;
+  rdfs:subPropertyOf <https://data.digichecks.eu/def/Project>;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Needed Charging Point Power" .
+
+<http://realia.es/realia-otl/totalApartmentPower> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Total Apartment Power" .
+
+<http://realia.es/realia-otl/Apartment> a owl:Class;
+  rdfs:subClassOf <http://realia.es/realia-otl/SupplyPoint>;
+  skos:prefLabel "Apartment";
+  skos:definition "Specialization of a Supply Point that is used in the apartment electrical connection." .
+
+<http://realia.es/realia-otl/designPower> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Design Power" .
+
+<http://realia.es/realia-otl/CGP> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "CGP";
+  skos:definition "CGP or general power distribution board is used to distribute the power via power lines." .
+
+<http://realia.es/realia-otl/simultaneousPower> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Simultaneous Power" .
+
+<http://realia.es/realia-otl/CGPElevation> a owl:Class;
+  skos:prefLabel "CGP Elevation";
+  skos:definition "The CGP Elevation document necessary for Spanish Electrical Building Permit." .
+
+<http://realia.es/realia-otl/UrbanisationPlan> a owl:Class;
+  skos:prefLabel "Urbanisation Plan";
+  skos:definition "The Urbanisation Plan document necessary for Spanish Electrical Building Permit." .
+
+<http://realia.es/realia-otl/PoliceNumber> a owl:Class;
+  skos:prefLabel "Police Number";
+  skos:definition "The Police Number document necessary for Spanish Electrical Building Permit." .
+
+<http://realia.es/realia-otl/PowerBreakdown> a owl:Class;
+  skos:prefLabel "Power Breakdown";
+  skos:definition "The Power Breakdown document necessary for Spanish Electrical Building Permit." .
+
+<http://realia.es/realia-otl/SupplyPoints> a owl:Class;
+  skos:prefLabel "Supply Points";
+  skos:definition "The Supply Points document necessary for Spanish Electrical Building Permit." .
+
+<http://realia.es/realia-otl/UTMCoordinatePlan> a owl:Class;
+  skos:prefLabel "UTM Coordinate Plan";
+  skos:definition "The UTM Coordinate Plan document necessary for Spanish Electrical Building Permit." .
+
+<http://realia.es/realia-otl/ElectricalBuildingPermit> a owl:Class;
+  rdfs:subClassOf <https://data.digichecks.eu/def/Permit>;
+  skos:prefLabel "Electrical Building Permit";
+  skos:definition "Electrical Building Permit necessary for Spanish Construction Projects." .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/e2de80c8-2936-454f-bc36-d8afb5158a65>
+  a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/dc91a252-bf94-4d9b-b47d-9d56ba4266fe>
+  a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/a384f485-1573-3aa1-b5df-95e7be70ac5d>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/RealiaProject>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/totalChargingPointPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/966fe4af-2f6c-4eac-aeb8-4c025fa1c4ad>
+    ], [
+      sh:path <http://realia.es/realia-otl/totalApartmentPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/71dbf122-1efc-4efe-9252-e75f9c62dfce>
+    ], [
+      sh:path <http://realia.es/realia-otl/neededChargingPointPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/dc91a252-bf94-4d9b-b47d-9d56ba4266fe>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/966fe4af-2f6c-4eac-aeb8-4c025fa1c4ad>
+  a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/71dbf122-1efc-4efe-9252-e75f9c62dfce>
+  a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/bd1b6b0f-0f27-3d8d-b69c-1b1442be4199>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/CGP>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/simultaneousPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/e2de80c8-2936-454f-bc36-d8afb5158a65>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/3ba72553-0504-3f11-ad1a-291886823892>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/Garage>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/designPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/a2fcbd9a-a03c-4924-854f-59ddbd5e9347>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/a2fcbd9a-a03c-4924-854f-59ddbd5e9347>
+  a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/680feaa9-5d4f-4f7c-a6fb-97c3b46c034e>
+  a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/b085aad5-3626-4d6b-9aec-36e9b1d3b177>
+  a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/3a1bae89-347d-3659-acb8-51097e1aace9>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/CommonArea>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/designPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/6e43f48e-a55f-44ec-83f6-bf0b6afc0f0a>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/6e43f48e-a55f-44ec-83f6-bf0b6afc0f0a>
+  a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/79a92e07-47b9-4ad7-a73b-5fa2e74ee755>
+  a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/068d5421-9434-31bd-8150-e5032f00f785>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/Apartment>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/designPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/b085aad5-3626-4d6b-9aec-36e9b1d3b177>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/f5b9495c-b9d3-3729-b47f-5173347fa3c8>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/ElectricVehicleChargingPoint>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/designPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/f1e78bcd-b494-4881-85fd-f06688f7c5a1>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/f1e78bcd-b494-4881-85fd-f06688f7c5a1>
+  a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7c2841a1-aee0-3215-9aba-aee93a492be7>
+  a sh:NodeShape;
+  sh:targetClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/b0cc1eff-f654-4df1-8ac2-f6cc36534f01>,
+    <http://realia.es/realia-otl/E10>;
+  sh:property [
+      sh:qualifiedValueShape [
+          sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/e18a063f-63d6-4e35-a5cc-db8235fed3cb>
+        ];
+      sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger
+    ], [
+      sh:path <http://realia.es/realia-otl/simultaneousPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/680feaa9-5d4f-4f7c-a6fb-97c3b46c034e>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/2d8a4d7c-2f2b-31d6-b0d0-cb2244c51d34>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/SupplyPoint>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/designPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/79a92e07-47b9-4ad7-a73b-5fa2e74ee755>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/acdb1946-9982-4fbd-ba2e-af0df1f240f1>
+  a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/ad6ca297-f123-3ff6-88e4-9eb35eecce28>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/Commercial>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/designPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/c0cea780-2345-4191-abe3-5c45a3ba67d9>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/c0cea780-2345-4191-abe3-5c45a3ba67d9>
+  a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7535709b-b903-4829-a81c-63e7f3ef6f7f>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/e5c9adff-71e3-32c2-98ea-845b683db21a>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/E11>;
+  sh:property [
+      sh:path <http://realia.es/realia-otl/simultaneousPower>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/acdb1946-9982-4fbd-ba2e-af0df1f240f1>
+    ] .
+
+<http://realia.es/realia-otl/ElectricVehicleChargingPoint> a owl:Class;
+  rdfs:subClassOf <http://realia.es/realia-otl/SupplyPoint>;
+  skos:prefLabel "Electric Vehicle Charging Point";
+  skos:definition "Specialization of a Supply Point that is used in the EV charging point electrical connection." .
+
+<http://realia.es/realia-otl/SupplyPoint> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Supply Point";
+  skos:definition "Supply point is the connection point between the network and an individual consumer." .
+
+<http://realia.es/realia-otl/E10> a owl:Class;
+  rdfs:subClassOf <http://realia.es/realia-otl/CGP>;
+  skos:prefLabel "E10";
+  skos:definition "E10 is a specialization of the CGP" .
+
+<http://realia.es/realia-otl/CommonArea> a owl:Class;
+  rdfs:subClassOf <http://realia.es/realia-otl/SupplyPoint>;
+  skos:prefLabel "Common Area";
+  skos:definition "Specialization of a Supply Point that is used in the common areas electrical connection." .
+
+<http://realia.es/realia-otl/Garage> a owl:Class;
+  rdfs:subClassOf <http://realia.es/realia-otl/SupplyPoint>;
+  skos:prefLabel "Garage";
+  skos:definition "Specialization of a Supply Point that is used in the garage electrical connection." .
+
+<http://realia.es/realia-otl/E11> a owl:Class;
+  rdfs:subClassOf <http://realia.es/realia-otl/CGP>;
+  skos:prefLabel "E11";
+  skos:definition "E11 is a specialization of the CGP" .
+
+<http://realia.es/realia-otl/LGA> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "LGA";
+  skos:definition "LGA is the main supply line. It contains multiple supply points." .
+
+<http://realia.es/realia-otl/Commercial> a owl:Class;
+  rdfs:subClassOf <http://realia.es/realia-otl/SupplyPoint>;
+  skos:prefLabel "Commercial";
+  skos:definition "Specialization of a Supply Point that is used in the commercial electrical connection." .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/49a47a74-ba1a-4f99-b44a-812ffdf92952>
+  rdfs:subClassOf [ a owl:Restriction;
+      owl:onProperty <https://w3id.org/sml/def#isDescribedBy>;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7578f2df-0942-43e7-912b-c047144d8e5d>
+    ], [ a owl:Restriction;
+      owl:onProperty <https://w3id.org/sml/def#isDescribedBy>;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/a7203ae5-0051-4f54-96e3-84b73a0da5cb>
+    ], [ a owl:Restriction;
+      owl:onProperty <https://w3id.org/sml/def#isDescribedBy>;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/350f237d-54f7-4012-80f2-472fa0dd5cdc>
+    ], [ a owl:Restriction;
+      owl:onProperty <https://w3id.org/sml/def#isDescribedBy>;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/5c08f8ea-699d-425d-a953-68590b8ebe3c>
+    ], [ a owl:Restriction;
+      owl:onProperty <https://w3id.org/sml/def#isDescribedBy>;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/b3eb4c92-de82-4241-8935-1e30e328e5fa>
+    ], [ a owl:Restriction;
+      owl:onProperty <https://w3id.org/sml/def#isDescribedBy>;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/2c2b519c-e13e-4944-8871-ae043d344f61>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/e18a063f-63d6-4e35-a5cc-db8235fed3cb>
+  rdfs:subClassOf [ a owl:Restriction;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/588629ff-23ea-4970-9697-0afb4e27d09d>
+    ] .
+
+<https://hub.laces.tech/digichecks/private/development/realia-otl-v1/b0cc1eff-f654-4df1-8ac2-f6cc36534f01>
+  rdfs:subClassOf [ a owl:Restriction;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/e18a063f-63d6-4e35-a5cc-db8235fed3cb>
+    ] .
+
+[] sh:path <https://w3id.org/sml/def#isDescribedBy>;
+  sh:qualifiedValueShape [
+      sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/7578f2df-0942-43e7-912b-c047144d8e5d>
+    ];
+  sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger .
+
+[] sh:path <https://w3id.org/sml/def#isDescribedBy>;
+  sh:qualifiedValueShape [
+      sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/2c2b519c-e13e-4944-8871-ae043d344f61>
+    ];
+  sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger .
+
+[] sh:path <https://w3id.org/sml/def#isDescribedBy>;
+  sh:qualifiedValueShape [
+      sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/350f237d-54f7-4012-80f2-472fa0dd5cdc>
+    ];
+  sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger .
+
+[] sh:path <https://w3id.org/sml/def#isDescribedBy>;
+  sh:qualifiedValueShape [
+      sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/b3eb4c92-de82-4241-8935-1e30e328e5fa>
+    ];
+  sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger .
+
+[] sh:path <https://w3id.org/sml/def#isDescribedBy>;
+  sh:qualifiedValueShape [
+      sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/5c08f8ea-699d-425d-a953-68590b8ebe3c>
+    ];
+  sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger .
+
+[] sh:path <https://w3id.org/sml/def#isDescribedBy>;
+  sh:qualifiedValueShape [
+      sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/a7203ae5-0051-4f54-96e3-84b73a0da5cb>
+    ];
+  sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger .
+
+[] sh:qualifiedValueShape [
+      sh:class <https://hub.laces.tech/digichecks/private/development/realia-otl-v1/588629ff-23ea-4970-9697-0afb4e27d09d>
+    ];
+  sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger .

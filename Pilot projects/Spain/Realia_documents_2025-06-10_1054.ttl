@@ -1,0 +1,132 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<http://example.org/realia/dataset/documentrequirement001> a sml:Requirement; 
+  rdf:value "Every Electrical permit should be based on a valid permit request."; 
+  skos:closeMatch <http://example.org/realia/dataset/shape_necessaryDocsForElectricalBuildingPermit1>; 
+  skos:notation "REQ-001" . 
+
+
+<http://example.org/realia/dataset/documentrequirement002> a sml:Requirement; 
+  ex:TODO "A permit request for an electrical permit is supported by a power breakdown document." ; 
+  skos:closeMatch   <http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1> ; 
+  skos:notation "REQ-002" .
+<http://example.org/realia/dataset/documentrequirement003> a sml:Requirement; 
+  ex:TODO "A permit request for an electrical permit is supported by a CGP Elevation document." ; 
+  skos:closeMatch   <http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1> ; 
+  skos:notation "REQ-003".
+<http://example.org/realia/dataset/documentrequirement004> a sml:Requirement; 
+  ex:TODO "A permit request for an electrical permit is supported by an Urbanisation plan." ; 
+  skos:closeMatch   <http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1> ; 
+  skos:notation "REQ-004". 
+<http://example.org/realia/dataset/documentrequirement005> a sml:Requirement; 
+  ex:TODO "A permit request for an electrical permit is supported by a Police number document." ; 
+  skos:closeMatch   <http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1> ; 
+  skos:notation "REQ-005". 
+<http://example.org/realia/dataset/documentrequirement006> a sml:Requirement; 
+  ex:TODO "A permit request for an electrical permit is supported by a detailed supply points breakdown." ; 
+  skos:closeMatch   <http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1> ; 
+  skos:notation "REQ-006". 
+<http://example.org/realia/dataset/documentrequirement007> a sml:Requirement; 
+  ex:TODO "A permit request for an electrical permit is supported by a map with UTM coordinates." ; 
+  skos:closeMatch   <http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1> ; 
+  skos:notation "REQ-007". 
+
+<http://realia.es/realia-otl/ElectricalBuildingPermit> sml:hasRequirement <http://example.org/realia/dataset/documentrequirement001>,
+                                                                          <http://example.org/realia/dataset/documentrequirement002>,
+                                                                          <http://example.org/realia/dataset/documentrequirement003>,
+                                                                          <http://example.org/realia/dataset/documentrequirement004>,
+                                                                          <http://example.org/realia/dataset/documentrequirement005>,
+                                                                          <http://example.org/realia/dataset/documentrequirement006>,
+                                                                          <http://example.org/realia/dataset/documentrequirement007> .
+
+
+<http://example.org/realia/dataset/shape_necessaryDocsForElectricalBuildingPermit1>
+  a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/ElectricalBuildingPermit>;
+  sh:property <http://example.org/realia/dataset/atLeastOnePermitRequest_necessaryDocsForElectricalBuildingPermit1>;
+  sh:message "[the full top node shape error message] each individual realia:ElectricalBuildingPermit must have at least one valid permit request. A valid permit request should include at least one instance of each of the the 6 relevant documents" .
+
+<http://example.org/realia/dataset/atLeastOnePermitRequest_necessaryDocsForElectricalBuildingPermit1>
+  a sh:PropertyShape;
+  sh:path [
+      sh:inversePath <https://data.digichecks.eu/def/isRequestForPermit>
+    ];
+  sh:class <https://data.digichecks.eu/def/PermitRequest>;
+  sh:qualifiedValueShape <http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1>;
+  sh:qualifiedMinCount 1;
+  sh:message "each individual realia:ElectricalBuildingPermit must have at least one valid permit request." .
+
+<http://example.org/realia/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForElectricalBuildingPermit1>
+  a sh:NodeShape;
+  sh:property [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://realia.es/realia-otl/CGPElevation>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://realia.es/realia-otl/UrbanisationPlan>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://realia.es/realia-otl/PoliceNumber>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://realia.es/realia-otl/PowerBreakdown>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://realia.es/realia-otl/SupplyPoints>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://realia.es/realia-otl/UTMCoordinatePlan>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ];
+  sh:message "each valid permit request for a realia:ElectricalBuildingPermit should include at least one instance of following documents: CGP elevation, Urbanisation Plan, Police Number, Power Breakdown, Supply Points and UTM Coordinate Plan" .

@@ -1,0 +1,238 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<http://realia.es/realia-otl/requirement_100> a sml:Requirement; 
+  rdf:value "The applicant should give a total power usage for the number of apparments in each construction project in accordance to the OTL." ;
+  skos:editorialNote "This way, the autority can quickly assess the relevant procedures." ;  
+  skos:notation "REQ-100" ; 
+  skos:closeMatch <http://realia.es/realia-otl/totalApartmentPower-Project-PropertyShape> .
+
+<http://realia.es/realia-otl/requirement_101> a sml:Requirement; 
+  rdf:value "The applicant should give a total power usage for the charging facilities of Electrical Vehicles (EV) in each construction project in accordance to the OTL." ;
+  skos:editorialNote "This way, the autority can quickly assess the relevant procedures." ;  
+  skos:notation "REQ-101" ; 
+  skos:closeMatch <http://realia.es/realia-otl/totalChargingPointPower-Project-PropertyShape> , <http://realia.es/realia-otl/neededChargingPointPower-Project-PropertyShape>,
+    <http://realia.es/realia-otl/sufficientChargingPointPower-Project-PropertyShape>  . 
+
+<http://realia.es/realia-otl/requirement_200> a sml:Requirement; 
+  rdf:value "An appartment should be designed for a power usage of 9.2 kW. " ;
+  skos:notation "REQ-200" ; 
+  skos:closeMatch <http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape> .
+
+<http://realia.es/realia-otl/requirement_201> a sml:Requirement; 
+  rdf:value "An charging point should be designed for a power usage of 3.6 kW. " ;
+  skos:notation "REQ-201" ; 
+  skos:closeMatch <http://realia.es/realia-otl/ChargingPoint-SupplyPoint-PropertyShape> .
+
+<http://realia.es/realia-otl/requirement_221> a sml:Requirement; 
+  rdf:value "Any general power distribution board (CGP) may only provide power to at most 155 kW simultaneously." ; 
+  skos:notation "REQ-221"; 
+  skos:closeMatch <http://realia.es/realia-otl/simultaneousPower-SupplyPoint-PropertyShape> . 
+
+<http://realia.es/realia-otl/requirement_222> a sml:Requirement; 
+  rdf:value "A CGP of type E-10 is connected to one and only one main supply line." ;
+  skos:notation "REQ-222"; 
+  skos:closeMatch <http://realia.es/realia-otl/isConnectedTo-E10-PropertyShape> . 
+
+<http://realia.es/realia-otl/requirement_223> a sml:Requirement; 
+  rdf:value "A CGP of type E-11 is connected to one and only one main supply line." ;
+  skos:notation "REQ-223"; 
+  skos:closeMatch <http://realia.es/realia-otl/isConnectedTo-E11-PropertyShape> . 
+
+
+
+
+
+<http://realia.es/realia-otl/RealiaProject-NodeShape> a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/RealiaProject>;
+  sh:property <http://realia.es/realia-otl/totalApartmentPower-Project-PropertyShape>,
+    <http://realia.es/realia-otl/totalChargingPointPower-Project-PropertyShape>, <http://realia.es/realia-otl/neededChargingPointPower-Project-PropertyShape>,
+    <http://realia.es/realia-otl/sufficientChargingPointPower-Project-PropertyShape> .
+
+<http://realia.es/realia-otl/totalApartmentPower-Project-PropertyShape> a sh:PropertyShape;
+  sh:path <http://realia.es/realia-otl/totalApartmentPower>;
+  sh:property <http://realia.es/realia-otl/totalApartmentPower-Project-PropertyShape-unit>,
+    <http://realia.es/realia-otl/totalApartmentPower-Project-PropertyShape-value>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:message "Each Realia-otlProject (and specializations) should have a property totalApartmentPower." .
+
+<http://realia.es/realia-otl/totalChargingPointPower-Project-PropertyShape> a sh:PropertyShape;
+  sh:path <http://realia.es/realia-otl/totalChargingPointPower>;
+  sh:property <http://realia.es/realia-otl/totalChargingPointPower-Project-PropertyShape-unit>,
+    <http://realia.es/realia-otl/totalChargingPointPower-Project-PropertyShape-value>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:message "Each Realia-otlProject (and specializations) should have a property totalChargingPointPower." .
+
+<http://realia.es/realia-otl/neededChargingPointPower-Project-PropertyShape> a sh:PropertyShape;
+  sh:path <http://realia.es/realia-otl/neededChargingPointPower>;
+  sh:property <http://realia.es/realia-otl/neededChargingPointPower-Project-PropertyShape-unit>,
+    <http://realia.es/realia-otl/neededChargingPointPower-Project-PropertyShape-value>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:message "Each Realia-otlProject (and specializations) should have a property neededChargingPointPower." .
+
+<http://realia.es/realia-otl/sufficientChargingPointPower-Project-PropertyShape> a
+    sh:PropertyShape;
+  sh:path <http://realia.es/realia-otl/totalChargingPointPower>;
+  sh:property [
+      sh:path rdf:value;
+      sh:minInclusive 0.0E0;
+      sh:greaterThan [
+          sh:path <http://realia.es/realia-otl/neededChargingPointPower>;
+          sh:property [
+              sh:path rdf:value;
+              sh:datatype xsd:double
+            ]
+        ]
+    ] .
+
+<http://realia.es/realia-otl/totalApartmentPower-Project-PropertyShape-unit> a sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#hasUnit>;
+  sh:maxCount 1;
+  sh:minCount 1 .
+
+<http://realia.es/realia-otl/totalApartmentPower-Project-PropertyShape-value> a sh:PropertyShape;
+  sh:path rdf:value;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:minInclusive 0 .
+
+<http://realia.es/realia-otl/totalChargingPointPower-Project-PropertyShape-unit> a
+    sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#hasUnit>;
+  sh:maxCount 1;
+  sh:minCount 1 .
+
+<http://realia.es/realia-otl/totalChargingPointPower-Project-PropertyShape-value>
+  a sh:PropertyShape;
+  sh:path rdf:value;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:minInclusive 0 .
+
+<http://realia.es/realia-otl/neededChargingPointPower-Project-PropertyShape-unit>
+  a sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#hasUnit>;
+  sh:maxCount 1;
+  sh:minCount 1 .
+
+<http://realia.es/realia-otl/neededChargingPointPower-Project-PropertyShape-value>
+  a sh:PropertyShape;
+  sh:path rdf:value;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:minInclusive 0 .
+
+<http://realia.es/realia-otl/Apartment-NodeShape> a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/Apartment>;
+  sh:property <http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape> .
+
+<http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape> a sh:PropertyShape;
+  sh:path <http://realia.es/realia-otl/designPower>;
+  sh:property <http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape-unit>,
+    <http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape-value>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:message "Each element of type Apartment should have a property designPower that should be equal to 9.2 kW." .
+
+<http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape-unit> a sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#hasUnit>;
+  sh:maxCount 1;
+  sh:minCount 1 .
+
+<http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape-value> a sh:PropertyShape;
+  sh:path rdf:value;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:hasValue 9.2E0 .
+
+<http://realia.es/realia-otl/ChargingPoint-NodeShape> a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/ChargingPoint> .
+
+<http://realia.es/realia-otl/ChargingPoint-SupplyPoint-PropertyShape> a sh:PropertyShape;
+  sh:path <http://realia.es/realia-otl/designPower>;
+  sh:property <http://realia.es/realia-otl/ChargingPoint-SupplyPoint-PropertyShape-unit>,
+    <http://realia.es/realia-otl/ChargingPoint-SupplyPoint-PropertyShape-value>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:message "Each element of type ChargingPoint should have a property designPower that should be equal to 3.6 kW." .
+
+<http://realia.es/realia-otl/ChargingPoint-SupplyPoint-PropertyShape-unit> a sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#hasUnit>;
+  sh:maxCount 1;
+  sh:minCount 1 .
+
+<http://realia.es/realia-otl/ChargingPoint-SupplyPoint-PropertyShape-value> a sh:PropertyShape;
+  sh:path rdf:value;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:hasValue 3.6E0 .
+
+<http://realia.es/realia-otl/CGP-NodeShape> a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/CGP>, <http://realia.es/realia-otl/E-11>,
+    <http://realia.es/realia-otl/E-10>;
+  sh:property <http://realia.es/realia-otl/simultaneousPower-SupplyPoint-PropertyShape> .
+
+<http://realia.es/realia-otl/simultaneousPower-SupplyPoint-PropertyShape> a sh:PropertyShape;
+  sh:path <http://realia.es/realia-otl/simultaneousPower>;
+  sh:property <http://realia.es/realia-otl/simultaneousPower-SupplyPoint-PropertyShape-unit>,
+    <http://realia.es/realia-otl/simultaneousPower-SupplyPoint-PropertyShape-value>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:message "Each element of type CGP (and specializations) should have a property simultaneousPower expressed in conformance with the SML standard." .
+
+<http://realia.es/realia-otl/simultaneousPower-SupplyPoint-PropertyShape-unit> a sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#hasUnit>;
+  sh:maxCount 1;
+  sh:minCount 1 .
+
+<http://realia.es/realia-otl/simultaneousPower-SupplyPoint-PropertyShape-value> a
+    sh:PropertyShape;
+  sh:path rdf:value;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:maxInclusive 155;
+  sh:minInclusive 0 .
+
+<http://realia.es/realia-otl/E10-NodeShape> a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/E-10>;
+  sh:property <http://realia.es/realia-otl/isConnectedTo-E10-PropertyShape> .
+
+<http://realia.es/realia-otl/isConnectedTo-E10-PropertyShape> a sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#isConnectedTo>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:message "Each element of type E-10 needs to be connected with exactly one LGA." .
+
+<http://realia.es/realia-otl/E11-NodeShape> a sh:NodeShape;
+  sh:targetClass <http://realia.es/realia-otl/E-11>;
+  sh:property <http://realia.es/realia-otl/isConnectedTo-E11-PropertyShape> .
+
+<http://realia.es/realia-otl/isConnectedTo-E11-PropertyShape> a sh:PropertyShape;
+  sh:path <https://w3id.org/sml/def#isConnectedTo>;
+  sh:maxCount 2;
+  sh:minCount 2;
+  sh:message "Each element of type E-11 needs to be connected with exactly two LGAs." .
