@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<https://austria-pilot-otl.data.digichecks.eu/def/requirement050> a sml:Requirement ; 
+    rdf:value "Plans submitted as part of a permit request need to comply with applicable zoning rules" . 
+    skos:notation "REQ-AN-050"; 
+    skos:closeMatch <https://austria-pilot-otl.data.digichecks.eu/def/AustrianProjectShape> .
+
+<https://austria-pilot-otl.data.digichecks.eu/def/AustrianProjectShape> a sh:NodeShape;
+  sh:targetClass <https://austria-pilot-otl.data.digichecks.eu/def/AustrianProject>;
+  sh:property [
+      sh:path <https://austria-pilot-otl.data.digichecks.eu/def/proposedProjectZoning>;
+      sh:sparql [
+          sh:select """
+                SELECT ?this (GROUP_CONCAT(?value; separator=', ') as ?invalidValues)
+                WHERE {
+                    ?this otl-austria:proposedProjectZoning ?value .
+                    FILTER NOT EXISTS {
+                        ?this otl-austria:allowedProjectZoning ?value .
+                    }
+                }
+                GROUP BY ?this
+            """;
+          sh:message "Invalid zoning values found: {?invalidValues}"
+        ]
+    ] .

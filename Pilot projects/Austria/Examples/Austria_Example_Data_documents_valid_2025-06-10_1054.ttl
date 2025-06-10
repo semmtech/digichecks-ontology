@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<http://example.org/cree/dataset/bregenzProject> a <https://data.digichecks.eu/def/Project>;
+  dcterms:subject <http://example.org/cree/dataset/projectDescription1>, <http://example.org/cree/dataset/buildingDescription1>,
+    <http://example.org/cree/dataset/aerialView1>, <http://example.org/cree/dataset/floorLayout1>,
+    <http://example.org/cree/dataset/acousticReport1>;
+  <https://data.digichecks.eu/def/hasPermitRequest> <http://example.org/cree/dataset/generalBuildingPermitRequest1>,
+    <http://example.org/cree/dataset/generalBuildingPermitRequest2> .
+
+<http://example.org/cree/dataset/generalBuildingPermitRequest1> a <https://data.digichecks.eu/def/PermitRequest>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication79>,
+    <http://cree-dataspace.org/data/publication80>, <http://cree-dataspace.org/data/publication81>,
+    <http://cree-dataspace.org/data/publication82>, <http://cree-dataspace.org/data/publication83>;
+  <https://data.digichecks.eu/def/isRequestForPermit> <http://example.org/cree/dataset/generalBuildingPermit1> .
+
+<http://example.org/cree/dataset/generalBuildingPermitRequest2> a <https://data.digichecks.eu/def/PermitRequest>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication79>,
+    <http://cree-dataspace.org/data/publication80>, <http://cree-dataspace.org/data/publication81>,
+    <http://cree-dataspace.org/data/publication82>, <http://cree-dataspace.org/data/publication83>,
+    <http://cree-dataspace.org/data/publication38>;
+  <https://data.digichecks.eu/def/isRequestForPermit> <http://example.org/cree/dataset/generalBuildingPermit1> .
+
+<http://example.org/cree/dataset/projectDescription1> a <http://cree.at/cree-otl/ProjectDescription>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication38> .
+
+<http://example.org/cree/dataset/buildingDescription1> a <http://cree.at/cree-otl/BuildingDescription>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication79> .
+
+<http://example.org/cree/dataset/aerialView1> a <http://cree.at/cree-otl/AerialView>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication80> .
+
+<http://example.org/cree/dataset/floorLayout1> a <http://cree.at/cree-otl/FloorLayout>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication81> .
+
+<http://example.org/cree/dataset/acousticReport1> a <http://cree.at/cree-otl/AcousticReport>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication82> .
+
+<http://example.org/cree/dataset/generalBuildingPermitRequest0> a <https://data.digichecks.eu/def/PermitRequest>;
+  <https://data.digichecks.eu/def/isRequestForPermit> <http://example.org/cree/dataset/generalBuildingPermit1> .
+
+<http://example.org/cree/dataset/generalBuildingPermit1> a <http://cree.at/cree-otl/GeneralBuildingPermit>;
+  <https://w3id.org/sml/def#hasRequirement> <http://example.org/cree/dataset/necessaryDocsForGeneralBuildingPermit1> .
+
+<http://cree-dataspace.org/data/publication79> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication80> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication81> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication82> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication83> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication38> a <https://w3id.org/idsa/core/Resource> .
+
+<http://example.org/cree/dataset/necessaryDocsForGeneralBuildingPermit1> a <https://data.digichecks.eu/def/GenericRequirement>;
+  <https://data.digichecks.eu/def/isExpressedAs> <http://example.org/cree/dataset/shape_necessaryDocsForGeneralBuildingPermit1> .
+
+<http://example.org/cree/dataset/shape_necessaryDocsForGeneralBuildingPermit1> a sh:NodeShape;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication23> .
+
+<http://cree-dataspace.org/data/publication23> a <https://w3id.org/idsa/core/Resource> .
+
+<http://example.org/cree/dataset/allocation_necessaryDocsForGeneralBuildingPermit1>
+  a <https://data.digichecks.eu/def/Allocation>;
+  <https://w3id.org/sml/def#hasRequirement> <http://example.org/cree/dataset/necessaryDocsForGeneralBuildingPermit1>;
+  <https://data.digichecks.eu/def/isAllocationFor> <http://example.org/cree/dataset/projectDescription1>,
+    <http://example.org/cree/dataset/buildingDescription1>, <http://example.org/cree/dataset/aerialView1>,
+    <http://example.org/cree/dataset/floorLayout1>, <http://example.org/cree/dataset/acousticReport1> .

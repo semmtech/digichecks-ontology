@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+@prefix sml: <https://w3id.org/sml/def#> .
+
+
+<http://example.org/cree/dataset/requirement200> a sml:Requirement ; 
+  rdf:value "A permit request for a building permit should include a correct building description" ; 
+  skos:notation "REQ-200"; 
+  skos:closeMatch <http://example.org/cree/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForGeneralBuildingPermit1> . 
+
+<http://example.org/cree/dataset/requirement201> a sml:Requirement ; 
+  rdf:value "A permit request for a building permit should include a correct project description" ; 
+  skos:notation "REQ-201"; 
+  skos:closeMatch <http://example.org/cree/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForGeneralBuildingPermit1> . 
+
+<http://example.org/cree/dataset/requirement202> a sml:Requirement ; 
+  rdf:value "A permit request for a building permit should include a correct aerial plan" ; 
+  skos:notation "REQ-202"; 
+  skos:closeMatch <http://example.org/cree/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForGeneralBuildingPermit1> . 
+
+<http://example.org/cree/dataset/requirement203> a sml:Requirement ; 
+  rdf:value "A permit request for a building permit should include an acoustic report" ; 
+  skos:notation "REQ-203"; 
+  skos:closeMatch <http://example.org/cree/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForGeneralBuildingPermit1> . 
+
+<http://example.org/cree/dataset/requirement204> a sml:Requirement ; 
+  rdf:value "A permit request for a building permit should include a floor layout" ; 
+  skos:notation "REQ-204"; 
+  skos:closeMatch <http://example.org/cree/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForGeneralBuildingPermit1> . 
+
+<http://example.org/cree/dataset/shape_necessaryDocsForGeneralBuildingPermit1> a sh:NodeShape;
+  sh:targetClass <http://cree.at/cree-otl/GeneralBuildingPermit>;
+  sh:property <http://example.org/cree/dataset/atLeastOnePermitRequest_necessaryDocsForGeneralBuildingPermit1>;
+  sh:message "[the full top node shape error message] each individual cree:GeneralBuildingPermit must have at least one valid permit request. A valid permit request should include at least one correct building description and one correct project description" .
+
+<http://example.org/cree/dataset/atLeastOnePermitRequest_necessaryDocsForGeneralBuildingPermit1>
+  a sh:PropertyShape;
+  sh:path [
+      sh:inversePath <https://data.digichecks.eu/def/isRequestForPermit>
+    ];
+  sh:class <https://data.digichecks.eu/def/PermitRequest>;
+  sh:qualifiedValueShape <http://example.org/cree/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForGeneralBuildingPermit1>;
+  sh:qualifiedMinCount 1;
+  sh:message "each individual cree:GeneralBuildingPermit must have at least one valid permit request." .
+
+<http://example.org/cree/dataset/atLeastOneCorrectSubjectOfEachType_necessaryDocsForGeneralBuildingPermit1>
+  a sh:NodeShape;
+  sh:property [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://cree.at/cree-otl/BuildingDescription>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://cree.at/cree-otl/ProjectDescription>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://cree.at/cree-otl/AerialView>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://cree.at/cree-otl/FloorLayout>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ], [
+      sh:path (<https://w3id.org/sml/def#isDescribedBy> [
+            sh:inversePath <https://w3id.org/sml/def#isDescribedBy>
+          ]);
+      sh:qualifiedValueShape [
+          sh:class <http://cree.at/cree-otl/AcousticReport>
+        ];
+      sh:qualifiedMinCount 1;
+      sh:qualifiedValueShapesDisjoint true
+    ];
+  sh:message "each valid permit request for a cree:GeneralBuildingPermit should include at least one correct building description, one correct project description, one correct aerial view, one correct floor layout, and one correct acoustic report" .
