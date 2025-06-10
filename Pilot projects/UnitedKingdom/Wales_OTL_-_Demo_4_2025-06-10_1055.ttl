@@ -1,0 +1,903 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<https://w3id.org/sml/def#InformationObject> a owl:Class;
+  skos:prefLabel "informatieobject"@nl, "information object"@en .
+
+<https://w3id.org/sml/def#Activity> a owl:Class;
+  skos:prefLabel "activity"@en, "activiteit"@nl .
+
+<https://w3id.org/sml/def#EnumerationType> a owl:Class;
+  skos:prefLabel "enumeratietype"@nl, "enumeration type"@en .
+
+<https://w3id.org/sml/def#hasPart> a owl:ObjectProperty;
+  skos:prefLabel "has part"@en, "heeft onderdeel"@nl .
+
+<https://w3id.org/sml/def#Event> a owl:Class;
+  skos:prefLabel "event"@en, "gebeurtenis"@nl .
+
+<https://w3id.org/sml/def#State> a owl:Class;
+  skos:prefLabel "state"@en, "toestand"@nl .
+
+<https://w3id.org/sml/def#PhysicalObject> a owl:Class;
+  skos:prefLabel "physical object"@en, "fysiek object"@nl .
+
+<https://w3id.org/sml/def#FunctionalEntity> a owl:Class;
+  skos:prefLabel "Spatial region"@en, "Ruimtelijk gebied"@nl .
+
+<https://w3id.org/sml/def#SpatialEntity> a owl:Class;
+  skos:prefLabel "Geometric entity"@en, "geometrische entiteit"@nl .
+
+<http://data.digichecks.eu/def/2f4da74f-0d1c-4022-838b-f15e033785a0> a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/7d89f80d-62f0-474c-8878-06085a7a02c6>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://data.digichecks.eu/def/de1559c1-7835-3a17-9fc4-3b90acc455e2> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/PondDesign>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/treesClearingaroundPond>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/crossSectionalProfile>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/treesPlantationProposed>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/fencingOfPond>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/depthOfPond>;
+      sh:datatype xsd:decimal
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/waterSurfaceArea>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/2f4da74f-0d1c-4022-838b-f15e033785a0>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/pondStatusMonitoring>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/hasClayBentoniteLiner>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/islandsPresent>;
+      sh:datatype xsd:boolean
+    ] .
+
+<http://data.digichecks.eu/def/355953f6-03e2-460e-944b-b8bdb5c56634> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/7d89f80d-62f0-474c-8878-06085a7a02c6>
+    ] .
+
+<http://data.digichecks.eu/def/9e1d7f75-bbd9-3dc9-b2ec-26ebc7a37a7b> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/PopulationClassAssessmentSurvey>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/accordanceToGCNGuideline>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/populationClassAssessmentSurveyDetails>;
+      sh:datatype xsd:string
+    ] .
+
+<http://data.digichecks.eu/def/49684e4b-1ec2-3cbf-ac74-768681645ccd> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/GCNSurvey>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/surveyRegister>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/date>;
+      sh:datatype xsd:date
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/bufferZone>;
+      sh:datatype xsd:enumeration
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/numberofVisitsPerYear>;
+      sh:datatype xsd:integer
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/typeofGCNSurvey>;
+      sh:datatype xsd:enumeration
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/weatherCondition>;
+      sh:class <http://data.digichecks.eu/def/61ab316f-bde0-4dfe-b8fc-62355313fafa>
+    ] .
+
+<http://data.digichecks.eu/def/46b1e8c9-97ac-340d-b276-688324382f1e> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/Compartment>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/area>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/355953f6-03e2-460e-944b-b8bdb5c56634>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/perimeter>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/551eb27e-58b5-475b-b635-70625cc14edd>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/closestDistanceToNextTrap>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/8fc1143e-18d9-47f4-8f84-4837da032a2f>
+    ] .
+
+<http://data.digichecks.eu/def/551eb27e-58b5-475b-b635-70625cc14edd> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ] .
+
+<http://data.digichecks.eu/def/8fc1143e-18d9-47f4-8f84-4837da032a2f> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ] .
+
+<http://data.digichecks.eu/def/12d79fdc-7a43-40e2-a790-0b349b0457c9> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ] .
+
+<http://data.digichecks.eu/def/058647ed-3c19-3c6d-8e1e-d7d622874b08> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/BatSurvey>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/typeofBatSurvey>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/numberofVisitsPerYear>;
+      sh:datatype xsd:integer
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/weatherCondition>;
+      sh:class <http://data.digichecks.eu/def/61ab316f-bde0-4dfe-b8fc-62355313fafa>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/momentOfTheDay>;
+      sh:class <http://data.digichecks.eu/def/2c0d8962-79bc-4c9e-a4c5-ebe5d216004e>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/batSurveyLocationStructure>;
+      sh:datatype xsd:enumeration
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/date>;
+      sh:datatype xsd:date
+    ] .
+
+<http://data.digichecks.eu/def/8e42e317-e6fe-3324-898f-f2b01e652308> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/ExistingStructure>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/batEmbargoPeriodEnd>;
+      sh:datatype xsd:gDay
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/batEmbargoPeriodStart>;
+      sh:datatype xsd:gDay
+    ] .
+
+<http://data.digichecks.eu/def/324aebe8-f928-42fb-9e16-78f5fbb2ede8> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ] .
+
+<http://data.digichecks.eu/def/531cc8a1-5ba9-3d67-ad72-76a6e93fab2b> a sh:NodeShape;
+  sh:targetClass <http://data.digichecks.eu/def/dac155eb-b704-49dc-aad2-5acf2fd16542>,
+    <http://wales-pilot-otl.data.digichecks.eu/def/PitfallTrap>, <http://wales-pilot-otl.data.digichecks.eu/def/Required>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/ecologicalCheckPerformed>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/closestDistanceToNextTrap>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/1617fa49-d3a7-47a0-843e-fbe98b8a5583>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/trapUsability>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/useOfFloatationDevice>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:qualifiedValueShape [
+          sh:class <http://data.digichecks.eu/def/dac155eb-b704-49dc-aad2-5acf2fd16542>
+        ];
+      sh:qualifiedMinCount "0"^^xsd:nonNegativeInteger
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/trapInstallationDensity>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/9af2e866-ca0f-419d-adc4-57deb2e341c7>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/presenceOfMammalLadder>;
+      sh:hasValue <http://data.digichecks.eu/def/7adc9c16-9897-419b-b901-2b79f872cf6b>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/ecologicalSupervisionRequired>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/inspectionNeeded>;
+      sh:datatype xsd:boolean
+    ] .
+
+<http://data.digichecks.eu/def/9af2e866-ca0f-419d-adc4-57deb2e341c7> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/b5b56fc8-7eec-40c3-a909-ab62edba6df4>
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/b5b56fc8-7eec-40c3-a909-ab62edba6df4>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://data.digichecks.eu/def/1617fa49-d3a7-47a0-843e-fbe98b8a5583> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ] .
+
+<http://data.digichecks.eu/def/4906e20a-d109-3933-9b1a-0e8957db3b3a> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/BottleTrap>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/closestDistanceToNextTrap>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/a99ee593-1155-4ae6-a365-e97a559c5ee7>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ] .
+
+<http://data.digichecks.eu/def/a99ee593-1155-4ae6-a365-e97a559c5ee7> a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://data.digichecks.eu/def/dfa91319-cb60-3f90-b255-9334f444f229> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/PopulationMonitoring>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/accordanceToGCNGuideline>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/torchingMethodUsed>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/numberofVisitsPerYear>;
+      sh:datatype xsd:integer
+    ] .
+
+<http://data.digichecks.eu/def/6e5a23af-f6ce-40c1-82f8-1ca83f557d05> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ] .
+
+<http://data.digichecks.eu/def/6c64eecc-9df4-3ad9-afe0-444a53e0adef> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/BatBox>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/heightAboveGround>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/12d79fdc-7a43-40e2-a790-0b349b0457c9>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/quantity>;
+      sh:datatype xsd:enumeration
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/purpose>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/productName>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/installerPerson>;
+      sh:datatype xsd:string
+    ] .
+
+<http://data.digichecks.eu/def/e2260985-cc6b-327f-a2ba-a24935f8c304> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/PondFence>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/inspectionNeeded>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/fenceLength>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/6e5a23af-f6ce-40c1-82f8-1ca83f557d05>
+    ] .
+
+<http://data.digichecks.eu/def/cbcdf260-04ca-3cee-a450-d05dd81b512e> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/Culvert>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/isDrainingWater>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/artificialBatRoostPipe>;
+      sh:datatype xsd:boolean
+    ] .
+
+<http://data.digichecks.eu/def/b61bc854-30c0-46a7-a5f0-96ca88bcff99> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ] .
+
+<http://data.digichecks.eu/def/15b6c6a2-612f-317a-b4f1-007d8d6e1b47> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/FenceInspection>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/siteStaff>;
+      sh:datatype xsd:decimal
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/monthlyAuditPerformedByEcologist>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/fencingActivityPeriod>;
+      sh:class <http://data.digichecks.eu/def/5656bf40-6b58-4ac8-a52c-26cfa1a03a69>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/repairsWithin24Hours>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/performedActivePeriod>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/inspectionFrequency>;
+      sh:datatype xsd:enumeration
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/record>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/fenceCheckedPerformedBySiteStaff>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/recordKeptBy>;
+      sh:datatype xsd:enumeration
+    ] .
+
+<http://data.digichecks.eu/def/a5810f49-0191-4b71-a444-e13563fc2239> a sh:NodeShape;
+  sh:property [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/b5b56fc8-7eec-40c3-a909-ab62edba6df4>
+    ] .
+
+<http://data.digichecks.eu/def/142315bd-a464-31c2-a38f-299db82b5ce3> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/RingFence>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/fenceLength>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/324aebe8-f928-42fb-9e16-78f5fbb2ede8>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/inspectionNeeded>;
+      sh:datatype xsd:boolean
+    ] .
+
+<http://data.digichecks.eu/def/d12906eb-7745-35ae-b88a-01250e325757> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/CaptureMethod>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ] .
+
+<http://data.digichecks.eu/def/bf67fa15-18a6-404e-811b-020144a72925> a sh:NodeShape;
+  sh:property [
+      sh:path <https://w3id.org/sml/def#hasUnit>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:hasValue <http://data.digichecks.eu/def/0d946e43-c686-41c4-adc6-7d2275333fe0>
+    ], [
+      sh:path rdf:value;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://data.digichecks.eu/def/68dd02b6-658d-37b0-a06c-bbce7ffe14a9> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/RetainedWoodLandArea>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/size>;
+      sh:datatype xsd:string
+    ] .
+
+<http://data.digichecks.eu/def/cd6a3435-5131-38e7-8331-b5110050e836> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/CarpetTilesTrap>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/trapUsability>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/closestDistanceToNextTrap>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/b61bc854-30c0-46a7-a5f0-96ca88bcff99>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/ecologicalSupervisionRequired>;
+      sh:hasValue <http://data.digichecks.eu/def/a9e9d41d-51c9-4a40-951e-a62d7b5fe654>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/trapInstallationDensity>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/a5810f49-0191-4b71-a444-e13563fc2239>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/ecologicalCheckPerformed>;
+      sh:hasValue <http://data.digichecks.eu/def/a9e9d41d-51c9-4a40-951e-a62d7b5fe654>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/inspectionNeeded>;
+      sh:hasValue <http://data.digichecks.eu/def/a9e9d41d-51c9-4a40-951e-a62d7b5fe654>
+    ] .
+
+<http://data.digichecks.eu/def/3c2a990e-89e0-36e9-9860-2ecf6b383a6b> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/Survey>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/location>;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/date>;
+      sh:datatype xsd:date
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/weatherCondition>;
+      sh:class <http://data.digichecks.eu/def/61ab316f-bde0-4dfe-b8fc-62355313fafa>
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/numberofVisitsPerYear>;
+      sh:datatype xsd:integer
+    ] .
+
+<http://data.digichecks.eu/def/495f3d6e-b667-3b01-8b9e-4a3444f693bb> a sh:NodeShape;
+  sh:targetClass <http://wales-pilot-otl.data.digichecks.eu/def/DriftFence>;
+  sh:property [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/inspectionNeeded>;
+      sh:datatype xsd:boolean
+    ], [
+      sh:path <http://wales-pilot-otl.data.digichecks.eu/def/fenceLength>;
+      sh:class <https://w3id.org/sml/def#QuantityValue>;
+      sh:node <http://data.digichecks.eu/def/bf67fa15-18a6-404e-811b-020144a72925>
+    ] .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/fenceLength> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Fence Length" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/treesPlantationProposed> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Trees Plantation Proposed" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/islandsPresent> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Islands Present" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/weatherCondition> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Weather Condition" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/crossSectionalProfile> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Cross Sectional Profile" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/numberofVisitsPerYear> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Number Of Visits Per Year" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Tree> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Tree" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Viaduct> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Viaduct" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Building> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Building" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/CaptureMethod> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Capture Method" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/PopulationClassAssessmentSurvey> a
+    owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Population Class Assessment Survey" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/productName> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Product Name" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/fencingOfPond> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Fencing Of Pond" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/recordKeptBy> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Record Kept By"@en .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/area> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Area" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/torchingMethodUsed> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Torching Method Used" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/RetainedWoodLandArea> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Retained Wood Land Area" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/BatBox> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Bat Box" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/accordanceToGCNGuideline> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Accordance To GCN Guideline" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/populationClassAssessmentSurveyDetails>
+  a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Population Class Assessment Survey Details" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/surveyRegister> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Survey Register" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/date> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Date" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/bufferZone> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Buffer Zone" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/location> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Location" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/typeofGCNSurvey> a owl:ObjectProperty;
+  rdfs:subPropertyOf <http://data.digichecks.eu/def/074812fe-d4c6-4d1e-b4a5-b184cf899256>;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Type of GCN Survey" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/GCNSurvey> a owl:Class;
+  rdfs:subClassOf <http://wales-pilot-otl.data.digichecks.eu/def/Survey>;
+  skos:prefLabel "GCN Survey" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/perimeter> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Perimeter" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/closestDistanceToNextTrap> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Closest Distance To Next Trap" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Compartment> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Compartment" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/repairsWithin24Hours> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Repairs Within 24 Hours" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/performedActivePeriod> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Performed Active Period" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/SurveyedLocation> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Surveyed Location" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Cave> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Cave" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/typeofBatSurvey> a owl:ObjectProperty;
+  rdfs:subPropertyOf <http://data.digichecks.eu/def/074812fe-d4c6-4d1e-b4a5-b184cf899256>;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Type of Bat Survey" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/momentOfTheDay> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Moment Of The Day" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/batSurveyLocationStructure> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Bat Survey Location Structure" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/BatSurvey> a owl:Class;
+  rdfs:subClassOf <http://wales-pilot-otl.data.digichecks.eu/def/Survey>;
+  skos:prefLabel "Bat Survey" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/hasClayBentoniteLiner> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Has Clay Bentonite Liner" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/batEmbargoPeriodEnd> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Bat Embargo Period End" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/batEmbargoPeriodStart> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Bat Embargo Period Start" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/ExistingStructure> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Existing Structure" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/waterSurfaceArea> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Water Surface Area"@en .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/PondFence> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Pond Fence" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/BottleTrap> a owl:Class;
+  rdfs:subClassOf <http://wales-pilot-otl.data.digichecks.eu/def/CaptureMethod>;
+  skos:prefLabel "Bottle Trap" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/fenceCheckedPerformedBySiteStaff> a
+    owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Fence Checked Performed By Site Staff" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/monthlyAuditPerformedByEcologist> a
+    owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Monthly Audit Performed By Ecologist" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/siteStaff> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Site Staff" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/fencingActivityPeriod> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Fencing Activity period" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/ecologicalCheckPerformed> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Ecological Check Performed" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/trapUsability> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Trap Usability" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/useOfFloatationDevice> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Use Of Floatation Device" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/trapInstallationDensity> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Traps Installation Density"@en .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/presenceOfMammalLadder> a owl:ObjectProperty;
+  skos:prefLabel "Presence Of Mammal Ladder"@en .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/ecologicalSupervisionRequired> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Ecological Supervision Required" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/inspectionNeeded> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Inspection Needed" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/PitfallTrap> a owl:Class;
+  rdfs:subClassOf <http://wales-pilot-otl.data.digichecks.eu/def/CaptureMethod>;
+  skos:prefLabel "Pitfall Trap";
+  skos:definition "Flush with drift fence" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Survey> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Survey" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/quantity> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Quantity" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/PopulationMonitoring> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Population Monitoring";
+  skos:definition "Monitoring the population of species through a specified method and schedule, ensuring compliance with established environmental guidelines" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/installerPerson> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Installer Person" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Bridge> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Bridge" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/heightAboveGround> a owl:ObjectProperty;
+  rdfs:range <https://w3id.org/sml/def#QuantityValue>;
+  skos:prefLabel "Height Above Ground" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/purpose> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Purpose" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/isDrainingWater> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Is Draining Water" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/artificialBatRoostPipe> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Artificial Bat Roost Pipe" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Culvert> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Culvert" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/PondDesign> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Pond Design"@en .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/DriftFence> a owl:Class;
+  rdfs:subClassOf <http://wales-pilot-otl.data.digichecks.eu/def/PondFence>;
+  skos:prefLabel "Drift Fence" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/size> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Size" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/treesClearingaroundPond> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Trees Clearing around Pond" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/depthOfPond> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Depth Of Pond" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/pondStatusMonitoring> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Pond Status Monitoring" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/inspectionFrequency> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Inspection Frequency" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/record> a owl:ObjectProperty;
+  rdfs:range rdfs:Resource;
+  skos:prefLabel "Record" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/FenceInspection> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Fence Inspection" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/RingFence> a owl:Class;
+  rdfs:subClassOf <http://wales-pilot-otl.data.digichecks.eu/def/PondFence>;
+  skos:prefLabel "Ring Fence" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/RoostStructure> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Roost Structure" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/CarpetTilesTrap> a owl:Class;
+  rdfs:subClassOf <http://wales-pilot-otl.data.digichecks.eu/def/CaptureMethod>;
+  skos:altLabel "artificial refugia";
+  skos:prefLabel "Carpet Tiles Trap" .
+
+<http://wales-pilot-otl.data.digichecks.eu/def/Infrastructure> a owl:Class;
+  rdfs:subClassOf <https://w3id.org/sml/def#PhysicalObject>;
+  skos:prefLabel "Infrastructure" .
+
+<http://data.digichecks.eu/def/dac155eb-b704-49dc-aad2-5acf2fd16542> rdfs:subClassOf
+    [ a owl:Restriction;
+      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
+      owl:onClass <http://data.digichecks.eu/def/dac155eb-b704-49dc-aad2-5acf2fd16542>
+    ] .
+
+<http://data.digichecks.eu/def/7adc9c16-9897-419b-b901-2b79f872cf6b> skos:prefLabel
+    "true" .
+
+<http://data.digichecks.eu/def/a9e9d41d-51c9-4a40-951e-a62d7b5fe654> skos:prefLabel
+    "false" .

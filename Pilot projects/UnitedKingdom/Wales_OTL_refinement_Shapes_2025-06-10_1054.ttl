@@ -1,0 +1,229 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<http://example.org/PitfallTrapShape> a sh:NodeShape;
+  sh:targetClass <http://example.org/PitfallTrap>;
+  sh:property [
+      sh:path <http://example.org/hasUsability>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/hasTrapInstallationDensity>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:node [ a sh:NodeShape;
+          sh:property [
+              sh:path rdf:value;
+              sh:datatype xsd:decimal;
+              sh:maxInclusive 0.2;
+              sh:minInclusive 0.1
+            ], [
+              sh:path <https://w3id.org/sml/def#hasUnit>;
+              sh:hasValue <http://qudt.org/vocab/unit#PER-M>
+            ]
+        ]
+    ], [
+      sh:path <http://example.org/hasPresenceOfMammalLadder>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/hasFlotationDevice>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/requiresEcologicalChecks>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/requiresEcologicalSupervision>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://example.org/CarpetTilesTrapShape> a sh:NodeShape;
+  sh:targetClass <http://example.org/CarpetTilesTrap>;
+  sh:property [
+      sh:path <http://example.org/hasTrapInstallationDensity>;
+      sh:node [ a sh:NodeShape;
+          sh:property [
+              sh:path rdf:value;
+              sh:datatype xsd:decimal;
+              sh:maxInclusive 0.1;
+              sh:minInclusive 0.1
+            ], [
+              sh:path <https://w3id.org/sml/def#hasUnit>;
+              sh:hasValue <http://qudt.org/vocab/unit#PER-M>
+            ]
+        ]
+    ], [
+      sh:path <http://example.org/requiresEcologicalChecks>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:defaultValue false
+    ], [
+      sh:path <http://example.org/requiresEcologicalSupervision>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 0;
+      sh:defaultValue false
+    ] .
+
+<http://example.org/PopulationMonitoringShape> a sh:NodeShape;
+  sh:targetClass <http://example.org/PopulationMonitoring>;
+  sh:property [
+      sh:path <http://example.org/usesTorchingMethod>;
+      sh:hasValue true
+    ], [
+      sh:path <http://example.org/numberOfVisitsPerYear>;
+      sh:datatype xsd:integer;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/accordanceWithGCNGuideline>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://example.org/PopulationClassAssessmentSurveysShape> a sh:NodeShape;
+  sh:targetClass <http://example.org/populationClassAssessmentSurveys>;
+  sh:property [
+      sh:path <http://example.org/firstSurvey>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/numberOfWaterbodies>;
+      sh:datatype xsd:integer;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/HSIScore>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:in ("0.6 and above" "0.5 to 0.59" "below 0.5")
+    ], [
+      sh:path <http://example.org/surveyMethod>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:in ("Bottle trap" "Egg searching" "Netting" "Torching")
+    ], [
+      sh:path <http://example.org/visitFrequency>;
+      sh:datatype xsd:integer;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/accordanceWithGCNGuideline>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://example.org/FenceInspectionShape> a sh:NodeShape;
+  sh:targetClass <http://example.org/FenceInspection>;
+  sh:property [
+      sh:path <http://example.org/inspectionFrequency>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:in ("Daily" "EveryOtherDay" "Weekly" "MoreThanWeekly")
+    ], [
+      sh:path <http://example.org/performedDuringActivePeriod>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/repairWithin24Hours>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/recordKeptBy>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:in ("Licence Holder" "Appointed Representative" "Other")
+    ], [
+      sh:path <http://example.org/monthlyAuditPerformedByEcologist>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/fenceCheckedBySiteStaff>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/higherSpecificationFencingInstalled>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/discussWithNRWBeforeInstallation>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .
+
+<http://example.org/PondDesignShape> a sh:NodeShape;
+  sh:targetClass <http://example.org/PondDesign>;
+  sh:property [
+      sh:path <http://example.org/waterSurfaceArea>;
+      sh:datatype xsd:decimal;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:unit "m²"
+    ], [
+      sh:path <http://example.org/hasBentoniteLiner>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/crossSectionalProfileDesign>;
+      sh:maxCount 3;
+      sh:minCount 1;
+      sh:in ("Shallow Areas" "Shallow Banks" "Areas 1m Deep")
+    ], [
+      sh:path <http://example.org/treesClearingAroundPond>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/treesPlantationProposed>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/islandsPresent>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ], [
+      sh:path <http://example.org/vegetationColonizationPreference>;
+      sh:maxCount 1;
+      sh:minCount 1;
+      sh:in ("Natural Vegetation" "Plantation")
+    ], [
+      sh:path <http://example.org/fencingOfPond>;
+      sh:datatype xsd:boolean;
+      sh:maxCount 1;
+      sh:minCount 1
+    ] .

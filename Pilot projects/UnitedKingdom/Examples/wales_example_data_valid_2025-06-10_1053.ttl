@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<http://example.org/pitfallTrap1> a <http://example.org/PitfallTrap>;
+  <http://example.org/hasUsability> true;
+  <http://example.org/hasTrapInstallationDensity> <http://example.org/density1>;
+  <http://example.org/hasPresenceOfMammalLadder> true;
+  <http://example.org/requiresEcologicalChecks> true;
+  <http://example.org/requiresEcologicalSupervision> true;
+  <http://example.org/hasFlotationDevice> true .
+
+<http://example.org/density1> a <https://w3id.org/sml/def#QuantityValue>;
+  rdf:value 0.1;
+  <https://w3id.org/sml/def#hasUnit> <http://qudt.org/vocab/unit#PER-M> .
+
+<http://example.org/carpetTilesTrap1> a <http://example.org/CarpetTilesTrap>;
+  <http://example.org/hasTrapInstallationDensity> <http://example.org/density2>;
+  <http://example.org/requiresEcologicalChecks> false;
+  <http://example.org/requiresEcologicalSupervision> false .
+
+<http://example.org/populationMonitoring1> a <http://example.org/PopulationMonitoring>;
+  <http://example.org/usesTorchingMethod> true;
+  <http://example.org/numberOfVisitsPerYear> 3;
+  <http://example.org/accordanceWithGCNGuideline> true .
+
+<http://example.org/populationClassAssessmentSurveys1> a <http://example.org/populationClassAssessmentSurveys>;
+  <http://example.org/accordanceWithGCNGuideline> true;
+  <http://example.org/firstSurvey> true;
+  <http://example.org/numberOfWaterbodies> 44;
+  <http://example.org/surveyMethod> "Bottle trap";
+  <http://example.org/visitFrequency> 4;
+  <http://example.org/HSIScore> "0.6 and above" .
+
+<http://example.org/populationClassAssessmentSurveys2> a <http://example.org/populationClassAssessmentSurveys>;
+  <http://example.org/accordanceWithGCNGuideline> true;
+  <http://example.org/firstSurvey> false;
+  <http://example.org/numberOfWaterbodies> 4;
+  <http://example.org/surveyMethod> "Bottle trap";
+  <http://example.org/visitFrequency> 4;
+  <http://example.org/HSIScore> "0.5 to 0.59" .
+
+<http://example.org/FencingInspection1> a <http://example.org/FenceInspection>;
+  <http://example.org/inspectionFrequency> "Daily";
+  <http://example.org/performedDuringActivePeriod> true;
+  <http://example.org/repairWithin24Hours> true;
+  <http://example.org/recordKeptBy> "Licence Holder";
+  <http://example.org/monthlyAuditPerformedByEcologist> true;
+  <http://example.org/fenceCheckedBySiteStaff> true;
+  <http://example.org/discussWithNRWBeforeInstallation> true;
+  <http://example.org/higherSpecificationFencingInstalled> true .
+
+<http://example.org/pondDesign1> a <http://example.org/PondDesign>;
+  <http://example.org/waterSurfaceArea> 300.0;
+  <http://example.org/hasBentoniteLiner> true;
+  <http://example.org/crossSectionalProfileDesign> "Shallow Areas", "Shallow Banks",
+    "Areas 1m Deep";
+  <http://example.org/treesClearingAroundPond> true;
+  <http://example.org/treesPlantationProposed> false;
+  <http://example.org/islandsPresent> false;
+  <http://example.org/vegetationColonizationPreference> "Natural Vegetation";
+  <http://example.org/fencingOfPond> true .
+
+<http://example.org/density2> a <https://w3id.org/sml/def#QuantityValue>;
+  rdf:value 0.1;
+  <https://w3id.org/sml/def#hasUnit> <http://qudt.org/vocab/unit#PER-M> .
+
+<http://example.org/jacobs> <http://example.org/undertookPopulationClassAssessmentSurveys>
+    <http://example.org/populationClassAssessmentSurveys1>, <http://example.org/populationClassAssessmentSurveys2> .
