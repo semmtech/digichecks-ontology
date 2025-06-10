@@ -1,0 +1,624 @@
+@prefix digic:  <https://digichecks.eu/psetconversion-ontology#> .
+@prefix ex:     <http://example.org/realia/dataset/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix otl:    <https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix qudt:   <http://qudt.org/schema/qudt/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix realia: <http://realia.es/realia-otl/> .
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix sml:    <https://w3id.org/sml/def#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+ex:3-2-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-5-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-5-C-Power .
+
+ex:2-4-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-S-A  rdf:type          ex:CommonArea ;
+        realia:designPower  ex:2-S-A-Power .
+
+ex:2-A-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-A-B-Power .
+
+ex:1-6-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-6-C-Power .
+
+ex:1-6-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-6-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-1-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-7-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-7-C-Power .
+
+ex:2-1-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-3-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:LGA-6  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:2-2-B , ex:2-1-A , ex:2-2-A , ex:2-5-A , ex:2-1-B , ex:2-4-A , ex:2-3-A , ex:2-3-B , ex:2-4-B .
+
+ex:1-5-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:LGA-11  rdf:type        realia:LGA ;
+        sml:isConnectedTo  ex:4-C-C .
+
+ex:3-6-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-B-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-1-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-B-S-Power  rdf:value  "10.085"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-2-D-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-3-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-3-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-B-RVE-Power  rdf:value  "25.76"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-B-URB  rdf:type        ex:CommonArea ;
+        realia:designPower  ex:3-B-URB-Power .
+
+ex:CGP-2A  rdf:type               realia:E-11 ;
+        realia:simultaneousPower  realia:CGP-2A-SimPower ;
+        sml:isConnectedTo         ex:LGA-6 , ex:LGA-4 .
+
+ex:1-1-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-1-A-Power .
+
+ex:1-5-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-5-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-A-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-A-B-Power .
+
+ex:2-5-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-A-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-2-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-2-A-Power .
+
+ex:LGA-1  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:1-B-A , ex:1-1-A , ex:1-B-B , ex:1-2-A , ex:1-S-C , ex:1-1-C , ex:1-1-D , ex:1-1-B .
+
+ex:3-B-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-B-B-Power .
+
+realia:CGP-4-SimPower
+        rdf:value    "82.819"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-7-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-3-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-3-A-Power .
+
+ex:1-2-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-1-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-1-C-Power .
+
+ex:1-4-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-4-A-Power .
+
+ex:LGA-9  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:2-S-GA , ex:2-B-RVE , ex:3-B-S .
+
+ex:1-4-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+realia:CGP-1A-SimPower
+        rdf:value    "136.765"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-2-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-2-C-Power .
+
+ex:1-5-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-5-A-Power .
+
+ex:3-A-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-6-D-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:neededChargingPointPowerMadrid
+        rdf:value    "0.0"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-3-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-3-C-Power .
+
+ex:1-A-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-A-C-Power .
+
+ex:1-1-D-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:totalApartmentPowerMadrid
+        rdf:value    0 ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-6-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-6-A-Power .
+
+ex:3-4-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-4-C-Power .
+
+ex:1-7-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-7-A-Power .
+
+ex:4-C-C  rdf:type          ex:Commercial ;
+        realia:designPower  ex:4-C-C-Power .
+
+ex:2-6-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-5-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-5-C-Power .
+
+ex:1-1-D  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-1-D-Power .
+
+ex:2-1-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-1-A-Power .
+
+realia:CGP-3A-SimPower
+        rdf:value    "149.98"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-1-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-6-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-6-C-Power .
+
+ex:1-2-D  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-2-D-Power .
+
+ex:LGA-4  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:1-7-B , ex:1-6-D , ex:1-A-C , ex:1-6-C , ex:1-7-A , ex:1-A-B , ex:1-A-A , ex:1-7-D , ex:1-7-C .
+
+ex:2-2-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-2-A-Power .
+
+ex:1-3-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-7-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-7-C-Power .
+
+ex:1-3-D  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-3-D-Power .
+
+ex:CGP-3B  rdf:type               realia:E10 ;
+        realia:simultaneousPower  realia:CGP-3B-SimPower ;
+        sml:isConnectedTo         ex:LGA-10 .
+
+ex:2-3-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-3-A-Power .
+
+ex:CGP-1A  rdf:type               realia:E-11 ;
+        realia:simultaneousPower  realia:CGP-1A-SimPower ;
+        sml:isConnectedTo         ex:LGA-1 , ex:LGA-2 .
+
+ex:1-5-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-4-D  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-4-D-Power .
+
+ex:2-4-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-4-A-Power .
+
+ex:3-B-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-5-D  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-5-D-Power .
+
+ex:realiaMadridProject
+        rdf:type                        realia:RealiaProject ;
+        realia:neededChargingPointPower
+                ex:neededChargingPointPowerMadrid ;
+        realia:totalApartmentPower      ex:totalApartmentPowerMadrid ;
+        realia:totalChargingPointPower  ex:totalChargingPointPowerMadrid .
+
+ex:2-5-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-5-A-Power .
+
+ex:1-2-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-3-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-6-D  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-6-D-Power .
+
+ex:2-6-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-6-A-Power .
+
+ex:2-A-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-A-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-5-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-7-D  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-7-D-Power .
+
+ex:3-5-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-7-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-7-A-Power .
+
+ex:3-7-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-1-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-1-A-Power .
+
+ex:2-7-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-7-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-B-RVE  rdf:type        ex:ChargingPoint ;
+        realia:designPower  ex:3-B-RVE-Power .
+
+ex:2-2-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-2-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-2-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:LGA-7  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:2-A-A , ex:2-6-A , ex:2-A-B , ex:2-6-B , ex:2-A-RVE , ex:2-7-A , ex:2-5-B , ex:2-7-B , ex:2-S-A .
+
+ex:3-2-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-2-A-Power .
+
+ex:1-4-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-3-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-3-A-Power .
+
+realia:CGP-2A-SimPower
+        rdf:value    "143.52"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-A-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-A-A-Power .
+
+ex:3-A-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-S-GA-Power  rdf:value  "44.5"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-6-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-4-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-4-A-Power .
+
+ex:1-B-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-B-A-Power .
+
+ex:1-1-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:4-C-C-Power  rdf:value  "82.819"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-5-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-5-A-Power .
+
+ex:CGP-2B  rdf:type               realia:E-11 ;
+        realia:simultaneousPower  realia:CGP-2B-SimPower ;
+        sml:isConnectedTo         ex:LGA-9 , ex:LGA-7 .
+
+ex:1-1-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-1-B-Power .
+
+ex:1-3-D-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-6-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-6-A-Power .
+
+ex:LGA-2  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:1-2-D , ex:1-4-A , ex:1-3-D , ex:1-2-B , ex:1-3-C , ex:1-3-A , ex:1-2-C , ex:1-3-B .
+
+ex:1-2-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-2-B-Power .
+
+ex:3-4-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-A-RVE  rdf:type        ex:ChargingPoint ;
+        realia:designPower  ex:2-A-RVE-Power .
+
+ex:3-7-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-7-A-Power .
+
+ex:1-S-C-Power  rdf:value  "15.325"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-3-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-3-B-Power .
+
+realia:CGP-1B-SimPower
+        rdf:value    "71.76"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-6-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-B-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-1-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-4-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-4-B-Power .
+
+ex:1-5-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-5-B-Power .
+
+ex:1-S-C  rdf:type          ex:CommonArea ;
+        realia:designPower  ex:1-S-C-Power .
+
+ex:2-A-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-A-A-Power .
+
+ex:1-6-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-6-B-Power .
+
+realia:CGP-3B-SimPower
+        rdf:value    "126.6"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-B-S  rdf:type          ex:CommonArea ;
+        realia:designPower  ex:3-B-S-Power .
+
+ex:1-7-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-7-B-Power .
+
+ex:1-7-D-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:CGP-4  rdf:type                realia:E-10 ;
+        realia:simultaneousPower  realia:CGP-4-SimPower ;
+        sml:isConnectedTo         ex:LGA-11 .
+
+ex:3-B-URB-Power  rdf:value  "30"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-1-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-1-B-Power .
+
+ex:3-5-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-A-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:LGA-5  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:2-S-C .
+
+ex:2-2-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-2-B-Power .
+
+ex:2-7-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-7-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:LGA-10  rdf:type        realia:LGA ;
+        sml:isConnectedTo  ex:3-7-B , ex:3-6-A , ex:3-7-A , ex:3-A-B , ex:3-A-A , ex:3-5-C , ex:3-5-B , ex:3-B-URB , ex:3-B-RVE , ex:3-7-C , ex:3-6-C , ex:3-6-B .
+
+ex:2-B-RVE  rdf:type        ex:ChargingPoint ;
+        realia:designPower  ex:2-B-RVE-Power .
+
+ex:2-S-GA  rdf:type         ex:Garage ;
+        realia:designPower  ex:2-S-GA-Power .
+
+ex:3-2-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-2-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-3-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-3-B-Power .
+
+ex:CGP-1B  rdf:type               realia:E-10 ;
+        realia:simultaneousPower  realia:CGP-1B-SimPower ;
+        sml:isConnectedTo         ex:LGA-3 .
+
+ex:1-4-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-4-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-4-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-4-B-Power .
+
+ex:3-4-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-5-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-5-B-Power .
+
+ex:1-6-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-S-C  rdf:type          ex:CommonArea ;
+        realia:designPower  ex:2-S-C-Power .
+
+ex:1-1-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-A-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-A-A-Power .
+
+ex:2-6-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-6-B-Power .
+
+ex:3-B-A  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-B-A-Power .
+
+ex:1-3-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-7-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:2-7-B-Power .
+
+ex:3-4-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-1-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-1-B-Power .
+
+ex:1-5-D-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-S-C-Power  rdf:value  "40.5"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+realia:CGP-2B-SimPower
+        rdf:value    "158.51"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:LGA-8  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:3-1-B , ex:3-1-A , ex:3-2-B , ex:3-5-A , ex:3-3-C , ex:3-4-A , ex:3-4-C , ex:3-2-C , ex:3-3-A , ex:3-B-A , ex:3-2-A , ex:3-1-C , ex:3-B-B , ex:3-3-B , ex:3-4-B .
+
+ex:3-6-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-B-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-2-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-2-B-Power .
+
+ex:3-1-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:totalChargingPointPowerMadrid
+        rdf:value    0 ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-3-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-3-B-Power .
+
+ex:1-A-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-A-B-Power .
+
+ex:3-3-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-B-RVE-Power  rdf:value  "18.4"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-3-B-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-A-RVE-Power  rdf:value  "11.04"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-4-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-4-B-Power .
+
+ex:1-B-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-B-B-Power .
+
+ex:1-A-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:2-S-A-Power  rdf:value  "10.085"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-5-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-5-B-Power .
+
+ex:1-1-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-1-C-Power .
+
+ex:1-7-C-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-6-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-6-B-Power .
+
+ex:1-2-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-2-C-Power .
+
+ex:LGA-3  rdf:type         realia:LGA ;
+        sml:isConnectedTo  ex:1-5-A , ex:1-4-B , ex:1-5-D , ex:1-6-B , ex:1-5-C , ex:1-4-D , ex:1-6-A , ex:1-5-B , ex:1-4-C .
+
+ex:3-7-B  rdf:type          ex:Apartment ;
+        realia:designPower  ex:3-7-B-Power .
+
+ex:1-3-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-3-C-Power .
+
+ex:CGP-3A  rdf:type               realia:E-11 ;
+        realia:simultaneousPower  realia:CGP-3A-SimPower ;
+        sml:isConnectedTo         ex:LGA-5 , ex:LGA-8 .
+
+ex:1-4-D-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:3-7-A-Power  rdf:value  "9.2"^^xsd:double ;
+        sml:hasUnit  qudt:KiloW .
+
+ex:1-4-C  rdf:type          ex:Apartment ;
+        realia:designPower  ex:1-4-C-Power .

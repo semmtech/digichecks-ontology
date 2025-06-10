@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<http://example.org/realia/dataset/shape_necessaryDocsForElectricalBuildingPermit1>
+  a sh:NodeShape;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication23> .
+
+<http://cree-dataspace.org/data/publication79> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication38> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication23> a <https://w3id.org/idsa/core/Resource> .
+
+<http://example.org/realia/dataset/madridProject> a <https://data.digichecks.eu/def/RealiaProject>;
+  dcterms:subject <http://example.org/realia/dataset/CGPElevation1>, <http://example.org/realia/dataset/urbanisationPlan1>,
+    <http://example.org/realia/dataset/policeNumber1>, <http://example.org/realia/dataset/powerBreakdown1>,
+    <http://example.org/realia/dataset/supplyPoints1>, <http://example.org/realia/dataset/UTMCoordinatePlan1>;
+  <https://data.digichecks.eu/def/hasPermitRequest> <http://example.org/realia/dataset/electricalBuildingPermitRequest0>,
+    <http://example.org/realia/dataset/electricalBuildingPermitRequest1>, <http://example.org/realia/dataset/electricalBuildingPermitRequest2>,
+    <http://example.org/realia/dataset/electricalBuildingPermitRequest3> .
+
+<http://example.org/realia/dataset/electricalBuildingPermitRequest0> a <https://data.digichecks.eu/def/PermitRequest>;
+  <https://data.digichecks.eu/def/isRequestForPermit> <http://example.org/realia/dataset/electricalBuildingPermit1> .
+
+<http://example.org/realia/dataset/electricalBuildingPermitRequest1> a <https://data.digichecks.eu/def/PermitRequest>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication38>;
+  <https://data.digichecks.eu/def/isRequestForPermit> <http://example.org/realia/dataset/electricalBuildingPermit1> .
+
+<http://example.org/realia/dataset/electricalBuildingPermitRequest2> a <https://data.digichecks.eu/def/PermitRequest>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication79>,
+    <http://cree-dataspace.org/data/publication38>, <http://cree-dataspace.org/data/publication85>,
+    <http://cree-dataspace.org/data/publication97>;
+  <https://data.digichecks.eu/def/isRequestForPermit> <http://example.org/realia/dataset/electricalBuildingPermit1> .
+
+<http://example.org/realia/dataset/electricalBuildingPermitRequest3> a <https://data.digichecks.eu/def/PermitRequest>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication79>,
+    <http://cree-dataspace.org/data/publication38>, <http://cree-dataspace.org/data/publication85>,
+    <http://cree-dataspace.org/data/publication97>, <http://cree-dataspace.org/data/publication105>,
+    <http://cree-dataspace.org/data/publication116>;
+  <https://data.digichecks.eu/def/isRequestForPermit> <http://example.org/realia/dataset/electricalBuildingPermit1> .
+
+<http://example.org/realia/dataset/CGPElevation1> a <http://realia.es/realia-otl/CGPElevation>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication38> .
+
+<http://example.org/realia/dataset/urbanisationPlan1> a <http://realia.es/realia-otl/UrbanisationPlan>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication79> .
+
+<http://example.org/realia/dataset/policeNumber1> a <http://realia.es/realia-otl/PoliceNumber>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication85> .
+
+<http://example.org/realia/dataset/powerBreakdown1> a <http://realia.es/realia-otl/PowerBreakdown>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication97> .
+
+<http://example.org/realia/dataset/supplyPoints1> a <http://realia.es/realia-otl/SupplyPoints>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication105> .
+
+<http://example.org/realia/dataset/UTMCoordinatePlan1> a <http://realia.es/realia-otl/UTMCoordinatePlan>;
+  <https://w3id.org/sml/def#isDescribedBy> <http://cree-dataspace.org/data/publication116> .
+
+<http://example.org/realia/dataset/electricalBuildingPermit1> a <http://realia.es/realia-otl/ElectricalBuildingPermit>;
+  <https://w3id.org/sml/def#hasRequirement> <http://example.org/realia/dataset/necessaryDocsForElectricalBuildingPermit1> .
+
+<http://cree-dataspace.org/data/publication85> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication97> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication105> a <https://w3id.org/idsa/core/Resource> .
+
+<http://cree-dataspace.org/data/publication116> a <https://w3id.org/idsa/core/Resource> .
+
+<http://example.org/realia/dataset/necessaryDocsForElectricalBuildingPermit1> a <https://data.digichecks.eu/def/GenericRequirement>;
+  <https://data.digichecks.eu/def/isExpressedAs> <http://example.org/realia/dataset/shape_necessaryDocsForElectricalBuildingPermit1> .
+
+<http://example.org/realia/dataset/allocation_necessaryDocsForElectricalBuildingPermit1>
+  a <https://data.digichecks.eu/def/Allocation>;
+  <https://w3id.org/sml/def#hasRequirement> <http://example.org/realia/dataset/necessaryDocsForElectricalBuildingPermit1>;
+  <https://data.digichecks.eu/def/isAllocationFor> <http://example.org/realia/dataset/CGPElevation1>,
+    <http://example.org/realia/dataset/urbanisationPlan1>, <http://example.org/realia/dataset/policeNumber1>,
+    <http://example.org/realia/dataset/powerBreakdown1>, <http://example.org/realia/dataset/supplyPoints1>,
+    <http://example.org/realia/dataset/UTMCoordinatePlan1> .

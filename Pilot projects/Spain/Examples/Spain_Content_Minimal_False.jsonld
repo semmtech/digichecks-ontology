@@ -1,0 +1,163 @@
+{
+    "@context": [
+        "https://stdigichecksprod.blob.core.windows.net/public/REALIA_context.jsonld",
+        "https://stdigichecksprod.blob.core.windows.net/public/digiChecks_topLevelPermitOntology_context.jsonld"
+    ],
+    "@graph": [
+        {
+            "@id": "ex:realiaMadridProject",
+            "@type": "realia-otl:RealiaProject",
+            "quantitativeProperties": {
+                "realia-otl:neededChargingPointPower": {
+                    "value": 27.232,
+                    "hasUnit": "qudt:KiloW"
+                },
+                "realia-otl:totalChargingPointPower": {
+                    "value": 55.2,
+                    "hasUnit": "qudt:KiloW"
+                },
+                "realia-otl:totalApartmentPower": {
+                    "value": 680.8,
+                    "hasUnit": "qudt:KiloW"
+                }
+            },
+            "nonQuantitativeProperties": {},
+            "relations": {}
+        },
+        {
+            "@id": "ex:CGP-1A",
+            "@type": "realia-otl:E-11",
+            "quantitativeProperties": {
+                "realia-otl:simultaneousPower": {
+                    "value": 176.765,
+                    "hasUnit": "qudt:KiloW"
+                }
+            },
+            "nonQuantitativeProperties": {},
+            "relations": {
+                "sml:isConnectedTo": [
+                    {
+                        "@id": "ex:LGA-2"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "ex:CGP-3B",
+            "@type": "realia-otl:E-10",
+            "quantitativeProperties": {
+                "realia-otl:simultaneousPower": {
+                    "value": 126.6,
+                    "hasUnit": "qudt:KiloW"
+                }
+            },
+            "nonQuantitativeProperties": {},
+            "relations": {
+                "sml:isConnectedTo": [
+                    {
+                        "@id": "ex:LGA-10"
+                    },
+                    {
+                        "@id": "ex:LGA-1"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "ex:LGA-1",
+            "@type": "realia-otl:LGA",
+            "quantitativeProperties": {},
+            "nonQuantitativeProperties": {},
+            "relations": {
+                "sml:isConnectedTo": [
+                    {
+                        "@id": "ex:1-1-A"
+                    },
+                    {
+                        "@id": "ex:1-2-A"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "ex:LGA-2",
+            "@type": "realia-otl:LGA",
+            "quantitativeProperties": {},
+            "nonQuantitativeProperties": {},
+            "relations": {
+                "sml:isConnectedTo": [
+                    {
+                        "@id": "ex:1-3-A"
+                    },
+                    {
+                        "@id": "ex:2-A-RVE"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "ex:LGA-10",
+            "@type": "realia-otl:LGA",
+            "quantitativeProperties": {},
+            "nonQuantitativeProperties": {},
+            "relations": {
+                "sml:isConnectedTo": [
+                    {
+                        "@id": "ex:3-B-URB"
+                    },
+                    {
+                        "@id": "ex:3-B-RVE"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "ex:1-1-A",
+            "@type": "realia-otl:Apartment",
+            "quantitativeProperties": {
+                "realia-otl:designPower": {
+                    "value": 9.2,
+                    "hasUnit": "qudt:KiloW"
+                }
+            },
+            "nonQuantitativeProperties": {},
+            "relations": {}
+        },
+        {
+            "@id": "ex:1-2-A",
+            "@type": "realia-otl:Apartment",
+            "quantitativeProperties": {
+                "realia-otl:designPower": {
+                    "value": 91.2,
+                    "hasUnit": "qudt:KiloW"
+                }
+            },
+            "nonQuantitativeProperties": {},
+            "relations": {}
+        },
+        {
+            "@id": "ex:2-A-RVE",
+            "@type": "realia-otl:ChargingPoint",
+            "quantitativeProperties": {
+                "realia-otl:designPower": {
+                    "value": 3.6,
+                    "hasUnit": "qudt:KiloW"
+                }
+            },
+            "nonQuantitativeProperties": {},
+            "relations": {}
+        },
+        {
+            "@id": "ex:3-B-RVE",
+            "@type": "realia-otl:ChargingPoint",
+            "quantitativeProperties": {
+                "realia-otl:designPower": {
+                    "value": 18.4,
+                    "hasUnit": "qudt:KiloW"
+                }
+            },
+            "nonQuantitativeProperties": {},
+            "relations": {}
+        }
+    ]
+}
