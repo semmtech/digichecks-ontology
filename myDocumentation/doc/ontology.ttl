@@ -737,17 +737,17 @@ rdfs:comment <http://www.w3.org/2004/02/skos/core#prefLabel> "comment" .
                                                                                                 _:genid4 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#TopConcept> .
 
-_:genid1 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-          <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid1 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+          <http://www.w3.org/ns/shacl#path> :wasDescribedBy .
 
-_:genid2 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-          <http://www.w3.org/ns/shacl#path> rdfs:comment .
-
-_:genid3 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+_:genid2 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> .
 
-_:genid4 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
-          <http://www.w3.org/ns/shacl#path> :wasDescribedBy .
+_:genid3 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+          <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+_:genid4 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+          <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
 
 
 ###  https://data.digichecks.eu/def/64b000d827b0605cddb2d64c
@@ -776,27 +776,27 @@ _:genid7 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requiremen
 <https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d> rdf:type owl:NamedIndividual ,
                                                                    <http://www.w3.org/ns/shacl#NodeShape> ;
                                                           <http://www.w3.org/ns/shacl#property> _:genid8 ,
-                                                                                                _:genid9 ,
                                                                                                 _:genid10 ,
-                                                                                                _:genid11 ;
+                                                                                                _:genid11 ,
+                                                                                                _:genid12 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> :Verification .
 
-_:genid8 <http://www.w3.org/ns/shacl#class> :VerificationMethod ;
-          <http://www.w3.org/ns/shacl#path> :hasVerificationMethod ;
-          <http://www.w3.org/ns/shacl#maxCount> 1 ;
-          <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid9 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-          <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> ;
-          <http://www.w3.org/ns/shacl#maxCount> 1 ;
-          <http://www.w3.org/ns/shacl#minCount> 1 .
+_:genid8 <http://www.w3.org/ns/shacl#or> [ ] ;
+<http://www.w3.org/ns/shacl#path> :hasAsOutput .
 
 _:genid10 <http://www.w3.org/ns/shacl#class> :Decision ;
            <http://www.w3.org/ns/shacl#path> :isInputFor ;
            <http://www.w3.org/ns/shacl#minCount> 1 .
 
-_:genid11 <http://www.w3.org/ns/shacl#or> [ ] ;
-<http://www.w3.org/ns/shacl#path> :hasAsOutput .
+_:genid11 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid12 <http://www.w3.org/ns/shacl#class> :VerificationMethod ;
+           <http://www.w3.org/ns/shacl#path> :hasVerificationMethod ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
 
 
 ###  https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100
@@ -807,14 +807,14 @@ _:genid11 <http://www.w3.org/ns/shacl#or> [ ] ;
                                                                                                 _:genid15 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Agent> .
 
-_:genid13 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
+_:genid13 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
 
 _:genid14 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
            <http://www.w3.org/ns/shacl#path> rdfs:comment .
 
-_:genid15 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:genid15 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
 
 
 ###  https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b
@@ -849,11 +849,11 @@ _:genid19 <http://www.w3.org/ns/shacl#class> :PermitRequest ;
                                                                                                 _:genid24 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/sml/def#Requirement> .
 
-_:genid20 <http://www.w3.org/ns/shacl#class> :Document ;
-           <http://www.w3.org/ns/shacl#path> :hasSource .
-
-_:genid21 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
+_:genid20 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
            <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
+
+_:genid21 <http://www.w3.org/ns/shacl#class> :Document ;
+           <http://www.w3.org/ns/shacl#path> :hasSource .
 
 _:genid22 <http://www.w3.org/ns/shacl#or> [ ] ;
 <http://www.w3.org/ns/shacl#path> :isExpressedAs .
@@ -872,19 +872,19 @@ _:genid24 <http://www.w3.org/ns/shacl#in> <https://data.digichecks.eu/def/95414b
                                                                                                 _:genid28 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> :Permit .
 
-_:genid25 <http://www.w3.org/ns/shacl#class> :Permit ;
+_:genid25 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
+           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
+
+_:genid26 <http://www.w3.org/ns/shacl#class> :Permit ;
            <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasPart> .
 
-_:genid26 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
+_:genid27 <http://www.w3.org/ns/shacl#class> <https://w3id.org/idsa/core/Resource> ;
            <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#isDescribedBy> ;
            <http://www.w3.org/ns/shacl#minCount> 1 .
 
-_:genid27 <http://www.w3.org/ns/shacl#class> :PermitRequest ;
+_:genid28 <http://www.w3.org/ns/shacl#class> :PermitRequest ;
            <http://www.w3.org/ns/shacl#path> :isPermitFor ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid28 <http://www.w3.org/ns/shacl#class> <https://w3id.org/sml/def#Requirement> ;
-           <http://www.w3.org/ns/shacl#path> <https://w3id.org/sml/def#hasRequirement> ;
            <http://www.w3.org/ns/shacl#minCount> 1 .
 
 
@@ -921,23 +921,23 @@ _:genid31 <http://www.w3.org/ns/shacl#in> <https://data.digichecks.eu/def/34e82a
                                                                                                 _:genid36 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Location> .
 
-_:genid32 <http://www.w3.org/ns/shacl#class> :Parcel ;
-           <http://www.w3.org/ns/shacl#path> :hasParcel ;
+_:genid32 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2006/vcard/ns#Address> ;
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasAddress> ;
            <http://www.w3.org/ns/shacl#maxCount> 1 .
 
 _:genid33 <http://www.w3.org/ns/shacl#class> <http://www.opengis.net/ont/geosparql#Geometry> ;
            <http://www.w3.org/ns/shacl#path> <http://www.opengis.net/ont/geosparql#hasGeometry> ;
            <http://www.w3.org/ns/shacl#maxCount> 1 .
 
-_:genid34 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2006/vcard/ns#Address> ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasAddress> ;
+_:genid34 <http://www.w3.org/ns/shacl#class> :Parcel ;
+           <http://www.w3.org/ns/shacl#path> :hasParcel ;
            <http://www.w3.org/ns/shacl#maxCount> 1 .
 
 _:genid35 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
 
 _:genid36 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+           <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
 
 
 ###  https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64
@@ -975,12 +975,12 @@ _:genid40 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
                                                                                                 _:genid42 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Association> .
 
-_:genid41 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
+_:genid41 <http://www.w3.org/ns/shacl#path> :role .
+
+_:genid42 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Agent> ;
            <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#agent> ;
            <http://www.w3.org/ns/shacl#maxCount> 1 ;
            <http://www.w3.org/ns/shacl#minCount> 1 .
-
-_:genid42 <http://www.w3.org/ns/shacl#path> :role .
 
 
 ###  https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb
@@ -1054,16 +1054,16 @@ _:genid52 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
                                                                                                 _:genid55 ;
                                                           <http://www.w3.org/ns/shacl#targetClass> :Parcel .
 
-_:genid53 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
-           <http://www.w3.org/ns/shacl#path> :isParcelFor ;
-           <http://www.w3.org/ns/shacl#maxCount> 1 ;
-           <http://www.w3.org/ns/shacl#minCount> 1 .
+_:genid53 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+           <http://www.w3.org/ns/shacl#path> rdfs:comment .
 
 _:genid54 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
            <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
 
-_:genid55 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
-           <http://www.w3.org/ns/shacl#path> rdfs:comment .
+_:genid55 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/prov#Location> ;
+           <http://www.w3.org/ns/shacl#path> :isParcelFor ;
+           <http://www.w3.org/ns/shacl#maxCount> 1 ;
+           <http://www.w3.org/ns/shacl#minCount> 1 .
 
 
 ###  https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc
@@ -1230,16 +1230,16 @@ _:genid60 <http://www.w3.org/ns/shacl#datatype> xsd:string ;
                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "is described by" .
 
 
-[ <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#NodeShape>
+[ <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#ValidationReport>
 ] .
-
-[ <http://www.w3.org/ns/shacl#class> :MachineReadableRule
- ] .
 
 [ <http://www.w3.org/ns/shacl#class> :Document
  ] .
 
-[ <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#ValidationReport>
+[ <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/shacl#NodeShape>
+ ] .
+
+[ <http://www.w3.org/ns/shacl#class> :MachineReadableRule
  ] .
 
 #################################################################

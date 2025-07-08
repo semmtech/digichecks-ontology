@@ -1337,20 +1337,20 @@
         <shacl:targetClass rdf:resource="https://w3id.org/sml/def#TopConcept"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid1">
-        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <shacl:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/wasDescribedBy"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
-        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid3">
         <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
         <shacl:path rdf:resource="https://w3id.org/sml/def#isDescribedBy"/>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid4">
-        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
-        <shacl:path rdf:resource="https://data.digichecks.eu/def/wasDescribedBy"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     </rdf:Description>
     
 
@@ -1390,22 +1390,16 @@
     <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d">
         <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
         <shacl:property rdf:nodeID="genid8"/>
-        <shacl:property rdf:nodeID="genid9"/>
         <shacl:property rdf:nodeID="genid10"/>
         <shacl:property rdf:nodeID="genid11"/>
+        <shacl:property rdf:nodeID="genid12"/>
         <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Verification"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid8">
-        <shacl:class rdf:resource="https://data.digichecks.eu/def/VerificationMethod"/>
-        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasVerificationMethod"/>
-        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
-        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
-        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-        <shacl:path rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
-        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:or>
+            <rdf:Description/>
+        </shacl:or>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasAsOutput"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid10">
         <shacl:class rdf:resource="https://data.digichecks.eu/def/Decision"/>
@@ -1413,10 +1407,16 @@
         <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid11">
-        <shacl:or>
-            <rdf:Description/>
-        </shacl:or>
-        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasAsOutput"/>
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/VerificationMethod"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasVerificationMethod"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
     </rdf:Description>
     
 
@@ -1432,16 +1432,16 @@
         <shacl:targetClass rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid13">
-        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-        <shacl:path rdf:resource="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid14">
         <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid15">
-        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <shacl:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
     </rdf:Description>
     
 
@@ -1489,12 +1489,12 @@
         <shacl:targetClass rdf:resource="https://w3id.org/sml/def#Requirement"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid20">
-        <shacl:class rdf:resource="https://data.digichecks.eu/def/Document"/>
-        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasSource"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid21">
         <shacl:class rdf:resource="https://w3id.org/sml/def#Requirement"/>
         <shacl:path rdf:resource="https://w3id.org/sml/def#hasPart"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid21">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Document"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasSource"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid22">
         <shacl:or>
@@ -1522,22 +1522,22 @@
         <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Permit"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid25">
+        <shacl:class rdf:resource="https://w3id.org/sml/def#Requirement"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#hasRequirement"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid26">
         <shacl:class rdf:resource="https://data.digichecks.eu/def/Permit"/>
         <shacl:path rdf:resource="https://w3id.org/sml/def#hasPart"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid26">
+    <rdf:Description rdf:nodeID="genid27">
         <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
         <shacl:path rdf:resource="https://w3id.org/sml/def#isDescribedBy"/>
         <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid27">
+    <rdf:Description rdf:nodeID="genid28">
         <shacl:class rdf:resource="https://data.digichecks.eu/def/PermitRequest"/>
         <shacl:path rdf:resource="https://data.digichecks.eu/def/isPermitFor"/>
-        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid28">
-        <shacl:class rdf:resource="https://w3id.org/sml/def#Requirement"/>
-        <shacl:path rdf:resource="https://w3id.org/sml/def#hasRequirement"/>
         <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
     </rdf:Description>
     
@@ -1586,8 +1586,8 @@
         <shacl:targetClass rdf:resource="http://www.w3.org/ns/prov#Location"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid32">
-        <shacl:class rdf:resource="https://data.digichecks.eu/def/Parcel"/>
-        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasParcel"/>
+        <shacl:class rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <shacl:path rdf:resource="http://www.w3.org/2006/vcard/ns#hasAddress"/>
         <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid33">
@@ -1596,17 +1596,17 @@
         <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid34">
-        <shacl:class rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
-        <shacl:path rdf:resource="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Parcel"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasParcel"/>
         <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid35">
         <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <shacl:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid36">
         <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <shacl:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     </rdf:Description>
     
 
@@ -1661,13 +1661,13 @@
         <shacl:targetClass rdf:resource="http://www.w3.org/ns/prov#Association"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid41">
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/role"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid42">
         <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <shacl:path rdf:resource="http://www.w3.org/ns/prov#agent"/>
         <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
         <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid42">
-        <shacl:path rdf:resource="https://data.digichecks.eu/def/role"/>
     </rdf:Description>
     
 
@@ -1768,18 +1768,18 @@
         <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Parcel"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid53">
-        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Location"/>
-        <shacl:path rdf:resource="https://data.digichecks.eu/def/isParcelFor"/>
-        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
-        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid54">
         <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <shacl:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid55">
-        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isParcelFor"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
     </rdf:Description>
     
 
@@ -2063,16 +2063,16 @@
         <skos:prefLabel>is described by</skos:prefLabel>
     </owl:NamedIndividual>
     <rdf:Description>
-        <shacl:class rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
-    </rdf:Description>
-    <rdf:Description>
-        <shacl:class rdf:resource="https://data.digichecks.eu/def/MachineReadableRule"/>
+        <shacl:class rdf:resource="http://www.w3.org/ns/shacl#ValidationReport"/>
     </rdf:Description>
     <rdf:Description>
         <shacl:class rdf:resource="https://data.digichecks.eu/def/Document"/>
     </rdf:Description>
     <rdf:Description>
-        <shacl:class rdf:resource="http://www.w3.org/ns/shacl#ValidationReport"/>
+        <shacl:class rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/MachineReadableRule"/>
     </rdf:Description>
     
 
