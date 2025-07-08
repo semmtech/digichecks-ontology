@@ -156,6 +156,7 @@
   sh:message "Each element of type Apartment should have a property designPower that should be equal to 9.2 kW." .
 
 <http://realia.es/realia-otl/Apartment-SupplyPoint-PropertyShape-unit> a sh:PropertyShape;
+  sh:hasValue qudt:KiloW ;
   sh:path <https://w3id.org/sml/def#hasUnit>;
   sh:maxCount 1;
   sh:minCount 1 .
