@@ -1,6 +1,6 @@
 # DigiChecks Permit Ontology
 
-This repository contains the DigiChecks Permit Ontology, a top-level ontology for describing permitting processes, requirements, and verification activities. The ontology is based on the Semantic Modelling and Linking (SML, EN 17632) framework and provides core terminology for DigiChecks services to communicate unambiguously about permitting processes.
+This repository contains the DigiChecks Permit Ontology, a top-level ontology for describing permitting processes, requirements, and verification activities. The ontology is based on the Semantic Modelling and Linking (SML, EN 17632) framework and provides core terminology for DigiChecks services to communicate unambiguously about permitting processes. The Publication is also available as [RDF-endpoint](https://hub.laces.tech/digichecks/public/production/digicehcks-ontology/versions/1).
 
 ## Overview
 
