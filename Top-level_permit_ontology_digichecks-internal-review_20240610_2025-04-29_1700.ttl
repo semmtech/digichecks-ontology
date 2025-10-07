@@ -21,7 +21,7 @@ checks:isControlledBy  rdf:type  owl:ObjectProperty;
         skos:prefLabel   "is controlled by" .
 
 checks:Allocation  rdf:type  owl:Class;
-        rdfs:subClassOf  sml:InformationObject;
+        rdfs:subClassOf  sml:Objectification;
         skos:definition  "An explicit relation between subject and requirement that shows that the subject needs to fulfill the stated requirement."@en;
         skos:prefLabel   "Allocation" .
 
@@ -313,11 +313,11 @@ checks:shallBeCompliantWith
                         ];
         sh:targetClass  sh:ValidationReport .
 
-checks:GenericRequirement
-        rdf:type         owl:Class;
-        rdfs:subClassOf  sml:Requirement;
-        skos:definition  "A requirement that is not specific for any projects / use case."@en;
-        skos:prefLabel   "Generic Requirement" .
+# checks:GenericRequirement
+#        rdf:type         owl:Class;
+#        rdfs:subClassOf  sml:Requirement;
+#        skos:definition  "A requirement that is not specific for any projects / use case."@en;
+#        skos:prefLabel   "Generic Requirement" .
 
 sml:QuantityValue  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Objectification;
@@ -394,11 +394,11 @@ skos:prefLabel  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:string;
         skos:prefLabel  "pref label" .
 
-checks:ProjectRequirement
-        rdf:type         owl:Class;
-        rdfs:subClassOf  sml:Requirement;
-        skos:definition  "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases."@en;
-        skos:prefLabel   "Project Requirement" .
+# checks:ProjectRequirement
+#        rdf:type         owl:Class;
+#        rdfs:subClassOf  sml:Requirement;
+#        skos:definition  "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases."@en;
+#        skos:prefLabel   "Project Requirement" .
 
 :6615257dfd34eb2f8e03f59a
         rdf:type        sh:NodeShape;
@@ -498,19 +498,36 @@ checks:size  rdf:type    owl:DatatypeProperty;
                           sh:minCount  1;
                           sh:path      checks:hasVerificationMethod
                         ];
+        sh:property     [ sh:datatype  xsd:date;
+                          sh:path      checks:date
+                        ];
+        sh:targetClass  checks:Verification .
+
+
+:VerificationShapeOutcomes 
+        rdf:type        sh:nodeShape; 
+        sh:targetClass  checks:Verification ; 
         sh:property     [ sh:or    ( [ sh:class  checks:Document ]
                                      [ sh:class  sh:ValidationReport ]
                                    );
                           sh:path  checks:hasAsOutput
                         ];
-        sh:property     [ sh:in        :c1d03c5b-c43e-305d-8114-eab99f675248;
+        # 
+        sh:property     [ sh:class        :ResultValues;
                           sh:maxCount  1;
                           sh:path      checks:result
                         ];
-        sh:property     [ sh:datatype  xsd:date;
-                          sh:path      checks:date
-                        ];
-        sh:targetClass  checks:Verification .
+
+checks:ResultValues 
+        rdf:type        rdfs:Class ; 
+        skos:prefLabel  "Compliance values" .
+
+checks:CheckCompliant a checks:ResultValues  ; 
+      skos:prefLabel "Compliant" . 
+  
+checks:CheckNonCompliant a checks:ResultValues ; 
+      skos:preflabel "Non compliant" .
+
 
 checks:version  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:string;
@@ -617,11 +634,7 @@ checks:applicationDate
                         ];
         sh:targetClass  geo:Geometry .
 
-:c1d03c5b-c43e-305d-8114-eab99f675248
-        rdf:type        rdf:List;
-        rdf:first       "non compliant";
-        rdf:rest        ( "compliant" );
-        skos:prefLabel  "Compliance values" .
+
 
 sml:hasState  rdf:type  owl:ObjectProperty;
         skos:prefLabel  "has state" .
@@ -639,7 +652,7 @@ dct:subject  rdf:type   owl:ObjectProperty;
 
 checks:MachineReadableRule
         rdf:type         owl:Class;
-        rdfs:subClassOf  sml:InformationObject;
+        rdfs:subClassOf  sml:AbstractConcept;
         skos:definition  "A set of instructions or guidelines that are structured in a format that can be easily interpreted and processed by a computer or software program. The term \"rule\" refers here to checking rules specifically and is not to be confused with inferencing rules for deriving knowledge."@en;
         skos:prefLabel   "Machine readable rule" .
 
