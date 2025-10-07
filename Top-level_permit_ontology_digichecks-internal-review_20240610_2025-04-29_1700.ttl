@@ -702,6 +702,12 @@ checks:isPermitForRequest
         skos:definition  "Indicates the relation between a permit and the related request for it"@en;
         skos:prefLabel   "is permit for request" .
 
+checks:hasUsecase
+      rdf:type          owl:ObjectProperty; 
+      skos:definition   "Indicates which use case is applicable for a specific project"@en ; 
+      skos:prefLabel    "has usecase" . 
+
+
 :64da30f3ec98ce2e4c41a20b
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     prov:Association;
@@ -718,7 +724,7 @@ checks:isPermitForRequest
                           sh:path   prov:atLocation
                         ];
         sh:property     [ sh:path  checks:size ];
-        sh:property   [ sh:path  checks:usecase 
+        sh:property   [ sh:path  checks:hasUsecase 
                         sh:class checks:UsecaseValues ] ; 
         sh:targetClass  checks:Project .
 
