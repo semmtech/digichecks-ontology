@@ -1,5 +1,4 @@
 PREFIX :      <http://www.example.org/>
-PREFIX base:  <https://w3id.org/def/basicsemantics-owl#>
 PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX checks: <https://data.digichecks.eu/def/>
 PREFIX geo:   <http://www.opengis.net/ont/geosparql#>
@@ -16,9 +15,13 @@ PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
 
 
 
-checks:isControlledBy  rdf:type  owl:ObjectProperty;
-        skos:definition  "Is an involvement in an occurrence that indicates that the involved object has a role as controller of the occurrence."@en;
-        skos:prefLabel   "is controlled by" .
+checks:hasRecipient  rdf:type  owl:ObjectProperty;
+        skos:definition  "Indicates a relation between a permit request and the Recipient, a prov:Agent, of the request. A Recipient is a legal entity (e.g., authority) or person in charge of receiving the permit application "@en;
+        skos:prefLabel   "has Recipient" .
+
+checks:hasApprover rdf:type owl:ObjectProperty; 
+        skos:definition  "Indicates a relation between a permitRequest and the Approver, a prov:Agent, of the Request. An Approver is a legal entity (e.g., competent authority) or person issuing the permit approval. "@en;
+        skos:prefLabel   "has Approver" . 
 
 checks:Allocation  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Objectification;
@@ -265,8 +268,8 @@ vcard:hasAddress  rdf:type  owl:ObjectProperty;
 sml:triggers  rdf:type  owl:ObjectProperty;
         skos:prefLabel  "triggers" .
 
-checks:isSubmittedBy  rdf:type  owl:ObjectProperty;
-        skos:definition  "Indicates that a permit request was made by appropriate associated person / organization that is authorized to make the specific request."@en;
+checks:hasApplicant  rdf:type  owl:ObjectProperty;
+        skos:definition  "The Permit request was applied for by an agent."@en;
         skos:prefLabel   "is submitted by" .
 
 sml:Activity  rdf:type   owl:Class;
@@ -459,11 +462,18 @@ sml:Requirement  rdf:type  owl:Class;
 :65e60b91ebc1577ef9381cbb
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class  prov:Agent;
-                          sh:path   checks:isControlledBy
+                          sh:path   checks:hasRecipient; 
+                          sh:minCount 1;
+                          sh:maxCount 1; 
+                        ];
+        sh:property     [ sh:class  prov:Agent;
+                          sh:path   checks:hasApprover; 
+                          # No minCounts, or max counts > The application may be in a state that it is unclear who the Approver is. 
+                          # No sh:maxCount, since there can be multiple Agents involved. 
                         ];
         sh:property     [ sh:class     prov:Agent;
                           sh:minCount  1;
-                          sh:path      checks:isSubmittedBy
+                          sh:path      checks:hasApplicant
                         ];
         sh:property     [ sh:class     checks:Project;
                           sh:minCount  1;
@@ -721,7 +731,8 @@ sml:ConcreteConcept  rdf:type  owl:Class;
 
 checks:PermitRequest  rdf:type  owl:Class;
         rdfs:subClassOf  sml:InformationObject;
-        skos:definition  "A permit request is a written appeal or application made to obtain official approval for something from a designated authority."@en;
+        skos:definition  """A permit request is a written appeal or application made to obtain official approval for something from a designated authority.
+It is used as the central hub in the permitting process, with, if issued, a checks:Permit as a result."""@en;
         skos:prefLabel   "Permit request" .
 
 prov:Association  rdf:type  owl:Class;
