@@ -54,6 +54,20 @@ checks:isGeometryOf  rdf:type  owl:ObjectProperty;
                         ];
         sh:targetClass  checks:Decision .
 
+checks:decisionOutcomeValues a rdfs:Class ; 
+        skos:prefLabel  "outcomes for Decision for permits" .
+
+checks:decisionApproved a checks:decisionOutcomeValues ; 
+        skos:prefLabel "Approved" . 
+
+checks:decisionApprovedWithReservations a checks:decisionOutcomeValues ; 
+        skos:prefLabel "Approved With Reservations" . 
+
+checks:decisionRejected a checks:decisionOutcomeValues ; 
+        skos:prefLabel "Rejected" .
+
+
+
 checks:hasParcel  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates the link between location and parcel."@en;
         skos:prefLabel   "has parcel" .
@@ -200,11 +214,7 @@ checks:isParcelFor  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates that a parcel is located at a certain location."@en;
         skos:prefLabel   "is parcel for" .
 
-:34e82a97-fdd5-3176-ab61-f75c778939ca
-        rdf:type        rdf:List;
-        rdf:first       "approved";
-        rdf:rest        ( "rejected" "approved with reservations" );
-        skos:prefLabel  "outcomes for Decision for permits" .
+
 
 sml:hasInterior  rdf:type  owl:ObjectProperty;
         skos:prefLabel  "has interior" .
