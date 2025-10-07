@@ -17,21 +17,21 @@ PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
 
 checks:hasRecipient  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates a relation between a permit request and the Recipient, a prov:Agent, of the request. A Recipient is a legal entity (e.g., authority) or person in charge of receiving the permit application "@en;
-        skos:prefLabel   "has Recipient" .
+        rdfs:label   "has Recipient" .
 
 checks:hasApprover rdf:type owl:ObjectProperty; 
         skos:definition  "Indicates a relation between a permitRequest and the Approver, a prov:Agent, of the Request. An Approver is a legal entity (e.g., competent authority) or person issuing the permit approval. "@en;
-        skos:prefLabel   "has Approver" . 
+        rdfs:label   "has Approver" . 
 
 checks:Allocation  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Objectification;
         skos:definition  "An explicit relation between subject and requirement that shows that the subject needs to fulfill the stated requirement."@en;
-        skos:prefLabel   "Allocation" .
+        rdfs:label   "Allocation" .
 
 checks:isGeometryOf  rdf:type  owl:ObjectProperty;
         owl:inverseOf    geo:hasGeometry;
         skos:definition  "Indicates that a geometry has a location linked to it."@en;
-        skos:prefLabel   "is geometry of" .
+        rdfs:label   "is geometry of" .
 
 :64da32f2ec98ce2e4c41a232
         rdf:type        sh:NodeShape;
@@ -55,47 +55,47 @@ checks:isGeometryOf  rdf:type  owl:ObjectProperty;
         sh:targetClass  checks:Decision .
 
 checks:decisionOutcomeValues a rdfs:Class ; 
-        skos:prefLabel  "outcomes for Decision for permits" .
+        rdfs:label  "outcomes for Decision for permits" .
 
 checks:decisionApproved a checks:decisionOutcomeValues ; 
-        skos:prefLabel "Approved" . 
+        rdfs:label "Approved" . 
 
 checks:decisionApprovedWithReservations a checks:decisionOutcomeValues ; 
-        skos:prefLabel "Approved With Reservations" . 
+        rdfs:label "Approved With Reservations" . 
 
 checks:decisionRejected a checks:decisionOutcomeValues ; 
-        skos:prefLabel "Rejected" .
+        rdfs:label "Rejected" .
 
 
 
 checks:hasParcel  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates the link between location and parcel."@en;
-        skos:prefLabel   "has parcel" .
+        rdfs:label   "has parcel" .
 
 prov:wasAssociatedWith
         rdf:type        owl:ObjectProperty;
-        skos:prefLabel  "was associated with" .
+        rdfs:label  "was associated with" .
 
 sh:NodeShape  rdf:type  owl:Class;
-        skos:prefLabel  "Node Shape" .
+        rdfs:label  "Node Shape" .
 
 checks:role  rdf:type     owl:DatatypeProperty;
         skos:definition  "Indicates in what capacity someone/something is linked to a project, permit, ..."@en;
-        skos:prefLabel   "role" .
+        rdfs:label   "role" .
 
 checks:name  rdf:type     owl:DatatypeProperty;
         skos:definition  "Provides the name/ title for concepts."@en;
-        skos:prefLabel   "name" .
+        rdfs:label   "name" .
 
 checks:Parcel  rdf:type   owl:Class;
         skos:definition  "Any quantity of land capable of being described with such definiteness that its locations and boundaries may be established."@en;
-        skos:prefLabel   "Parcel" .
+        rdfs:label   "Parcel" .
 
 checks:decisionOutcome
         rdf:type         owl:DatatypeProperty;
         rdfs:range       xsd:enumeration;
         skos:definition  "Provides a list of possible decision outcomes which impact the permit request."@en;
-        skos:prefLabel   "decision outcome" .
+        rdfs:label   "decision outcome" .
 
 :64eccb68d8a9bc575cd0c914
         rdf:type        sh:NodeShape;
@@ -106,7 +106,7 @@ checks:decisionOutcome
                           sh:path   sml:isDescribedBy
                         ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
@@ -131,23 +131,23 @@ checks:decisionOutcome
         sh:targetClass  checks:Allocation .
 
 sml:hasPart  rdf:type   owl:ObjectProperty;
-        skos:prefLabel  "has part" .
+        rdfs:label  "has part" .
 
 sml:State  rdf:type      owl:Class;
         rdfs:subClassOf  sml:ConcreteConcept;
-        skos:prefLabel   "State" .
+        rdfs:label   "State" .
 
 sml:PhysicalObject  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Object;
-        skos:prefLabel   "Physical Object" .
+        rdfs:label   "Physical Object" .
 
 sml:AbstractConcept  rdf:type  owl:Class;
         rdfs:subClassOf  sml:TopConcept;
-        skos:prefLabel   "Abstract Concept" .
+        rdfs:label   "Abstract Concept" .
 
 sml:EnumerationType  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Type;
-        skos:prefLabel   "Enumeration Type" .
+        rdfs:label   "Enumeration Type" .
 
 :64da327fec98ce2e4c41a229
         rdf:type        sh:NodeShape;
@@ -183,80 +183,80 @@ sml:EnumerationType  rdf:type  owl:Class;
         sh:targetClass  checks:Permit .
 
 sml:TopConcept  rdf:type  owl:Class;
-        skos:prefLabel  "Top Concept" .
+        rdfs:label  "Top Concept" .
 
 sml:QualityValue  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Objectification;
-        skos:prefLabel   "Quality Value" .
+        rdfs:label   "Quality Value" .
 
 sml:RelationReference
         rdf:type         owl:Class;
         rdfs:subClassOf  sml:Objectification;
-        skos:prefLabel   "Relation Reference" .
+        rdfs:label   "Relation Reference" .
 
 checks:isRequestForPermit
         rdf:type         owl:ObjectProperty;
         skos:definition  "Indicates the relation between a request and the specific permit it was requesting."@en;
-        skos:prefLabel   "is request for permit" .
+        rdfs:label   "is request for permit" .
 
 sml:InformationObject
         rdf:type         owl:Class;
         rdfs:subClassOf  sml:Object;
-        skos:prefLabel   "Information Object" .
+        rdfs:label   "Information Object" .
 
 checks:Permit  rdf:type   owl:Class;
         rdfs:subClassOf  sml:InformationObject;
         skos:definition  "A permit is a written permission or authorisation delivered by a competent authority, entity, or person, that is legally delegated to allow someone to do something or to go somewhere."@en;
-        skos:prefLabel   "Permit" .
+        rdfs:label   "Permit" .
 
 checks:isParcelFor  rdf:type  owl:ObjectProperty;
         owl:inverseOf    checks:hasParcel;
         skos:definition  "Indicates that a parcel is located at a certain location."@en;
-        skos:prefLabel   "is parcel for" .
+        rdfs:label   "is parcel for" .
 
 
 
 sml:hasInterior  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "has interior" .
+        rdfs:label  "has interior" .
 
 checks:isVerifiedIn  rdf:type  owl:ObjectProperty;
         skos:definition  "Is an association that indicates that the representer object represents the represented object."@en;
-        skos:prefLabel   "is verified in" .
+        rdfs:label   "is verified in" .
 
 prov:Location  rdf:type  owl:Class;
-        skos:prefLabel  "Location" .
+        rdfs:label  "Location" .
 
 sml:Representation  rdf:type  owl:Class;
         rdfs:subClassOf  sml:InformationObject;
-        skos:prefLabel   "Representation" .
+        rdfs:label   "Representation" .
 
 sml:Entity  rdf:type     owl:Class;
         rdfs:subClassOf  sml:ConcreteConcept;
-        skos:prefLabel   "Entitiy" .
+        rdfs:label   "Entitiy" .
 
 checks:isExpressedAs  rdf:type  owl:ObjectProperty;
         skos:definition  "Is a relation that determines how an object is represented similar to a target object"@en;
-        skos:prefLabel   "is expressed as" .
+        rdfs:label   "is expressed as" .
 
 checks:logicalOperator
         rdf:type         owl:DatatypeProperty;
         rdfs:range       xsd:enumeration;
         skos:definition  "Provides the possibility to indicate if certain conditions are complementary (AND) or supplementary (OR)."@en;
-        skos:prefLabel   "logical operator" .
+        rdfs:label   "logical operator" .
 
 checks:Document  rdf:type  owl:Class;
         rdfs:subClassOf  sml:InformationObject;
         skos:definition  "A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record or acts as a reference."@en;
-        skos:prefLabel   "Document" .
+        rdfs:label   "Document" .
 
 checks:hasPermitRequest
         rdf:type         owl:ObjectProperty;
         skos:definition  "Indicates the link from a project to a / multiple permit requests."@en;
-        skos:prefLabel   "has permit request" .
+        rdfs:label   "has permit request" .
 
 sml:isDescribedBy  rdf:type  owl:ObjectProperty;
         skos:definition  "Relation that is used to link various concepts to a resource. Many concepts require to be linked to certain proof documents / descriptions. This relation is set on Top Concept level."@en;
-        skos:prefLabel   "is described by" .
+        rdfs:label   "is described by" .
 
 :64d5f40dec98ce2e4c41a100
         rdf:type        sh:NodeShape;
@@ -268,46 +268,46 @@ sml:isDescribedBy  rdf:type  owl:ObjectProperty;
                         ];
         sh:property     [ sh:path  checks:name ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:targetClass  prov:Agent .
 
 vcard:hasAddress  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "has address" .
+        rdfs:label  "has address" .
 
 sml:triggers  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "triggers" .
+        rdfs:label  "triggers" .
 
 checks:hasApplicant  rdf:type  owl:ObjectProperty;
         skos:definition  "The Permit request was applied for by an agent."@en;
-        skos:prefLabel   "is submitted by" .
+        rdfs:label   "is submitted by" .
 
 sml:Activity  rdf:type   owl:Class;
         rdfs:subClassOf  sml:Entity;
-        skos:prefLabel   "Activity" .
+        rdfs:label   "Activity" .
 
 sml:hasTemporalEntity
         rdf:type        owl:ObjectProperty;
-        skos:prefLabel  "has temporal entity" .
+        rdfs:label  "has temporal entity" .
 
 sml:Object  rdf:type     owl:Class;
         rdfs:subClassOf  sml:Entity;
-        skos:prefLabel   "Object" .
+        rdfs:label   "Object" .
 
 prov:atLocation  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "at location" .
+        rdfs:label  "at location" .
 
 sml:transforms  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "transforms" .
+        rdfs:label  "transforms" .
 
 prov:Agent  rdf:type     owl:Class;
         rdfs:subClassOf  <http://w3id.org/gaia-x/participant#Participant>;
-        skos:prefLabel   "Agent" .
+        rdfs:label   "Agent" .
 
 checks:shallBeCompliantWith
         rdf:type         owl:ObjectProperty;
         skos:definition  "Is a conceptual requirement for compliancy to a criterion that indicates that a member of the class shall be conformant to a qualitative requirement. Typically an item, story or document of a kind that should be conform to the content of a document."@en;
-        skos:prefLabel   "shall be compliant with" .
+        rdfs:label   "shall be compliant with" .
 
 :6606a7ae965733652c7f6783
         rdf:type        sh:NodeShape;
@@ -315,7 +315,7 @@ checks:shallBeCompliantWith
                           sh:path   sml:isDescribedBy
                         ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
@@ -326,11 +326,11 @@ checks:shallBeCompliantWith
 #        rdf:type         owl:Class;
 #        rdfs:subClassOf  sml:Requirement;
 #        skos:definition  "A requirement that is not specific for any projects / use case."@en;
-#        skos:prefLabel   "Generic Requirement" .
+#        rdfs:label   "Generic Requirement" .
 
 sml:QuantityValue  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Objectification;
-        skos:prefLabel   "Quantity Value" .
+        rdfs:label   "Quantity Value" .
 
 :64da320fec98ce2e4c41a220
         rdf:type        sh:NodeShape;
@@ -353,30 +353,30 @@ sml:QuantityValue  rdf:type  owl:Class;
 
 prov:qualifiedAssociation
         rdf:type        owl:ObjectProperty;
-        skos:prefLabel  "qualified association" .
+        rdfs:label  "qualified association" .
 
 checks:VerificationMethod
         rdf:type         owl:Class;
         rdfs:subClassOf  sml:Activity;
         skos:definition  "A set of procedures to check if the subject is compliant with requirement."@en;
-        skos:prefLabel   "Verification method" .
+        rdfs:label   "Verification method" .
 
 :       rdf:type     owl:Ontology;
         rdfs:label   "3.1 Top Ontology";
         owl:imports  sh: , rdfs: , owl: .
 
 ids:Resource  rdf:type  owl:Class;
-        skos:prefLabel  "Resource" .
+        rdfs:label  "Resource" .
 
 checks:Verification  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Activity;
         skos:definition  "A Verification is an activity that checks if a subject is compliant with a requirement."@en;
-        skos:prefLabel   "Verification" .
+        rdfs:label   "Verification" .
 
 :661525e1fd34eb2f8e03f5bc
         rdf:type        sh:NodeShape;
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
@@ -392,22 +392,22 @@ checks:Verification  rdf:type  owl:Class;
                           sh:path   sml:isDescribedBy
                         ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
                         ];
         sh:targetClass  sml:TopConcept .
 
-skos:prefLabel  rdf:type  owl:DatatypeProperty;
+rdfs:label  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:string;
-        skos:prefLabel  "pref label" .
+        rdfs:label  "pref label" .
 
 # checks:ProjectRequirement
 #        rdf:type         owl:Class;
 #        rdfs:subClassOf  sml:Requirement;
 #        skos:definition  "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases."@en;
-#        skos:prefLabel   "Project Requirement" .
+#        rdfs:label   "Project Requirement" .
 
 :6615257dfd34eb2f8e03f59a
         rdf:type        sh:NodeShape;
@@ -417,7 +417,7 @@ skos:prefLabel  rdf:type  owl:DatatypeProperty;
                           sh:path      checks:isAddressFor
                         ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
@@ -425,7 +425,7 @@ skos:prefLabel  rdf:type  owl:DatatypeProperty;
         sh:targetClass  vcard:Address .
 
 sh:ValidationReport  rdf:type  owl:Class;
-        skos:prefLabel  "Validation Report" .
+        rdfs:label  "Validation Report" .
 
 :64dde72c4ef5931bfc406a64
         rdf:type        sh:NodeShape;
@@ -436,11 +436,11 @@ sh:ValidationReport  rdf:type  owl:Class;
 
 checks:wasDescribedBy  rdf:type  owl:ObjectProperty;
         skos:definition  "Relation that is used to indicate that a concept was linked to certain resource in the past. this is meant to keep track of different versions of resources, keep history on all links ever made from concept to resource."@en;
-        skos:prefLabel   "was described by" .
+        rdfs:label   "was described by" .
 
 checks:isMadeBy  rdf:type  owl:ObjectProperty;
         skos:definition  "Is an involvement in an occurrence that indicates that the involved object has a role as performer of the occurrence."@en;
-        skos:prefLabel   "is made by" .
+        rdfs:label   "is made by" .
 
 :661525d6fd34eb2f8e03f5b4
         rdf:type        sh:NodeShape;
@@ -450,7 +450,7 @@ checks:isMadeBy  rdf:type  owl:ObjectProperty;
                           sh:path      checks:isParcelFor
                         ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
@@ -458,16 +458,16 @@ checks:isMadeBy  rdf:type  owl:ObjectProperty;
         sh:targetClass  checks:Parcel .
 
 sml:hasBoundary  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "has boundary" .
+        rdfs:label  "has boundary" .
 
 checks:isInputFor  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates that a / multiple verifications where carried out as a foundation for certain decision taken."@en;
-        skos:prefLabel   "is input for" .
+        rdfs:label   "is input for" .
 
 sml:Requirement  rdf:type  owl:Class;
         rdfs:subClassOf  sml:InformationObject;
         skos:definition  "A rule that should hold for something, defined via its attributes or relations"@en;
-        skos:prefLabel   "Requirement" .
+        rdfs:label   "Requirement" .
 
 :65e60b91ebc1577ef9381cbb
         rdf:type        sh:NodeShape;
@@ -501,7 +501,7 @@ sml:Requirement  rdf:type  owl:Class;
         sh:targetClass  checks:PermitRequest .
 
 checks:size  rdf:type    owl:DatatypeProperty;
-        skos:prefLabel  "size" .
+        rdfs:label  "size" .
 
 :64d4a25fec98ce2e4c41a07d
         rdf:type        sh:NodeShape;
@@ -541,81 +541,81 @@ checks:size  rdf:type    owl:DatatypeProperty;
 
 checks:ResultValues 
         rdf:type        rdfs:Class ; 
-        skos:prefLabel  "Compliance values" .
+        rdfs:label  "Compliance values" .
 
 checks:CheckCompliant a checks:ResultValues  ; 
-      skos:prefLabel "Compliant" . 
+      rdfs:label "Compliant" . 
   
 checks:CheckNonCompliant a checks:ResultValues ; 
-      skos:preflabel "Non compliant" .
+      rdfs:label "Non compliant" .
 
 checks:version  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:string;
-        skos:prefLabel  "version" .
+        rdfs:label  "version" .
 
 checks:result  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:enumeration;
-        skos:prefLabel  "result" .
+        rdfs:label  "result" .
 
 sml:TemporalEntity  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Representation;
-        skos:prefLabel   "Temporal Entity" .
+        rdfs:label   "Temporal Entity" .
 
 prov:agent  rdf:type    owl:ObjectProperty;
-        skos:prefLabel  "agent" .
+        rdfs:label  "agent" .
 
 checks:isDecisionFor  rdf:type  owl:ObjectProperty;
         skos:definition  "Is a relation indicating the choice or judgment made based on available resources."@en;
-        skos:prefLabel   "is decision for" .
+        rdfs:label   "is decision for" .
 
 checks:date  rdf:type     owl:DatatypeProperty;
         rdfs:range       xsd:date;
         skos:definition  "This attribute describes a timing linked to concepts. It may indicate a date when something was submitted, received, checked, has expired, ..."@en;
-        skos:prefLabel   "date " .
+        rdfs:label   "date " .
 
 checks:isCollectedIn  rdf:type  owl:ObjectProperty;
         skos:definition  "Is a relation between a single thing and a plurality that indicates that the collected object is element of the collection of objects, under the constraint that the element may not be the same object as the plural object. In other words a collection cannot be an element of itself."@en;
-        skos:prefLabel   "is collected in" .
+        rdfs:label   "is collected in" .
 
 sml:Event  rdf:type      owl:Class;
         rdfs:subClassOf  sml:ConcreteConcept;
-        skos:prefLabel   "Event" .
+        rdfs:label   "Event" .
 
 sml:executes  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "executes" .
+        rdfs:label  "executes" .
 
 sml:GeometricEntity  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Representation;
-        skos:prefLabel   "Geometric Entity" .
+        rdfs:label   "Geometric Entity" .
 
 checks:Decision  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Activity;
         skos:definition  "A decision is an activity of making a choice or judgement based on the available resources."@en;
-        skos:prefLabel   "Decision" .
+        rdfs:label   "Decision" .
 
 checks:hasVerificationMethod
         rdf:type         owl:ObjectProperty;
         skos:definition  "Is an association that indicates a method to verify if the verification object has a method linked to it."@en;
-        skos:prefLabel   "has verification method" .
+        rdfs:label   "has verification method" .
 
 checks:isAllocationfor
         rdf:type         owl:ObjectProperty;
         skos:definition  "Is an association to ensure that the involved object has an allocation to the corresponding requirement."@en;
-        skos:prefLabel   "is allocation for" .
+        rdfs:label   "is allocation for" .
 
 checks:isDerivedIn  rdf:type  owl:ObjectProperty;
         skos:definition  "Is an association that indicates that the object has been derived in the source object."@en;
-        skos:prefLabel   "is derived in" .
+        rdfs:label   "is derived in" .
 
 rdfs:comment  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:string;
-        skos:prefLabel  "comment" .
+        rdfs:label  "comment" .
 
 checks:applicationDate
         rdf:type            owl:DatatypeProperty;
         rdfs:range          xsd:date;
         rdfs:subPropertyOf  checks:date;
-        skos:prefLabel      "application date" .
+        rdfs:label      "application date" .
 
 :64ddde554ef5931bfc406a34
         rdf:type        sh:NodeShape;
@@ -632,7 +632,7 @@ checks:applicationDate
                           sh:path      checks:hasParcel
                         ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
@@ -647,7 +647,7 @@ checks:applicationDate
                           sh:path      checks:isGeometryOf
                         ];
         sh:property     [ sh:datatype  xsd:string;
-                          sh:path      skos:prefLabel
+                          sh:path      rdfs:label
                         ];
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:comment
@@ -657,55 +657,55 @@ checks:applicationDate
 
 
 sml:hasState  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "has state" .
+        rdfs:label  "has state" .
 
 checks:issueDate  rdf:type   owl:DatatypeProperty;
         rdfs:range          xsd:date;
         rdfs:subPropertyOf  checks:date;
-        skos:prefLabel      "issue date" .
+        rdfs:label      "issue date" .
 
 sml:begins  rdf:type    owl:ObjectProperty;
-        skos:prefLabel  "begins" .
+        rdfs:label  "begins" .
 
 dct:subject  rdf:type   owl:ObjectProperty;
-        skos:prefLabel  "subject" .
+        rdfs:label  "subject" .
 
 checks:MachineReadableRule
         rdf:type         owl:Class;
         rdfs:subClassOf  sml:AbstractConcept;
         skos:definition  "A set of instructions or guidelines that are structured in a format that can be easily interpreted and processed by a computer or software program. The term \"rule\" refers here to checking rules specifically and is not to be confused with inferencing rules for deriving knowledge."@en;
-        skos:prefLabel   "Machine readable rule" .
+        rdfs:label   "Machine readable rule" .
 
 checks:hasAsOutput  rdf:type  owl:ObjectProperty;
         skos:definition  "Is an involvement in an occurrence that indicates that the involved object has been operated upon by the occurrence."@en;
-        skos:prefLabel   "has as output" .
+        rdfs:label   "has as output" .
 
 sml:Type  rdf:type       owl:Class;
         rdfs:subClassOf  sml:AbstractConcept;
-        skos:prefLabel   "Type" .
+        rdfs:label   "Type" .
 
 prov:actedOnBehalfOf  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "acted on behalf of" .
+        rdfs:label  "acted on behalf of" .
 
 sml:hasRequirement  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "has requirement" .
+        rdfs:label  "has requirement" .
 
 geo:Geometry  rdf:type  owl:Class;
-        skos:prefLabel  "Geometry" .
+        rdfs:label  "Geometry" .
 
 geo:hasGeometry  rdf:type  owl:ObjectProperty;
-        skos:prefLabel  "has geometry" .
+        rdfs:label  "has geometry" .
 
 checks:isPermitForRequest
         rdf:type         owl:ObjectProperty;
         owl:inverseOf    checks:hasPermitRequest;
         skos:definition  "Indicates the relation between a permit and the related request for it"@en;
-        skos:prefLabel   "is permit for request" .
+        rdfs:label   "is permit for request" .
 
 checks:hasUsecase
       rdf:type          owl:ObjectProperty; 
       skos:definition   "Indicates which use case is applicable for a specific project"@en ; 
-      skos:prefLabel    "has usecase" . 
+      rdfs:label    "has usecase" . 
 
 
 :64da30f3ec98ce2e4c41a20b
@@ -729,34 +729,34 @@ checks:hasUsecase
         sh:targetClass  checks:Project .
 
 checks:UsecaseValues a rdfs:Class ; 
-    skos:prefLabel "Values for the different use cases" . 
+    rdfs:label "Values for the different use cases" . 
 
 checks:Residential a checks:UsecaseValues ; 
-skos:prefLabel "Residential" . 
+rdfs:label "Residential" . 
 
 checks:Office a checks:UsecaseValues ; 
-skos:prefLabel "Office" . 
+rdfs:label "Office" . 
 checks:CommercialBuilding a checks:UsecaseValues ;
 skos:editorialNote "A building open to the general public with a commercial purpose, such as shops." 
-skos:prefLabel "Commercial building" . 
+rdfs:label "Commercial building" . 
 
 
 checks:PublicServices a checks:UsecaseValues ;
 skos:note "A building open to the general public with a non-commercial purpose, such as hospitals or schools. " 
-skos:prefLabel "Public services" . 
+rdfs:label "Public services" . 
 
 checks:Industrial a checks:UsecaseValues ; 
-skos:prefLabel "Industrial" . 
+rdfs:label "Industrial" . 
 
 
 checks:expirationDate  rdf:type  owl:DatatypeProperty;
         rdfs:range          xsd:date;
         rdfs:subPropertyOf  checks:date;
-        skos:prefLabel      "expiration date" .
+        rdfs:label      "expiration date" .
 
 sml:ConcreteConcept  rdf:type  owl:Class;
         rdfs:subClassOf  sml:TopConcept;
-        skos:prefLabel   "Concrete Concept" .
+        rdfs:label   "Concrete Concept" .
 
 :65d3dc1c13b8ea5093980dfc
         rdf:type        sh:NodeShape;
@@ -772,55 +772,55 @@ checks:PermitRequest  rdf:type  owl:Class;
         rdfs:subClassOf  sml:InformationObject;
         skos:definition  """A permit request is a written appeal or application made to obtain official approval for something from a designated authority.
 It is used as the central hub in the permitting process, with, if issued, a checks:Permit as a result."""@en;
-        skos:prefLabel   "Permit request" .
+        rdfs:label   "Permit request" .
 
 prov:Association  rdf:type  owl:Class;
         rdfs:subClassOf  sml:InformationObject;
-        skos:prefLabel   "Association" .
+        rdfs:label   "Association" .
 
 checks:isPermitFor  rdf:type  owl:ObjectProperty;
         owl:inverseOf    checks:isRequestForPermit;
         skos:definition  "Indicates the link between a permit and corresponding permit request that are / were made to obtain certain permit"@en;
-        skos:prefLabel   "is permit for" .
+        rdfs:label   "is permit for" .
 
 checks:isAddressFor  rdf:type  owl:ObjectProperty;
         owl:inverseOf    vcard:hasAddress;
         skos:definition  "Relation to check if the address is linked to a location."@en;
-        skos:prefLabel   "is address for" .
+        rdfs:label   "is address for" .
 
 checks:Project  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Entity;
         skos:definition  "A temporary process undertaken to solve a well-defined goal or objective with clearly defined start and end times, a set of clearly defined tasks, and a budget."@en;
-        skos:prefLabel   "Project" .
+        rdfs:label   "Project" .
 
 checks:hasSource  rdf:type  owl:ObjectProperty;
         skos:definition  "Is a relation that indicates the involved object has a origin or source from another object."@en;
-        skos:prefLabel   "has source" .
+        rdfs:label   "has source" .
 
 prov:Organization  rdf:type  owl:Class;
         rdfs:subClassOf  prov:Agent;
-        skos:prefLabel   "Organization" .
+        rdfs:label   "Organization" .
 
 :95414b38-5a62-3cf9-beed-42cbc73f4b9e
         rdf:type        rdf:List;
         rdf:first       "OR";
         rdf:rest        ( "AND" );
-        skos:prefLabel  "Logical operator list for requirements" .
+        rdfs:label  "Logical operator list for requirements" .
 
 sml:ConceptType  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Type;
-        skos:prefLabel   "Concept Type" .
+        rdfs:label   "Concept Type" .
 
 sml:ends  rdf:type      owl:ObjectProperty;
-        skos:prefLabel  "ends" .
+        rdfs:label  "ends" .
 
 vcard:Address  rdf:type  owl:Class;
-        skos:prefLabel  "Address" .
+        rdfs:label  "Address" .
 
 prov:Person  rdf:type    owl:Class;
         rdfs:subClassOf  prov:Agent;
-        skos:prefLabel   "Person" .
+        rdfs:label   "Person" .
 
 sml:Objectification  rdf:type  owl:Class;
         rdfs:subClassOf  sml:AbstractConcept;
-        skos:prefLabel   "Objectification" .
+        rdfs:label   "Objectification" .
