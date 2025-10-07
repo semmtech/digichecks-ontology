@@ -101,7 +101,7 @@ checks:decisionOutcome
 
 :64b000d827b0605cddb2d64c
         rdf:type        sh:NodeShape;
-        sh:property     [ sh:class     sml:TopConcept;
+        sh:property     [ sh:class     sml:ConcreteConcept;
                           sh:maxCount  1;
                           sh:minCount  1;
                           sh:path      checks:isAllocationfor
