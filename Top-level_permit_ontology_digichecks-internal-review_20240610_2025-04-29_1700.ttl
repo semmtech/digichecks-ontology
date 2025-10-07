@@ -140,11 +140,7 @@ sml:EnumerationType  rdf:type  owl:Class;
         sh:property     [ sh:class  checks:Permit;
                           sh:path   sml:hasPart
                         ];
-        sh:property     [ sh:datatype  xsd:date;
-                          sh:maxCount  1;
-                          sh:minCount  1;
-                          sh:path      checks:applicationDate
-                        ];
+
         sh:property     [ sh:class     ids:Resource;
                           sh:minCount  1;
                           sh:path      sml:isDescribedBy
@@ -477,6 +473,11 @@ sml:Requirement  rdf:type  owl:Class;
                           sh:maxCount  1;
                           sh:path      checks:isRequestForPermit
                         ];
+        sh:property     [ sh:datatype  xsd:date;
+                          sh:maxCount  1;
+                          sh:minCount  1;
+                          sh:path      checks:applicationDate
+                        ];
         sh:targetClass  checks:PermitRequest .
 
 checks:size  rdf:type    owl:DatatypeProperty;
@@ -527,7 +528,6 @@ checks:CheckCompliant a checks:ResultValues  ;
   
 checks:CheckNonCompliant a checks:ResultValues ; 
       skos:preflabel "Non compliant" .
-
 
 checks:version  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:string;
