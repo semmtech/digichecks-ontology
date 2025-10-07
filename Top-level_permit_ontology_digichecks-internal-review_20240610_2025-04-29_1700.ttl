@@ -718,7 +718,30 @@ checks:isPermitForRequest
                           sh:path   prov:atLocation
                         ];
         sh:property     [ sh:path  checks:size ];
+        sh:property   [ sh:path  checks:usecase 
+                        sh:class checks:UsecaseValues ] ; 
         sh:targetClass  checks:Project .
+
+checks:UsecaseValues a rdfs:Class ; 
+    skos:prefLabel "Values for the different use cases" . 
+
+checks:Residential a checks:UsecaseValues ; 
+skos:prefLabel "Residential" . 
+
+checks:Office a checks:UsecaseValues ; 
+skos:prefLabel "Office" . 
+checks:CommercialBuilding a checks:UsecaseValues ;
+skos:editorialNote "A building open to the general public with a commercial purpose, such as shops." 
+skos:prefLabel "Commercial building" . 
+
+
+checks:PublicServices a checks:UsecaseValues ;
+skos:note "A building open to the general public with a non-commercial purpose, such as hospitals or schools. " 
+skos:prefLabel "Public services" . 
+
+checks:Industrial a checks:UsecaseValues ; 
+skos:prefLabel "Industrial" . 
+
 
 checks:expirationDate  rdf:type  owl:DatatypeProperty;
         rdfs:range          xsd:date;
