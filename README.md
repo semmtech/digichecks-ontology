@@ -43,8 +43,9 @@ This ontology is licensed under [CC-BY](LICENSE).
 ## How to Cite
 
 If you use this ontology, please cite as:
-
-> To be announced.
+```
+Coen van Gruijthuijsen, Jeroen Werbrouck, Ruben Verstraeten (2025). The DigiChecks Ontology: a Top-Level Ontology for Managing the Building Permit Process, Digital Building Permit Conference
+```
 
 ## Contact
 
