@@ -37,10 +37,10 @@
     "id" : "73",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "77",
     "type" : "owl:Class"
   }, {
     "id" : "80",
@@ -172,7 +172,7 @@
     "id" : "113",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "130",
+    "id" : "129",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "193",
@@ -364,7 +364,7 @@
     "id" : "87",
     "type" : "owl:Class"
   }, {
-    "id" : "307",
+    "id" : "308",
     "type" : "owl:Class"
   }, {
     "id" : "352",
@@ -655,12 +655,12 @@
       "property" : [ {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494159",
+        "value" : "_:genid2147486124",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494156",
+        "value" : "_:genid2147486123",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -683,24 +683,6 @@
     "attributes" : [ "external" ],
     "id" : "73"
   }, {
-    "iri" : "http://www.w3.org/ns/shacl#JSTarget",
-    "baseIri" : "http://www.w3.org/ns/shacl",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/shacl#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "JSTarget"
-    },
-    "attributes" : [ "external" ],
-    "id" : "77",
-    "superClasses" : [ "78", "79" ]
-  }, {
     "iri" : "http://www.w3.org/ns/shacl#SPARQLConstructExecutable",
     "baseIri" : "http://www.w3.org/ns/shacl",
     "instances" : 0,
@@ -719,6 +701,24 @@
     "attributes" : [ "external" ],
     "id" : "57",
     "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/shacl#JSTarget",
+    "baseIri" : "http://www.w3.org/ns/shacl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/shacl#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JSTarget"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "78", "79" ]
   }, {
     "iri" : "http://www.w3.org/2006/vcard/ns#Address",
     "baseIri" : "http://www.w3.org/2006/vcard/ns",
@@ -835,20 +835,6 @@
         "IRI-based" : "Literal"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "BlankNodeOrIRI"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#BlankNode",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -875,6 +861,20 @@
       },
       "labels" : {
         "IRI-based" : "IRIOrLiteral"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BlankNodeOrIRI"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#BlankNodeOrLiteral",
@@ -1491,7 +1491,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "130",
+    "id" : "129",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1641,22 +1641,22 @@
       "property" : [ {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494164",
+        "value" : "_:genid2147486133",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494162",
+        "value" : "_:genid2147486134",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494161",
+        "value" : "_:genid2147486132",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494158",
+        "value" : "_:genid2147486135",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1815,12 +1815,12 @@
   }, {
     "instances" : 0,
     "union" : [ "286", "287" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "285"
   }, {
     "instances" : 0,
     "union" : [ "288", "289" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "237"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -1994,7 +1994,7 @@
     "label" : {
       "IRI-based" : "PropertyShape"
     },
-    "subClasses" : [ "307" ],
+    "subClasses" : [ "308" ],
     "attributes" : [ "external" ],
     "id" : "1",
     "superClasses" : [ "2" ]
@@ -2054,12 +2054,12 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494170",
+          "value" : "_:genid2147486116",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494174",
+          "value" : "_:genid2147486126",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2097,17 +2097,17 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494150",
+          "value" : "_:genid2147486128",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494184",
+          "value" : "_:genid2147486129",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494183",
+          "value" : "_:genid2147486096",
           "type" : "label"
         } ]
       },
@@ -2145,7 +2145,7 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494143",
+          "value" : "_:genid2147486101",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2197,22 +2197,22 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494145",
+          "value" : "_:genid2147486105",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494147",
+          "value" : "_:genid2147486104",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494146",
+          "value" : "_:genid2147486102",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494144",
+          "value" : "_:genid2147486103",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2250,7 +2250,7 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494171",
+          "value" : "_:genid2147486118",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2326,12 +2326,12 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494191",
+          "value" : "_:genid2147486107",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494190",
+          "value" : "_:genid2147486094",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2351,16 +2351,16 @@
         "IRI-based" : "TechnicalEntity"
       }
     }, {
-      "iri" : "https://data.digichecks.eu/def/64b000d827b0605cddb2d64c",
-      "baseIri" : "https://data.digichecks.eu/def",
-      "labels" : {
-        "IRI-based" : "64b000d827b0605cddb2d64c"
-      }
-    }, {
       "iri" : "https://data.digichecks.eu/def/64b000ca27b0605cddb2d646",
       "baseIri" : "https://data.digichecks.eu/def",
       "labels" : {
         "IRI-based" : "64b000ca27b0605cddb2d646"
+      }
+    }, {
+      "iri" : "https://data.digichecks.eu/def/64b000d827b0605cddb2d64c",
+      "baseIri" : "https://data.digichecks.eu/def",
+      "labels" : {
+        "IRI-based" : "64b000d827b0605cddb2d64c"
       }
     }, {
       "iri" : "https://w3id.org/sml/def#RelationReference",
@@ -2375,7 +2375,7 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494185",
+          "value" : "_:genid2147486106",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2419,17 +2419,17 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494167",
+          "value" : "_:genid2147486112",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494166",
+          "value" : "_:genid2147486113",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494165",
+          "value" : "_:genid2147486114",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2461,7 +2461,7 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494177",
+          "value" : "_:genid2147486115",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2511,12 +2511,12 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494176",
+          "value" : "_:genid2147486136",
           "type" : "label"
         }, {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494178",
+          "value" : "_:genid2147486127",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2560,7 +2560,7 @@
         "property" : [ {
           "identifier" : "property",
           "language" : "undefined",
-          "value" : "_:genid2147494180",
+          "value" : "_:genid2147486125",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2613,12 +2613,12 @@
       "property" : [ {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494189",
+        "value" : "_:genid2147486098",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494188",
+        "value" : "_:genid2147486093",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3174,7 +3174,7 @@
         "IRI-based" : "ClassConstraintComponent-class"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#NotConstraintComponent-not",
+      "iri" : "http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent-minInclusive",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -3185,7 +3185,7 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "NotConstraintComponent-not"
+        "IRI-based" : "MinInclusiveConstraintComponent-minInclusive"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#XoneConstraintComponent-xone",
@@ -3202,7 +3202,7 @@
         "IRI-based" : "XoneConstraintComponent-xone"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent-minInclusive",
+      "iri" : "http://www.w3.org/ns/shacl#NotConstraintComponent-not",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -3213,7 +3213,7 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "MinInclusiveConstraintComponent-minInclusive"
+        "IRI-based" : "NotConstraintComponent-not"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#ClosedConstraintComponent-ignoredProperties",
@@ -3258,20 +3258,6 @@
         "IRI-based" : "MaxInclusiveConstraintComponent-maxInclusive"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#NodeKindConstraintComponent-nodeKind",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "NodeKindConstraintComponent-nodeKind"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#LessThanConstraintComponent-lessThan",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -3284,6 +3270,20 @@
       },
       "labels" : {
         "IRI-based" : "LessThanConstraintComponent-lessThan"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#NodeKindConstraintComponent-nodeKind",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NodeKindConstraintComponent-nodeKind"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedMinCount",
@@ -3314,20 +3314,6 @@
         "IRI-based" : "PropertyConstraintComponent-property"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#QualifiedMaxCountConstraintComponent-qualifiedValueShape",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -3340,6 +3326,20 @@
       },
       "labels" : {
         "IRI-based" : "QualifiedMaxCountConstraintComponent-qualifiedValueShape"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#MaxExclusiveConstraintComponent-maxExclusive",
@@ -3356,20 +3356,6 @@
         "IRI-based" : "MaxExclusiveConstraintComponent-maxExclusive"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#HasValueConstraintComponent-hasValue",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "HasValueConstraintComponent-hasValue"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#MaxLengthConstraintComponent-maxLength",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -3382,6 +3368,20 @@
       },
       "labels" : {
         "IRI-based" : "MaxLengthConstraintComponent-maxLength"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#HasValueConstraintComponent-hasValue",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HasValueConstraintComponent-hasValue"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#MinCountConstraintComponent-minCount",
@@ -3399,7 +3399,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "307",
+    "id" : "308",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#SymmetricProperty",
@@ -3433,7 +3433,7 @@
       "property" : [ {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494181",
+        "value" : "_:genid2147486130",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3470,27 +3470,27 @@
       "property" : [ {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494192",
+        "value" : "_:genid2147486099",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494163",
+        "value" : "_:genid2147486143",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494148",
+        "value" : "_:genid2147486144",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494142",
+        "value" : "_:genid2147486145",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494152",
+        "value" : "_:genid2147486100",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3619,17 +3619,17 @@
       "property" : [ {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494169",
+        "value" : "_:genid2147486120",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494172",
+        "value" : "_:genid2147486122",
         "type" : "label"
       }, {
         "identifier" : "property",
         "language" : "undefined",
-        "value" : "_:genid2147494157",
+        "value" : "_:genid2147486121",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3810,12 +3810,12 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "undefined",
+        "language" : "en",
         "value" : "A rule that should hold for something, defined via its attributes or relations",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
+        "language" : "undefined",
         "value" : "A rule that should hold for something, defined via its attributes or relations",
         "type" : "label"
       } ],
@@ -4174,17 +4174,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-class",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-class",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-class",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -4202,27 +4202,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
         "type" : "iri"
       }, {
         "identifier" : "example",
@@ -4232,17 +4212,12 @@
       }, {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.1",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
         "type" : "iri"
       }, {
         "identifier" : "example",
@@ -4252,7 +4227,32 @@
       }, {
         "identifier" : "example",
         "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.1",
         "type" : "iri"
       }, {
         "identifier" : "example",
@@ -4574,6 +4574,20 @@
         "IRI-based" : "UniqueLangConstraintComponent"
       }
     }, {
+      "iri" : "http://www.w3.org/ns/shacl#DatatypeConstraintComponent",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DatatypeConstraintComponent"
+      }
+    }, {
       "iri" : "http://www.w3.org/ns/shacl#ClassConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -4600,20 +4614,6 @@
       },
       "labels" : {
         "IRI-based" : "MaxCountConstraintComponent"
-      }
-    }, {
-      "iri" : "http://www.w3.org/ns/shacl#DatatypeConstraintComponent",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "DatatypeConstraintComponent"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#LessThanOrEqualsConstraintComponent",
@@ -4672,20 +4672,6 @@
         "IRI-based" : "NodeConstraintComponent"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#NotConstraintComponent",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "NotConstraintComponent"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#MinLengthConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -4698,6 +4684,20 @@
       },
       "labels" : {
         "IRI-based" : "MinLengthConstraintComponent"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#NotConstraintComponent",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NotConstraintComponent"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent",
@@ -4784,6 +4784,20 @@
         "IRI-based" : "HasValueConstraintComponent"
       }
     }, {
+      "iri" : "http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MinInclusiveConstraintComponent"
+      }
+    }, {
       "iri" : "http://www.w3.org/ns/shacl#PatternConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -4810,20 +4824,6 @@
       },
       "labels" : {
         "IRI-based" : "MaxExclusiveConstraintComponent"
-      }
-    }, {
-      "iri" : "http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MinInclusiveConstraintComponent"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#XoneConstraintComponent",
@@ -4896,20 +4896,6 @@
         "IRI-based" : "MaxLengthConstraintComponent"
       }
     }, {
-      "iri" : "http://www.w3.org/ns/shacl#JSConstraintComponent",
-      "baseIri" : "http://www.w3.org/ns/shacl",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/ns/shacl#",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "JSConstraintComponent"
-      }
-    }, {
       "iri" : "http://www.w3.org/ns/shacl#ExpressionConstraintComponent",
       "baseIri" : "http://www.w3.org/ns/shacl",
       "annotations" : {
@@ -4922,6 +4908,20 @@
       },
       "labels" : {
         "IRI-based" : "ExpressionConstraintComponent"
+      }
+    }, {
+      "iri" : "http://www.w3.org/ns/shacl#JSConstraintComponent",
+      "baseIri" : "http://www.w3.org/ns/shacl",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/ns/shacl#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "JSConstraintComponent"
       }
     }, {
       "iri" : "http://www.w3.org/ns/shacl#InConstraintComponent",
@@ -5123,10 +5123,10 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "128",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "129",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "131",
     "type" : "rdfs:SubClassOf"
@@ -5407,7 +5407,7 @@
     "id" : "305",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "308",
+    "id" : "307",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "309",
@@ -5959,12 +5959,12 @@
       "editorialNote" : [ {
         "identifier" : "editorialNote",
         "language" : "en",
-        "value" : "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair).",
+        "value" : "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes.",
         "type" : "label"
       }, {
         "identifier" : "editorialNote",
         "language" : "en",
-        "value" : "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes.",
+        "value" : "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair).",
         "type" : "label"
       } ],
       "inverse" : [ {
@@ -6076,7 +6076,7 @@
       "IRI-based" : "jsLibraryURL"
     },
     "domain" : "54",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "53"
   }, {
     "range" : "37",
@@ -6109,7 +6109,7 @@
       "IRI-based" : "qualifiedMaxCount"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "63"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#targetObjectsOf",
@@ -6145,7 +6145,7 @@
       "IRI-based" : "maxQualifiedCardinality"
     },
     "domain" : "52",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "66"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#or",
@@ -6294,7 +6294,7 @@
       "IRI-based" : "minCardinality"
     },
     "domain" : "52",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "93"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#sourceShape",
@@ -6366,7 +6366,7 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "101"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#domain",
@@ -6422,7 +6422,7 @@
       "IRI-based" : "closed"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "112"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#bottomDataProperty",
@@ -6440,7 +6440,7 @@
       "IRI-based" : "bottomDataProperty"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "117"
   }, {
     "iri" : "https://data.digichecks.eu/def/hasUsecase",
@@ -6512,6 +6512,24 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "127"
   }, {
+    "iri" : "http://www.w3.org/ns/shacl#ask",
+    "baseIri" : "http://www.w3.org/ns/shacl",
+    "range" : "129",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/shacl#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ask"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "128"
+  }, {
     "iri" : "http://www.w3.org/ns/shacl#targetSubjectsOf",
     "baseIri" : "http://www.w3.org/ns/shacl",
     "range" : "21",
@@ -6528,25 +6546,7 @@
     },
     "domain" : "2",
     "attributes" : [ "object", "external" ],
-    "id" : "128"
-  }, {
-    "iri" : "http://www.w3.org/ns/shacl#ask",
-    "baseIri" : "http://www.w3.org/ns/shacl",
-    "range" : "130",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/shacl#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ask"
-    },
-    "domain" : "31",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "129"
+    "id" : "130"
   }, {
     "range" : "32",
     "domain" : "132",
@@ -6603,7 +6603,7 @@
       "IRI-based" : "annotationVarName"
     },
     "domain" : "68",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "146"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#jsFunctionName",
@@ -6621,7 +6621,7 @@
       "IRI-based" : "jsFunctionName"
     },
     "domain" : "78",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "148"
   }, {
     "iri" : "https://data.digichecks.eu/def/hasParcel",
@@ -6657,7 +6657,7 @@
       "IRI-based" : "qualifiedValueShapesDisjoint"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "151"
   }, {
     "range" : "32",
@@ -6748,7 +6748,7 @@
       "IRI-based" : "qualifiedCardinality"
     },
     "domain" : "52",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "171"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#hasSelf",
@@ -6807,7 +6807,7 @@
       "IRI-based" : "namespace"
     },
     "domain" : "144",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "176"
   }, {
     "range" : "21",
@@ -6883,7 +6883,7 @@
       "IRI-based" : "prefix"
     },
     "domain" : "144",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "195"
   }, {
     "range" : "21",
@@ -7082,7 +7082,7 @@
       "IRI-based" : "cardinality"
     },
     "domain" : "52",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "217"
   }, {
     "iri" : "https://data.digichecks.eu/def/logicalOperator",
@@ -7219,12 +7219,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/2000/01/rdf-schema#",
+        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
+        "value" : "http://www.w3.org/2000/01/rdf-schema#",
         "type" : "iri"
       } ]
     },
@@ -7233,7 +7233,7 @@
     },
     "domain" : "32",
     "comment" : { },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "236"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#pattern",
@@ -7251,7 +7251,7 @@
       "IRI-based" : "pattern"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "240"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#flags",
@@ -7269,7 +7269,7 @@
       "IRI-based" : "flags"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "241"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#filterShape",
@@ -7345,7 +7345,7 @@
     "id" : "251"
   }, {
     "domain" : "27",
-    "range" : "250",
+    "range" : "73",
     "id" : "253",
     "label" : {
       "IRI-based" : "46",
@@ -7401,7 +7401,7 @@
     "id" : "255"
   }, {
     "domain" : "27",
-    "range" : "123",
+    "range" : "214",
     "id" : "257",
     "label" : {
       "IRI-based" : "43",
@@ -7409,7 +7409,7 @@
     }
   }, {
     "domain" : "27",
-    "range" : "73",
+    "range" : "215",
     "id" : "258",
     "label" : {
       "IRI-based" : "42",
@@ -7417,7 +7417,7 @@
     }
   }, {
     "domain" : "27",
-    "range" : "214",
+    "range" : "190",
     "id" : "259",
     "label" : {
       "IRI-based" : "45",
@@ -7425,7 +7425,7 @@
     }
   }, {
     "domain" : "27",
-    "range" : "215",
+    "range" : "250",
     "id" : "260",
     "label" : {
       "IRI-based" : "44",
@@ -7433,7 +7433,7 @@
     }
   }, {
     "domain" : "27",
-    "range" : "190",
+    "range" : "123",
     "id" : "261",
     "label" : {
       "IRI-based" : "41",
@@ -7551,16 +7551,16 @@
     "baseIri" : "http://www.w3.org/ns/prov",
     "range" : "23",
     "annotations" : {
-      "editorialNote" : [ {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
-        "type" : "label"
-      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
         "value" : "agentOfInfluence",
+        "type" : "label"
+      } ],
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -7646,7 +7646,7 @@
       "IRI-based" : "maxCount"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "296"
   }, {
     "iri" : "https://w3id.org/sml/def#transforms",
@@ -7731,8 +7731,8 @@
       "IRI-based" : "conforms"
     },
     "domain" : "164",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "308"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "307"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#disjointWith",
     "baseIri" : "http://www.w3.org/2002/07/owl",
@@ -8021,7 +8021,7 @@
       "IRI-based" : "deactivated"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "343"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -8031,12 +8031,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/2000/01/rdf-schema#",
+        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
+        "value" : "http://www.w3.org/2000/01/rdf-schema#",
         "type" : "iri"
       } ]
     },
@@ -8045,7 +8045,7 @@
     },
     "domain" : "32",
     "comment" : { },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "344"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#unionOf",
@@ -8185,8 +8185,8 @@
     "label" : {
       "IRI-based" : "optional"
     },
-    "domain" : "307",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "308",
+    "attributes" : [ "datatype", "external" ],
     "id" : "356"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#uniqueLang",
@@ -8204,7 +8204,7 @@
       "IRI-based" : "uniqueLang"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "357"
   }, {
     "iri" : "https://data.digichecks.eu/def/applicationDate",
@@ -8518,7 +8518,7 @@
       "IRI-based" : "qualifiedMinCount"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "376"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#zeroOrMorePath",
@@ -8690,12 +8690,12 @@
       "IRI-based" : "maxLength"
     },
     "domain" : "181",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "386"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#parameter",
     "baseIri" : "http://www.w3.org/ns/shacl",
-    "range" : "307",
+    "range" : "308",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8798,7 +8798,7 @@
       "IRI-based" : "update"
     },
     "domain" : "61",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "393"
   }, {
     "iri" : "http://www.w3.org/ns/shacl#rule",
@@ -8882,7 +8882,7 @@
       "IRI-based" : "minCount"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "397"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#inverseOf",
@@ -9072,7 +9072,7 @@
       "IRI-based" : "construct"
     },
     "domain" : "57",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "410"
   }, {
     "range" : "158",
@@ -9100,7 +9100,7 @@
       "IRI-based" : "minLength"
     },
     "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "413"
   }, {
     "iri" : "https://data.digichecks.eu/def/shallBeCompliantWith",
@@ -9177,7 +9177,7 @@
       "IRI-based" : "shapesGraphWellFormed"
     },
     "domain" : "164",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "418"
   }, {
     "iri" : "https://data.digichecks.eu/def/role",
@@ -9274,7 +9274,7 @@
     "id" : "426"
   }, {
     "range" : "1",
-    "domain" : "307",
+    "domain" : "308",
     "attributes" : [ "object", "anonymous" ],
     "id" : "427"
   }, {
@@ -9356,17 +9356,17 @@
     "baseIri" : "http://www.w3.org/ns/prov",
     "range" : "23",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedAssociationOf",
-        "type" : "label"
-      } ],
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Association",
         "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedAssociationOf",
+        "type" : "label"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -9500,7 +9500,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql#",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -9510,7 +9510,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
+        "value" : "http://www.opengis.net/ont/geosparql#",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -9528,32 +9528,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
         "type" : "iri"
       }, {
         "identifier" : "example",
@@ -9563,12 +9538,7 @@
       }, {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
-        "type" : "iri"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
         "type" : "iri"
       }, {
         "identifier" : "example",
@@ -9578,12 +9548,42 @@
       }, {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
         "type" : "iri"
       }, {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
         "type" : "iri"
       } ]
     },
@@ -9666,12 +9666,12 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedDelegation",
+        "value" : "http://www.w3.org/ns/prov#Delegation",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Delegation",
+        "value" : "http://www.w3.org/ns/prov#qualifiedDelegation",
         "type" : "iri"
       } ]
     },
@@ -9711,7 +9711,7 @@
       "IRI-based" : "maxCardinality"
     },
     "domain" : "52",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "445"
   }, {
     "iri" : "https://w3id.org/sml/def#hasState",
@@ -9759,7 +9759,7 @@
       "IRI-based" : "minQualifiedCardinality"
     },
     "domain" : "52",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "449"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#equivalentProperty",
@@ -9814,7 +9814,7 @@
       "IRI-based" : "select"
     },
     "domain" : "59",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "452"
   }, {
     "iri" : "https://w3id.org/sml/def#begins",
