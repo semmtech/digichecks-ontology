@@ -1,0 +1,2423 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://data.digichecks.eu/def/"
+     xml:base="https://data.digichecks.eu/def/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:shacl="http://www.w3.org/ns/shacl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:data-view="http://www.w3.org/2003/g/data-view#">
+    <owl:Ontology rdf:about="https://data.digichecks.eu/def/">
+        <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2002/07/owl#"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/shacl#"/>
+        <owl:imports rdf:resource="https://w3id.org/sml/def#"/>
+        <terms:description>The DigiChecks Permit Ontology is a top-level ontology for describing permitting processes, requirements, and verification activities. The ontology is based on the Semantic Modelling and Linking (SML, EN 17632) framework and provides core terminology for DigiChecks services to communicate unambiguously about permitting processes.</terms:description>
+        <rdfs:label>Digichecks Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#actedOnBehalfOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#agent -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#atLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#atLocation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAssociation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionOutcome -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/decisionOutcome">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#enumeration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasApplicant -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasApplicant"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasApprover -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasApprover"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasAsOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasAsOutput"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasParcel -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasParcel"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasPermitRequest -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasPermitRequest"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasRecipient -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasRecipient"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasSource"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasUsecase -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasUsecase"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasVerificationMethod -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/hasVerificationMethod"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isAddressFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isAddressFor">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isAllocationfor -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isAllocationfor"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isCollectedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isCollectedIn"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isDecisionFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isDecisionFor"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isDerivedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isDerivedIn"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isExpressedAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isExpressedAs"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isGeometryOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isGeometryOf">
+        <owl:inverseOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isInputFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isInputFor"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isMadeBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isMadeBy"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isParcelFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isParcelFor">
+        <owl:inverseOf rdf:resource="https://data.digichecks.eu/def/hasParcel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isPermitFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isPermitFor">
+        <owl:inverseOf rdf:resource="https://data.digichecks.eu/def/isRequestForPermit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isPermitForRequest -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isPermitForRequest">
+        <owl:inverseOf rdf:resource="https://data.digichecks.eu/def/hasPermitRequest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isRequestForPermit -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isRequestForPermit"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isVerifiedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/isVerifiedIn"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/logicalOperator -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/logicalOperator">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#enumeration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/result -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/result">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#enumeration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/shallBeCompliantWith -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/shallBeCompliantWith"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/wasDescribedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.digichecks.eu/def/wasDescribedBy"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#begins -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#begins"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#ends -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#ends"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#executes -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#executes"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasBoundary -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#hasBoundary"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#hasPart"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#hasRequirement"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasState -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#hasState"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasTemporalEntity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#hasTemporalEntity"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#transforms -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sml/def#transforms"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/applicationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/applicationDate">
+        <rdfs:subPropertyOf rdf:resource="https://data.digichecks.eu/def/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionOutcome -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/decisionOutcome"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/expirationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/expirationDate">
+        <rdfs:subPropertyOf rdf:resource="https://data.digichecks.eu/def/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/issueDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/issueDate">
+        <rdfs:subPropertyOf rdf:resource="https://data.digichecks.eu/def/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.digichecks.eu/def/logicalOperator -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/logicalOperator"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/name"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/result -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/result"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/role -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/role"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/size -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/size"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/version -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.digichecks.eu/def/version">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/gaia-x/participant#Participant -->
+
+
+    <owl:Class rdf:about="http://w3id.org/gaia-x/participant#Participant"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#enumeration -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#enumeration"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Address -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Address"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gaia-x/participant#Participant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Association -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Association">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#nodeShape -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/shacl#nodeShape"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Allocation -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/Allocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Objectification"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Decision -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/Decision">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Document -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/Document">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/MachineReadableRule -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/MachineReadableRule">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#AbstractConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Parcel -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/Parcel"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Permit -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/Permit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/PermitRequest -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/PermitRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Project -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/Project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/ResultValues -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/ResultValues"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/UsecaseValues -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/UsecaseValues"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Verification -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/Verification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/VerificationMethod -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/VerificationMethod">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionOutcomeValues -->
+
+
+    <owl:Class rdf:about="https://data.digichecks.eu/def/decisionOutcomeValues"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#AbstractConcept -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#AbstractConcept"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#Activity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#Activity"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#ConceptType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#ConceptType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sml/def#ConcreteConcept -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#ConcreteConcept">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#TopConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sml/def#Entity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#Entity"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#Event -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#Event">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#ConcreteConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sml/def#GeometricEntity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#GeometricEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Representation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sml/def#InformationObject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#InformationObject"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#Objectification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#Objectification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#AbstractConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sml/def#Representation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#Representation"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#Requirement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#Requirement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sml/def#TemporalEntity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#TemporalEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#Representation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sml/def#TopConcept -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#TopConcept"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#Type -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sml/def#Type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sml/def#AbstractConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/subject">
+        <rdfs:label>subject</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <rdfs:label>Geometry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:label>has geometry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label>comment</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>pref label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Address -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/vcard/ns#Address">
+        <rdfs:label>Address</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:label>Agent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Association -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Association">
+        <rdfs:label>Association</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Location -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Location"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#actedOnBehalfOf -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#actedOnBehalfOf">
+        <rdfs:label>acted on behalf of</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#agent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#agent">
+        <rdfs:label>agent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#atLocation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#atLocation">
+        <rdfs:label>at location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAssociation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation">
+        <rdfs:label>qualified association</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Allocation -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Allocation">
+        <rdfs:label>Allocation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/CheckCompliant -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/CheckCompliant">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/ResultValues"/>
+        <rdfs:label>Compliant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/CheckNonCompliant -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/CheckNonCompliant">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/ResultValues"/>
+        <rdfs:label>Non compliant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/CommercialBuilding -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/CommercialBuilding">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/UsecaseValues"/>
+        <rdfs:label>Commercial building</rdfs:label>
+        <skos:editorialNote>A building open to the general public with a commercial purpose, such as shops.</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Decision -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Decision">
+        <rdfs:label>Decision</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Document -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Document">
+        <rdfs:label>Document</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Industrial -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Industrial">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/UsecaseValues"/>
+        <rdfs:label>Industrial</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/MachineReadableRule -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/MachineReadableRule">
+        <rdfs:label>Machine readable rule</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Office -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Office">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/UsecaseValues"/>
+        <rdfs:label>Office</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Parcel -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Parcel">
+        <rdfs:label>Parcel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Permit -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Permit">
+        <rdfs:label>Permit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/PermitRequest -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/PermitRequest">
+        <rdfs:label>Permit request</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Project -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Project">
+        <rdfs:label>Project</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/PublicServices -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/PublicServices">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/UsecaseValues"/>
+        <rdfs:label>Public services</rdfs:label>
+        <skos:note>A building open to the general public with a non-commercial purpose, such as hospitals or schools. </skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Residential -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Residential">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/UsecaseValues"/>
+        <rdfs:label>Residential</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/ResultValues -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/ResultValues">
+        <rdfs:label>Compliance values</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/UsecaseValues -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/UsecaseValues">
+        <rdfs:label>Values for the different use cases</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/Verification -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/Verification">
+        <rdfs:label>Verification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/VerificationMethod -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/VerificationMethod">
+        <rdfs:label>Verification method</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/VerificationShapeOutcomes -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/VerificationShapeOutcomes">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#nodeShape"/>
+        <shacl:property rdf:nodeID="genid1"/>
+        <shacl:property rdf:nodeID="genid2"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Verification"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid1">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/ResultValues"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/result"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <shacl:or>
+            <rdf:Description/>
+        </shacl:or>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasAsOutput"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/applicationDate -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/applicationDate">
+        <rdfs:label>application date</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/date -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/date">
+        <rdfs:label>date </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionApproved -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/decisionApproved">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/decisionOutcomeValues"/>
+        <rdfs:label>Approved</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionApprovedWithReservations -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/decisionApprovedWithReservations">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/decisionOutcomeValues"/>
+        <rdfs:label>Approved With Reservations</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionOutcome -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/decisionOutcome">
+        <rdfs:label>decision outcome</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionOutcomeValues -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/decisionOutcomeValues">
+        <rdfs:label>outcomes for Decision for permits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/decisionRejected -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/decisionRejected">
+        <rdf:type rdf:resource="https://data.digichecks.eu/def/decisionOutcomeValues"/>
+        <rdfs:label>Rejected</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/expirationDate -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/expirationDate">
+        <rdfs:label>expiration date</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasApplicant -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasApplicant">
+        <rdfs:label>is submitted by</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasApprover -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasApprover">
+        <rdfs:label>has Approver</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasAsOutput -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasAsOutput">
+        <rdfs:label>has as output</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasParcel -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasParcel">
+        <rdfs:label>has parcel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasPermitRequest -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasPermitRequest">
+        <rdfs:label>has permit request</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasRecipient -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasRecipient">
+        <rdfs:label>has Recipient</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasSource -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasSource">
+        <rdfs:label>has source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasUsecase -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasUsecase">
+        <rdfs:label>has usecase</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/hasVerificationMethod -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/hasVerificationMethod">
+        <rdfs:label>has verification method</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isAddressFor -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isAddressFor">
+        <rdfs:label>is address for</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isAllocationfor -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isAllocationfor">
+        <rdfs:label>is allocation for</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isCollectedIn -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isCollectedIn">
+        <rdfs:label>is collected in</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isDecisionFor -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isDecisionFor">
+        <rdfs:label>is decision for</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isDerivedIn -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isDerivedIn">
+        <rdfs:label>is derived in</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isExpressedAs -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isExpressedAs">
+        <rdfs:label>is expressed as</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isGeometryOf -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isGeometryOf">
+        <rdfs:label>is geometry of</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isInputFor -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isInputFor">
+        <rdfs:label>is input for</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isMadeBy -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isMadeBy">
+        <rdfs:label>is made by</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isParcelFor -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isParcelFor">
+        <rdfs:label>is parcel for</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isPermitFor -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isPermitFor">
+        <rdfs:label>is permit for</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isPermitForRequest -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isPermitForRequest">
+        <rdfs:label>is permit for request</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isRequestForPermit -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isRequestForPermit">
+        <rdfs:label>is request for permit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/isVerifiedIn -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/isVerifiedIn">
+        <rdfs:label>is verified in</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/issueDate -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/issueDate">
+        <rdfs:label>issue date</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/logicalOperator -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/logicalOperator">
+        <rdfs:label>logical operator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/name -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/name">
+        <rdfs:label>name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/result -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/result">
+        <rdfs:label>result</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/role -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/role">
+        <rdfs:label>role</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/shallBeCompliantWith -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/shallBeCompliantWith">
+        <rdfs:label>shall be compliant with</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/size -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/size">
+        <rdfs:label>size</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/version -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/version">
+        <rdfs:label>version</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/wasDescribedBy -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/wasDescribedBy">
+        <rdfs:label>was described by</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64b000ca27b0605cddb2d646 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64b000ca27b0605cddb2d646">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid4"/>
+        <shacl:property rdf:nodeID="genid5"/>
+        <shacl:property rdf:nodeID="genid6"/>
+        <shacl:property rdf:nodeID="genid7"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/sml/def#TopConcept"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid4">
+        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#isDescribedBy"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/wasDescribedBy"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64b000d827b0605cddb2d64c -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64b000d827b0605cddb2d64c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid8"/>
+        <shacl:property rdf:nodeID="genid9"/>
+        <shacl:property rdf:nodeID="genid10"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Allocation"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid8">
+        <shacl:class rdf:resource="https://w3id.org/sml/def#ConcreteConcept"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isAllocationfor"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <shacl:class rdf:resource="https://w3id.org/sml/def#Requirement"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#hasRequirement"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Verification"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isVerifiedIn"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64d4a25fec98ce2e4c41a07d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid11"/>
+        <shacl:property rdf:nodeID="genid12"/>
+        <shacl:property rdf:nodeID="genid13"/>
+        <shacl:property rdf:nodeID="genid14"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Verification"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid11">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Decision"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isInputFor"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid13">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/VerificationMethod"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasVerificationMethod"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/date"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64d5f40dec98ce2e4c41a100">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid15"/>
+        <shacl:property rdf:nodeID="genid16"/>
+        <shacl:property rdf:nodeID="genid17"/>
+        <shacl:property rdf:nodeID="genid18"/>
+        <shacl:targetClass rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid15">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid17">
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/name"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid18">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64da30f3ec98ce2e4c41a20b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid19"/>
+        <shacl:property rdf:nodeID="genid20"/>
+        <shacl:property rdf:nodeID="genid21"/>
+        <shacl:property rdf:nodeID="genid22"/>
+        <shacl:property rdf:nodeID="genid23"/>
+        <shacl:property rdf:nodeID="genid24"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Project"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid19">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/PermitRequest"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasPermitRequest"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid20">
+        <shacl:class rdf:resource="https://w3id.org/sml/def#TopConcept"/>
+        <shacl:path rdf:resource="http://purl.org/dc/terms/subject"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid21">
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/size"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid22">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid23">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/UsecaseValues"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasUsecase"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid24">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Association"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64da320fec98ce2e4c41a220 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64da320fec98ce2e4c41a220">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid25"/>
+        <shacl:property rdf:nodeID="genid27"/>
+        <shacl:property rdf:nodeID="genid28"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/sml/def#Requirement"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid25">
+        <shacl:or>
+            <rdf:Description/>
+        </shacl:or>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isExpressedAs"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid27">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Document"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasSource"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
+        <shacl:class rdf:resource="https://w3id.org/sml/def#Requirement"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#hasPart"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64da327fec98ce2e4c41a229 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64da327fec98ce2e4c41a229">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid29"/>
+        <shacl:property rdf:nodeID="genid30"/>
+        <shacl:property rdf:nodeID="genid31"/>
+        <shacl:property rdf:nodeID="genid32"/>
+        <shacl:property rdf:nodeID="genid33"/>
+        <shacl:property rdf:nodeID="genid34"/>
+        <shacl:property rdf:nodeID="genid35"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Permit"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid29">
+        <shacl:class rdf:resource="https://w3id.org/sml/def#Requirement"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#hasRequirement"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid30">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/issueDate"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid31">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/expirationDate"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid32">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/PermitRequest"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isPermitFor"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid33">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Permit"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#hasPart"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid34">
+        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#isDescribedBy"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid35">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/version"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64da32f2ec98ce2e4c41a232">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid36"/>
+        <shacl:property rdf:nodeID="genid37"/>
+        <shacl:property rdf:nodeID="genid38"/>
+        <shacl:property rdf:nodeID="genid39"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Decision"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid36">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/date"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid37">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid38">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/decisionOutcomeValues"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/decisionOutcome"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid39">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/PermitRequest"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isDecisionFor"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64ddde554ef5931bfc406a34 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64ddde554ef5931bfc406a34">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid40"/>
+        <shacl:property rdf:nodeID="genid41"/>
+        <shacl:property rdf:nodeID="genid42"/>
+        <shacl:property rdf:nodeID="genid43"/>
+        <shacl:property rdf:nodeID="genid44"/>
+        <shacl:targetClass rdf:resource="http://www.w3.org/ns/prov#Location"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid40">
+        <shacl:class rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <shacl:path rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid41">
+        <shacl:class rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <shacl:path rdf:resource="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid42">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid43">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Parcel"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasParcel"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid44">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64dde72c4ef5931bfc406a64">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid45"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Document"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid45">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/version"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/64eccb68d8a9bc575cd0c914">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid46"/>
+        <shacl:property rdf:nodeID="genid47"/>
+        <shacl:property rdf:nodeID="genid48"/>
+        <shacl:property rdf:nodeID="genid49"/>
+        <shacl:targetClass rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid46">
+        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/wasDescribedBy"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid47">
+        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#isDescribedBy"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid48">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid49">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/65d3dc1c13b8ea5093980dfc">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid50"/>
+        <shacl:property rdf:nodeID="genid51"/>
+        <shacl:targetClass rdf:resource="http://www.w3.org/ns/prov#Association"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid50">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="http://www.w3.org/ns/prov#agent"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid51">
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/role"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/65e60b91ebc1577ef9381cbb">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid52"/>
+        <shacl:property rdf:nodeID="genid53"/>
+        <shacl:property rdf:nodeID="genid54"/>
+        <shacl:property rdf:nodeID="genid55"/>
+        <shacl:property rdf:nodeID="genid56"/>
+        <shacl:property rdf:nodeID="genid57"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/PermitRequest"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid52">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasRecipient"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid53">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasApprover"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid54">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/hasApplicant"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid55">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Project"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isPermitForRequest"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid56">
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Permit"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isRequestForPermit"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid57">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/applicationDate"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/6606a7ae965733652c7f6783 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/6606a7ae965733652c7f6783">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid58"/>
+        <shacl:property rdf:nodeID="genid59"/>
+        <shacl:property rdf:nodeID="genid60"/>
+        <shacl:targetClass rdf:resource="http://www.w3.org/ns/shacl#ValidationReport"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid58">
+        <shacl:class rdf:resource="https://w3id.org/idsa/core/Resource"/>
+        <shacl:path rdf:resource="https://w3id.org/sml/def#isDescribedBy"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid59">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid60">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/661525befd34eb2f8e03f5a4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid61"/>
+        <shacl:property rdf:nodeID="genid62"/>
+        <shacl:property rdf:nodeID="genid63"/>
+        <shacl:targetClass rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid61">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isGeometryOf"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid62">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid63">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/661525d6fd34eb2f8e03f5b4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid64"/>
+        <shacl:property rdf:nodeID="genid65"/>
+        <shacl:property rdf:nodeID="genid66"/>
+        <shacl:targetClass rdf:resource="https://data.digichecks.eu/def/Parcel"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid64">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isParcelFor"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid65">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid66">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/661525e1fd34eb2f8e03f5bc">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid67"/>
+        <shacl:property rdf:nodeID="genid68"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/idsa/core/Resource"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid67">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid68">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a -->
+
+
+    <owl:NamedIndividual rdf:about="https://data.digichecks.eu/def/6615257dfd34eb2f8e03f59a">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:property rdf:nodeID="genid69"/>
+        <shacl:property rdf:nodeID="genid70"/>
+        <shacl:property rdf:nodeID="genid71"/>
+        <shacl:targetClass rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid69">
+        <shacl:class rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <shacl:path rdf:resource="https://data.digichecks.eu/def/isAddressFor"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid70">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid71">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/idsa/core/Resource -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/idsa/core/Resource"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#ConceptType -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#ConceptType">
+        <rdfs:label>Concept Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#ConcreteConcept -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#ConcreteConcept">
+        <rdfs:label>Concrete Concept</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#Event -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#Event">
+        <rdfs:label>Event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#GeometricEntity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#GeometricEntity">
+        <rdfs:label>Geometric Entity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#Objectification -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#Objectification">
+        <rdfs:label>Objectification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#Requirement -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#Requirement">
+        <rdfs:label>Requirement</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#TemporalEntity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#TemporalEntity">
+        <rdfs:label>Temporal Entity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#TopConcept -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#TopConcept"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#Type -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#Type">
+        <rdfs:label>Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#begins -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#begins">
+        <rdfs:label>begins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#ends -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#ends">
+        <rdfs:label>ends</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#executes -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#executes">
+        <rdfs:label>executes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasBoundary -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#hasBoundary">
+        <rdfs:label>has boundary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasPart -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#hasPart">
+        <rdfs:label>has part</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasRequirement -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#hasRequirement">
+        <rdfs:label>has requirement</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasState -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#hasState">
+        <rdfs:label>has state</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#hasTemporalEntity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#hasTemporalEntity">
+        <rdfs:label>has temporal entity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sml/def#isDescribedBy -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#isDescribedBy"/>
+    
+
+
+    <!-- https://w3id.org/sml/def#transforms -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sml/def#transforms">
+        <rdfs:label>transforms</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <shacl:class rdf:resource="http://www.w3.org/ns/shacl#ValidationReport"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/Document"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="https://data.digichecks.eu/def/MachineReadableRule"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/Allocation">
+        <skos:definition xml:lang="en">An explicit relation between subject and requirement that shows that the subject needs to fulfill the stated requirement.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/Decision">
+        <skos:definition xml:lang="en">A decision is an activity of making a choice or judgement based on the available resources.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/Document">
+        <skos:definition xml:lang="en">A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record or acts as a reference.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/MachineReadableRule">
+        <skos:definition xml:lang="en">A set of instructions or guidelines that are structured in a format that can be easily interpreted and processed by a computer or software program. The term &quot;rule&quot; refers here to checking rules specifically and is not to be confused with inferencing rules for deriving knowledge.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/Parcel">
+        <skos:definition xml:lang="en">Any quantity of land capable of being described with such definiteness that its locations and boundaries may be established.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/Permit">
+        <skos:definition xml:lang="en">A permit is a written permission or authorisation delivered by a competent authority, entity, or person, that is legally delegated to allow someone to do something or to go somewhere.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/PermitRequest">
+        <skos:definition xml:lang="en">A permit request is a written appeal or application made to obtain official approval for something from a designated authority.
+It is used as the central hub in the permitting process, with, if issued, a checks:Permit as a result.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/Project">
+        <skos:definition xml:lang="en">A temporary process undertaken to solve a well-defined goal or objective with clearly defined start and end times, a set of clearly defined tasks, and a budget.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/Verification">
+        <skos:definition xml:lang="en">A Verification is an activity that checks if a subject is compliant with a requirement.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/VerificationMethod">
+        <skos:definition xml:lang="en">A set of procedures to check if the subject is compliant with requirement.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/date">
+        <skos:definition xml:lang="en">This attribute describes a timing linked to concepts. It may indicate a date when something was submitted, received, checked, has expired, ...</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/decisionOutcome">
+        <skos:definition xml:lang="en">Provides a list of possible decision outcomes which impact the permit request.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasApplicant">
+        <skos:definition xml:lang="en">The Permit request was applied for by an agent.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasApprover">
+        <skos:definition xml:lang="en">Indicates a relation between a permitRequest and the Approver, a prov:Agent, of the Request. An Approver is a legal entity (e.g., competent authority) or person issuing the permit approval. </skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasAsOutput">
+        <skos:definition xml:lang="en">Is an involvement in an occurrence that indicates that the involved object has been operated upon by the occurrence.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasParcel">
+        <skos:definition xml:lang="en">Indicates the link between location and parcel.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasPermitRequest">
+        <skos:definition xml:lang="en">Indicates the link from a project to a / multiple permit requests.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasRecipient">
+        <skos:definition xml:lang="en">Indicates a relation between a permit request and the Recipient, a prov:Agent, of the request. A Recipient is a legal entity (e.g., authority) or person in charge of receiving the permit application </skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasSource">
+        <skos:definition xml:lang="en">Is a relation that indicates the involved object has a origin or source from another object.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasUsecase">
+        <skos:definition xml:lang="en">Indicates which use case is applicable for a specific project</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/hasVerificationMethod">
+        <skos:definition xml:lang="en">Is an association that indicates a method to verify if the verification object has a method linked to it.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isAddressFor">
+        <skos:definition xml:lang="en">Relation to check if the address is linked to a location.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isAllocationfor">
+        <skos:definition xml:lang="en">Is an association to ensure that the involved object has an allocation to the corresponding requirement.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isCollectedIn">
+        <skos:definition xml:lang="en">Is a relation between a single thing and a plurality that indicates that the collected object is element of the collection of objects, under the constraint that the element may not be the same object as the plural object. In other words a collection cannot be an element of itself.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isDecisionFor">
+        <skos:definition xml:lang="en">Is a relation indicating the choice or judgment made based on available resources.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isDerivedIn">
+        <skos:definition xml:lang="en">Is an association that indicates that the object has been derived in the source object.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isExpressedAs">
+        <skos:definition xml:lang="en">Is a relation that determines how an object is represented similar to a target object</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isGeometryOf">
+        <skos:definition xml:lang="en">Indicates that a geometry has a location linked to it.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isInputFor">
+        <skos:definition xml:lang="en">Indicates that a / multiple verifications where carried out as a foundation for certain decision taken.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isMadeBy">
+        <skos:definition xml:lang="en">Is an involvement in an occurrence that indicates that the involved object has a role as performer of the occurrence.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isParcelFor">
+        <skos:definition xml:lang="en">Indicates that a parcel is located at a certain location.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isPermitFor">
+        <skos:definition xml:lang="en">Indicates the link between a permit and corresponding permit request that are / were made to obtain certain permit</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isPermitForRequest">
+        <skos:definition xml:lang="en">Indicates the relation between a permit and the related request for it</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isRequestForPermit">
+        <skos:definition xml:lang="en">Indicates the relation between a request and the specific permit it was requesting.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/isVerifiedIn">
+        <skos:definition xml:lang="en">Is an association that indicates that the representer object represents the represented object.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/logicalOperator">
+        <skos:definition xml:lang="en">Provides the possibility to indicate if certain conditions are complementary (AND) or supplementary (OR).</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/name">
+        <skos:definition xml:lang="en">Provides the name/ title for concepts.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/role">
+        <skos:definition xml:lang="en">Indicates in what capacity someone/something is linked to a project, permit, ...</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/shallBeCompliantWith">
+        <skos:definition xml:lang="en">Is a conceptual requirement for compliancy to a criterion that indicates that a member of the class shall be conformant to a qualitative requirement. Typically an item, story or document of a kind that should be conform to the content of a document.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://data.digichecks.eu/def/wasDescribedBy">
+        <skos:definition xml:lang="en">Relation that is used to indicate that a concept was linked to certain resource in the past. this is meant to keep track of different versions of resources, keep history on all links ever made from concept to resource.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sml/def#Requirement">
+        <skos:definition xml:lang="en">A rule that should hold for something, defined via its attributes or relations</skos:definition>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
