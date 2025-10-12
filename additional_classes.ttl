@@ -1,0 +1,121 @@
+PREFIX dct:   <http://purl.org/dc/terms/>
+PREFIX checks: <https://data.digichecks.eu/def/>
+PREFIX geo:   <http://www.opengis.net/ont/geosparql#>
+PREFIX ids:   <https://w3id.org/idsa/core/>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX prov:  <http://www.w3.org/ns/prov#>
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh:    <http://www.w3.org/ns/shacl#>
+PREFIX skos:  <http://www.w3.org/2004/02/skos/core#>
+PREFIX sml:   <https://w3id.org/sml/def#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+PREFIX :   <https://data.digichecks.eu/def/>
+
+sml:Activity  rdf:type   owl:Class;
+        rdfs:subClassOf  sml:Entity;
+        rdfs:label   "Activity" .
+
+
+sml:PhysicalObject  rdf:type  owl:Class;
+        rdfs:subClassOf  sml:Object;
+        rdfs:label   "Physical Object" .
+
+
+sml:Object  rdf:type     owl:Class;
+        rdfs:subClassOf  sml:Entity;
+        rdfs:label   "Object" .
+
+
+sml:State  rdf:type      owl:Class;
+        rdfs:subClassOf  sml:ConcreteConcept;
+        rdfs:label   "State" .
+
+
+sml:EnumerationType  rdf:type  owl:Class;
+        rdfs:subClassOf  sml:Type;
+        rdfs:label   "Enumeration Type" .
+
+sml:InformationObject
+        rdf:type         owl:Class;
+        rdfs:subClassOf  sml:Object;
+        rdfs:label   "Information Object" .
+
+
+prov:Organization  rdf:type  owl:Class;
+        rdfs:subClassOf  prov:Agent;
+        rdfs:label   "Organization" .
+
+
+prov:Person  rdf:type    owl:Class;
+        rdfs:subClassOf  prov:Agent;
+        rdfs:label   "Person" .
+
+
+sml:AbstractConcept  rdf:type  owl:Class;
+        rdfs:subClassOf  sml:TopConcept;
+        rdfs:label   "Abstract Concept" .
+
+
+sml:TopConcept  rdf:type  owl:Class;
+        rdfs:label  "Top Concept" .
+
+sml:QualityValue  rdf:type  owl:Class;
+        rdfs:subClassOf  sml:Objectification;
+        rdfs:label   "Quality Value" .
+
+sml:RelationReference
+        rdf:type         owl:Class;
+        rdfs:subClassOf  sml:Objectification;
+        rdfs:label   "Relation Reference" .
+
+prov:Location  rdf:type  owl:Class;
+        rdfs:label  "Location" .
+
+
+sml:Representation  rdf:type  owl:Class;
+        rdfs:subClassOf  sml:InformationObject;
+        rdfs:label   "Representation" .
+
+
+sml:Entity  rdf:type     owl:Class;
+        rdfs:subClassOf  sml:ConcreteConcept;
+        rdfs:label   "Entitiy" .
+
+sml:QuantityValue  rdf:type  owl:Class;
+        rdfs:subClassOf  sml:Objectification;
+        rdfs:label   "Quantity Value" .
+
+ids:Resource  rdf:type  owl:Class;
+        rdfs:label  "Resource" .
+
+## Shacl 
+sh:ValidationReport  rdf:type  owl:Class;
+        rdfs:label  "Validation Report" .
+
+sh:NodeShape  rdf:type  owl:Class;
+        rdfs:label  "Node Shape" .
+
+## Imported Relations
+prov:wasAssociatedWith
+        rdf:type        owl:ObjectProperty;
+        rdfs:label  "was associated with" .
+    
+
+
+sml:hasInterior  rdf:type  owl:ObjectProperty;
+        rdfs:label  "has interior" .
+    
+
+
+sml:isDescribedBy  rdf:type  owl:ObjectProperty;
+        skos:definition  "Relation that is used to link various concepts to a resource. Many concepts require to be linked to certain proof documents / descriptions. This relation is set on Top Concept level."@en;
+        rdfs:label   "is described by" 
+
+
+vcard:hasAddress  rdf:type  owl:ObjectProperty;
+        rdfs:label  "has address" .
+
+sml:triggers  rdf:type  owl:ObjectProperty;
+        rdfs:label  "triggers" .

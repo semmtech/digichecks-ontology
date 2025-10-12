@@ -11,8 +11,7 @@ PREFIX skos:  <http://www.w3.org/2004/02/skos/core#>
 PREFIX sml:   <https://w3id.org/sml/def#>
 PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
-
-
+PREFIX :   <https://data.digichecks.eu/def/>
 
 checks:hasRecipient  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates a relation between a permit request and the Recipient, a prov:Agent, of the request. A Recipient is a legal entity (e.g., authority) or person in charge of receiving the permit application "@en;
@@ -71,12 +70,8 @@ checks:hasParcel  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates the link between location and parcel."@en;
         rdfs:label   "has parcel" .
 
-prov:wasAssociatedWith
-        rdf:type        owl:ObjectProperty;
-        rdfs:label  "was associated with" .
 
-sh:NodeShape  rdf:type  owl:Class;
-        rdfs:label  "Node Shape" .
+
 
 checks:role  rdf:type     owl:DatatypeProperty;
         skos:definition  "Indicates in what capacity someone/something is linked to a project, permit, ..."@en;
@@ -132,21 +127,6 @@ checks:64b000d827b0605cddb2d64c
 sml:hasPart  rdf:type   owl:ObjectProperty;
         rdfs:label  "has part" .
 
-sml:State  rdf:type      owl:Class;
-        rdfs:subClassOf  sml:ConcreteConcept;
-        rdfs:label   "State" .
-
-sml:PhysicalObject  rdf:type  owl:Class;
-        rdfs:subClassOf  sml:Object;
-        rdfs:label   "Physical Object" .
-
-sml:AbstractConcept  rdf:type  owl:Class;
-        rdfs:subClassOf  sml:TopConcept;
-        rdfs:label   "Abstract Concept" .
-
-sml:EnumerationType  rdf:type  owl:Class;
-        rdfs:subClassOf  sml:Type;
-        rdfs:label   "Enumeration Type" .
 
 checks:64da327fec98ce2e4c41a229
         rdf:type        sh:NodeShape;
@@ -181,27 +161,13 @@ checks:64da327fec98ce2e4c41a229
                         ];
         sh:targetClass  checks:Permit .
 
-sml:TopConcept  rdf:type  owl:Class;
-        rdfs:label  "Top Concept" .
 
-sml:QualityValue  rdf:type  owl:Class;
-        rdfs:subClassOf  sml:Objectification;
-        rdfs:label   "Quality Value" .
 
-sml:RelationReference
-        rdf:type         owl:Class;
-        rdfs:subClassOf  sml:Objectification;
-        rdfs:label   "Relation Reference" .
 
 checks:isRequestForPermit
         rdf:type         owl:ObjectProperty;
         skos:definition  "Indicates the relation between a request and the specific permit it was requesting."@en;
         rdfs:label   "is request for permit" .
-
-sml:InformationObject
-        rdf:type         owl:Class;
-        rdfs:subClassOf  sml:Object;
-        rdfs:label   "Information Object" .
 
 checks:Permit  rdf:type   owl:Class;
         rdfs:subClassOf  sml:InformationObject;
@@ -215,23 +181,12 @@ checks:isParcelFor  rdf:type  owl:ObjectProperty;
 
 
 
-sml:hasInterior  rdf:type  owl:ObjectProperty;
-        rdfs:label  "has interior" .
+
 
 checks:isVerifiedIn  rdf:type  owl:ObjectProperty;
         skos:definition  "Is an association that indicates that the representer object represents the represented object."@en;
         rdfs:label   "is verified in" .
 
-prov:Location  rdf:type  owl:Class;
-        rdfs:label  "Location" .
-
-sml:Representation  rdf:type  owl:Class;
-        rdfs:subClassOf  sml:InformationObject;
-        rdfs:label   "Representation" .
-
-sml:Entity  rdf:type     owl:Class;
-        rdfs:subClassOf  sml:ConcreteConcept;
-        rdfs:label   "Entitiy" .
 
 checks:isExpressedAs  rdf:type  owl:ObjectProperty;
         skos:definition  "Is a relation that determines how an object is represented similar to a target object"@en;
@@ -253,9 +208,7 @@ checks:hasPermitRequest
         skos:definition  "Indicates the link from a project to a / multiple permit requests."@en;
         rdfs:label   "has permit request" .
 
-sml:isDescribedBy  rdf:type  owl:ObjectProperty;
-        skos:definition  "Relation that is used to link various concepts to a resource. Many concepts require to be linked to certain proof documents / descriptions. This relation is set on Top Concept level."@en;
-        rdfs:label   "is described by" .
+
 
 checks:64d5f40dec98ce2e4c41a100
         rdf:type        sh:NodeShape;
@@ -271,27 +224,15 @@ checks:64d5f40dec98ce2e4c41a100
                         ];
         sh:targetClass  prov:Agent .
 
-vcard:hasAddress  rdf:type  owl:ObjectProperty;
-        rdfs:label  "has address" .
 
-sml:triggers  rdf:type  owl:ObjectProperty;
-        rdfs:label  "triggers" .
 
 checks:hasApplicant  rdf:type  owl:ObjectProperty;
         skos:definition  "The Permit request was applied for by an agent."@en;
         rdfs:label   "is submitted by" .
 
-sml:Activity  rdf:type   owl:Class;
-        rdfs:subClassOf  sml:Entity;
-        rdfs:label   "Activity" .
-
 sml:hasTemporalEntity
         rdf:type        owl:ObjectProperty;
         rdfs:label  "has temporal entity" .
-
-sml:Object  rdf:type     owl:Class;
-        rdfs:subClassOf  sml:Entity;
-        rdfs:label   "Object" .
 
 prov:atLocation  rdf:type  owl:ObjectProperty;
         rdfs:label  "at location" .
@@ -327,9 +268,7 @@ checks:6606a7ae965733652c7f6783
 #        skos:definition  "A requirement that is not specific for any projects / use case."@en;
 #        rdfs:label   "Generic Requirement" .
 
-sml:QuantityValue  rdf:type  owl:Class;
-        rdfs:subClassOf  sml:Objectification;
-        rdfs:label   "Quantity Value" .
+
 
 checks:64da320fec98ce2e4c41a220
         rdf:type        sh:NodeShape;
@@ -358,10 +297,11 @@ checks:VerificationMethod
 
 checks:       rdf:type     owl:Ontology;
         rdfs:label   "Digichecks Ontology";
-        owl:imports  sh: , rdfs: , owl: .
+        dct:description "The DigiChecks Permit Ontology is a top-level ontology for describing permitting processes, requirements, and verification activities. The ontology is based on the Semantic Modelling and Linking (SML, EN 17632) framework and provides core terminology for DigiChecks services to communicate unambiguously about permitting processes."; 
+        
+        owl:imports  sh: , rdfs: , owl:  , prov:, sml:, geo: .
 
-ids:Resource  rdf:type  owl:Class;
-        rdfs:label  "Resource" .
+
 
 checks:Verification  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Activity;
@@ -419,8 +359,7 @@ checks:6615257dfd34eb2f8e03f59a
                         ];
         sh:targetClass  vcard:Address .
 
-sh:ValidationReport  rdf:type  owl:Class;
-        rdfs:label  "Validation Report" .
+
 
 checks:64dde72c4ef5931bfc406a64
         rdf:type        sh:NodeShape;
@@ -532,7 +471,7 @@ checks:VerificationShapeOutcomes
         sh:property     [ sh:class     checks:ResultValues;
                           sh:maxCount  1;
                           sh:path      checks:result
-                        ];
+                        ] .
 
 checks:ResultValues 
         rdf:type        rdfs:Class ; 
@@ -719,7 +658,7 @@ checks:64da30f3ec98ce2e4c41a20b
                           sh:path   prov:atLocation
                         ];
         sh:property     [ sh:path  checks:size ];
-        sh:property   [ sh:path  checks:hasUsecase 
+        sh:property   [ sh:path  checks:hasUsecase ;
                         sh:class checks:UsecaseValues ] ; 
         sh:targetClass  checks:Project .
 
@@ -732,12 +671,12 @@ rdfs:label "Residential" .
 checks:Office a checks:UsecaseValues ; 
 rdfs:label "Office" . 
 checks:CommercialBuilding a checks:UsecaseValues ;
-skos:editorialNote "A building open to the general public with a commercial purpose, such as shops." 
+skos:editorialNote "A building open to the general public with a commercial purpose, such as shops." ;
 rdfs:label "Commercial building" . 
 
 
 checks:PublicServices a checks:UsecaseValues ;
-skos:note "A building open to the general public with a non-commercial purpose, such as hospitals or schools. " 
+skos:note "A building open to the general public with a non-commercial purpose, such as hospitals or schools. " ;
 rdfs:label "Public services" . 
 
 checks:Industrial a checks:UsecaseValues ; 
@@ -792,9 +731,6 @@ checks:hasSource  rdf:type  owl:ObjectProperty;
         skos:definition  "Is a relation that indicates the involved object has a origin or source from another object."@en;
         rdfs:label   "has source" .
 
-prov:Organization  rdf:type  owl:Class;
-        rdfs:subClassOf  prov:Agent;
-        rdfs:label   "Organization" .
 
 
 sml:ConceptType  rdf:type  owl:Class;
@@ -807,9 +743,6 @@ sml:ends  rdf:type      owl:ObjectProperty;
 vcard:Address  rdf:type  owl:Class;
         rdfs:label  "Address" .
 
-prov:Person  rdf:type    owl:Class;
-        rdfs:subClassOf  prov:Agent;
-        rdfs:label   "Person" .
 
 sml:Objectification  rdf:type  owl:Class;
         rdfs:subClassOf  sml:AbstractConcept;
