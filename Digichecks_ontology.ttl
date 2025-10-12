@@ -1,4 +1,3 @@
-PREFIX :      <http://www.example.org/>
 PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX checks: <https://data.digichecks.eu/def/>
 PREFIX geo:   <http://www.opengis.net/ont/geosparql#>
@@ -33,7 +32,7 @@ checks:isGeometryOf  rdf:type  owl:ObjectProperty;
         skos:definition  "Indicates that a geometry has a location linked to it."@en;
         rdfs:label   "is geometry of" .
 
-:64da32f2ec98ce2e4c41a232
+checks:64da32f2ec98ce2e4c41a232
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     prov:Agent;
                           sh:maxCount  1;
@@ -45,7 +44,7 @@ checks:isGeometryOf  rdf:type  owl:ObjectProperty;
                           sh:minCount  1;
                           sh:path      checks:isDecisionFor
                         ];
-        sh:property     [ sh:in        :34e82a97-fdd5-3176-ab61-f75c778939ca;
+        sh:property     [ sh:class     checks:decisionOutcomeValues;
                           sh:maxCount  1;
                           sh:path      checks:decisionOutcome
                         ];
@@ -97,7 +96,7 @@ checks:decisionOutcome
         skos:definition  "Provides a list of possible decision outcomes which impact the permit request."@en;
         rdfs:label   "decision outcome" .
 
-:64eccb68d8a9bc575cd0c914
+checks:64eccb68d8a9bc575cd0c914
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class  ids:Resource;
                           sh:path   checks:wasDescribedBy
@@ -113,7 +112,7 @@ checks:decisionOutcome
                         ];
         sh:targetClass  sh:NodeShape .
 
-:64b000d827b0605cddb2d64c
+checks:64b000d827b0605cddb2d64c
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     sml:ConcreteConcept;
                           sh:maxCount  1;
@@ -149,7 +148,7 @@ sml:EnumerationType  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Type;
         rdfs:label   "Enumeration Type" .
 
-:64da327fec98ce2e4c41a229
+checks:64da327fec98ce2e4c41a229
         rdf:type        sh:NodeShape;
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      checks:version
@@ -258,7 +257,7 @@ sml:isDescribedBy  rdf:type  owl:ObjectProperty;
         skos:definition  "Relation that is used to link various concepts to a resource. Many concepts require to be linked to certain proof documents / descriptions. This relation is set on Top Concept level."@en;
         rdfs:label   "is described by" .
 
-:64d5f40dec98ce2e4c41a100
+checks:64d5f40dec98ce2e4c41a100
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class  prov:Agent;
                           sh:path   prov:actedOnBehalfOf
@@ -309,7 +308,7 @@ checks:shallBeCompliantWith
         skos:definition  "Is a conceptual requirement for compliancy to a criterion that indicates that a member of the class shall be conformant to a qualitative requirement. Typically an item, story or document of a kind that should be conform to the content of a document."@en;
         rdfs:label   "shall be compliant with" .
 
-:6606a7ae965733652c7f6783
+checks:6606a7ae965733652c7f6783
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class  ids:Resource;
                           sh:path   sml:isDescribedBy
@@ -332,7 +331,7 @@ sml:QuantityValue  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Objectification;
         rdfs:label   "Quantity Value" .
 
-:64da320fec98ce2e4c41a220
+checks:64da320fec98ce2e4c41a220
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class  checks:Document;
                           sh:path   checks:hasSource
@@ -344,10 +343,6 @@ sml:QuantityValue  rdf:type  owl:Class;
                                      [ sh:class  checks:MachineReadableRule ]
                                    );
                           sh:path  checks:isExpressedAs
-                        ];
-        sh:property     [ sh:in        :95414b38-5a62-3cf9-beed-42cbc73f4b9e;
-                          sh:maxCount  1;
-                          sh:path      checks:logicalOperator
                         ];
         sh:targetClass  sml:Requirement .
 
@@ -361,8 +356,8 @@ checks:VerificationMethod
         skos:definition  "A set of procedures to check if the subject is compliant with requirement."@en;
         rdfs:label   "Verification method" .
 
-:       rdf:type     owl:Ontology;
-        rdfs:label   "3.1 Top Ontology";
+checks:       rdf:type     owl:Ontology;
+        rdfs:label   "Digichecks Ontology";
         owl:imports  sh: , rdfs: , owl: .
 
 ids:Resource  rdf:type  owl:Class;
@@ -373,7 +368,7 @@ checks:Verification  rdf:type  owl:Class;
         skos:definition  "A Verification is an activity that checks if a subject is compliant with a requirement."@en;
         rdfs:label   "Verification" .
 
-:661525e1fd34eb2f8e03f5bc
+checks:661525e1fd34eb2f8e03f5bc
         rdf:type        sh:NodeShape;
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      rdfs:label
@@ -383,7 +378,7 @@ checks:Verification  rdf:type  owl:Class;
                         ];
         sh:targetClass  ids:Resource .
 
-:64b000ca27b0605cddb2d646
+checks:64b000ca27b0605cddb2d646
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class  ids:Resource;
                           sh:path   checks:wasDescribedBy
@@ -409,7 +404,7 @@ rdfs:label  rdf:type  owl:DatatypeProperty;
 #        skos:definition  "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases."@en;
 #        rdfs:label   "Project Requirement" .
 
-:6615257dfd34eb2f8e03f59a
+checks:6615257dfd34eb2f8e03f59a
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     prov:Location;
                           sh:maxCount  1;
@@ -427,7 +422,7 @@ rdfs:label  rdf:type  owl:DatatypeProperty;
 sh:ValidationReport  rdf:type  owl:Class;
         rdfs:label  "Validation Report" .
 
-:64dde72c4ef5931bfc406a64
+checks:64dde72c4ef5931bfc406a64
         rdf:type        sh:NodeShape;
         sh:property     [ sh:datatype  xsd:string;
                           sh:path      checks:version
@@ -442,7 +437,7 @@ checks:isMadeBy  rdf:type  owl:ObjectProperty;
         skos:definition  "Is an involvement in an occurrence that indicates that the involved object has a role as performer of the occurrence."@en;
         rdfs:label   "is made by" .
 
-:661525d6fd34eb2f8e03f5b4
+checks:661525d6fd34eb2f8e03f5b4
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     prov:Location;
                           sh:maxCount  1;
@@ -469,7 +464,7 @@ sml:Requirement  rdf:type  owl:Class;
         skos:definition  "A rule that should hold for something, defined via its attributes or relations"@en;
         rdfs:label   "Requirement" .
 
-:65e60b91ebc1577ef9381cbb
+checks:65e60b91ebc1577ef9381cbb
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class  prov:Agent;
                           sh:path   checks:hasRecipient; 
@@ -503,7 +498,7 @@ sml:Requirement  rdf:type  owl:Class;
 checks:size  rdf:type    owl:DatatypeProperty;
         rdfs:label  "size" .
 
-:64d4a25fec98ce2e4c41a07d
+checks:64d4a25fec98ce2e4c41a07d
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     checks:Decision;
                           sh:minCount  1;
@@ -525,7 +520,7 @@ checks:size  rdf:type    owl:DatatypeProperty;
         sh:targetClass  checks:Verification .
 
 
-:VerificationShapeOutcomes 
+checks:VerificationShapeOutcomes 
         rdf:type        sh:nodeShape; 
         sh:targetClass  checks:Verification ; 
         sh:property     [ sh:or    ( [ sh:class  checks:Document ]
@@ -534,7 +529,7 @@ checks:size  rdf:type    owl:DatatypeProperty;
                           sh:path  checks:hasAsOutput
                         ];
         # 
-        sh:property     [ sh:class        :ResultValues;
+        sh:property     [ sh:class     checks:ResultValues;
                           sh:maxCount  1;
                           sh:path      checks:result
                         ];
@@ -617,7 +612,7 @@ checks:applicationDate
         rdfs:subPropertyOf  checks:date;
         rdfs:label      "application date" .
 
-:64ddde554ef5931bfc406a34
+checks:64ddde554ef5931bfc406a34
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     vcard:Address;
                           sh:maxCount  1;
@@ -639,7 +634,7 @@ checks:applicationDate
                         ];
         sh:targetClass  prov:Location .
 
-:661525befd34eb2f8e03f5a4
+checks:661525befd34eb2f8e03f5a4
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     prov:Location;
                           sh:maxCount  1;
@@ -708,7 +703,7 @@ checks:hasUsecase
       rdfs:label    "has usecase" . 
 
 
-:64da30f3ec98ce2e4c41a20b
+checks:64da30f3ec98ce2e4c41a20b
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     prov:Association;
                           sh:minCount  1;
@@ -758,7 +753,7 @@ sml:ConcreteConcept  rdf:type  owl:Class;
         rdfs:subClassOf  sml:TopConcept;
         rdfs:label   "Concrete Concept" .
 
-:65d3dc1c13b8ea5093980dfc
+checks:65d3dc1c13b8ea5093980dfc
         rdf:type        sh:NodeShape;
         sh:property     [ sh:class     prov:Agent;
                           sh:maxCount  1;
@@ -801,11 +796,6 @@ prov:Organization  rdf:type  owl:Class;
         rdfs:subClassOf  prov:Agent;
         rdfs:label   "Organization" .
 
-:95414b38-5a62-3cf9-beed-42cbc73f4b9e
-        rdf:type        rdf:List;
-        rdf:first       "OR";
-        rdf:rest        ( "AND" );
-        rdfs:label  "Logical operator list for requirements" .
 
 sml:ConceptType  rdf:type  owl:Class;
         rdfs:subClassOf  sml:Type;
