@@ -4,7 +4,7 @@ This repository contains the DigiChecks Permit Ontology, a top-level ontology fo
 
 ## Overview
 
-- **Ontology file:** [`Top-level_permit_ontology_digichecks-internal-review_20240610_2025-04-29_1700.ttl`](Top-level_permit_ontology_digichecks-internal-review_20240610_2025-04-29_1700.ttl)
+- **Ontology file:** [`Digichecks_ontology.ttl`](Digichecks_ontology.ttl)
 - **Documentation:** See the [Landing page](https://semmtech.github.io/digichecks-ontology/) for generated documentation.
 - **Pilot projects:** Example SHACL rules and project-specific ontologies are available in [`Pilot projects/`](Pilot projects/).
 
