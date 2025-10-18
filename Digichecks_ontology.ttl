@@ -545,6 +545,10 @@ rdfs:comment  rdf:type  owl:DatatypeProperty;
         rdfs:range      xsd:string;
         rdfs:label  "comment" .
 
+checks:RequestPhase a owl:Class ; 
+        rdfs:label "The phase a request is in. These can include, but is not limited to, "
+
+
 checks:applicationDate
         rdf:type            owl:DatatypeProperty;
         rdfs:range          xsd:date;
