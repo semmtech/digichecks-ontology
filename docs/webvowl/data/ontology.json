@@ -1,0 +1,2110 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
+  "namespace" : [ ],
+  "header" : {
+    "languages" : [ "IRI-based", "en", "undefined" ],
+    "uri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/",
+    "version" : "1_0",
+    "author" : [ "DigiChecks" ],
+    "description" : {
+      "undefined" : "The top-level permit ontology contains the relevant terminology related to permitting processes. It contains the core terminology for DigiChecks services to communicate unambiguously about a permitting process."
+    },
+    "rdfsLabel" : [ "Top-level permit ontology" ],
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2025-06-02T15:18:19.990713462",
+        "type" : "label"
+      } ]
+    }
+  },
+  "metrics" : {
+    "classCount" : 45,
+    "datatypeCount" : 8,
+    "objectPropertyCount" : 44,
+    "datatypePropertyCount" : 8,
+    "propertyCount" : 52,
+    "nodeCount" : 53,
+    "axiomCount" : 504,
+    "individualCount" : 105
+  },
+  "class" : [ {
+    "id" : "class16",
+    "type" : "externalclass"
+  }, {
+    "id" : "class40",
+    "type" : "externalclass"
+  }, {
+    "id" : "class20",
+    "type" : "externalclass"
+  }, {
+    "id" : "class45",
+    "type" : "externalclass"
+  }, {
+    "id" : "class1",
+    "type" : "externalclass"
+  }, {
+    "id" : "class19",
+    "type" : "externalclass"
+  }, {
+    "id" : "class39",
+    "type" : "externalclass"
+  }, {
+    "id" : "class41",
+    "type" : "externalclass"
+  }, {
+    "id" : "class8",
+    "type" : "externalclass"
+  }, {
+    "id" : "class37",
+    "type" : "externalclass"
+  }, {
+    "id" : "class32",
+    "type" : "externalclass"
+  }, {
+    "id" : "class42",
+    "type" : "externalclass"
+  }, {
+    "id" : "class4",
+    "type" : "externalclass"
+  }, {
+    "id" : "class9",
+    "type" : "externalclass"
+  }, {
+    "id" : "class10",
+    "type" : "externalclass"
+  }, {
+    "id" : "class11",
+    "type" : "externalclass"
+  }, {
+    "id" : "class33",
+    "type" : "externalclass"
+  }, {
+    "id" : "class30",
+    "type" : "externalclass"
+  }, {
+    "id" : "class36",
+    "type" : "externalclass"
+  }, {
+    "id" : "class2",
+    "type" : "externalclass"
+  }, {
+    "id" : "class12",
+    "type" : "externalclass"
+  }, {
+    "id" : "class31",
+    "type" : "externalclass"
+  }, {
+    "id" : "class26",
+    "type" : "externalclass"
+  }, {
+    "id" : "class5",
+    "type" : "externalclass"
+  }, {
+    "id" : "class38",
+    "type" : "externalclass"
+  }, {
+    "id" : "class17",
+    "type" : "externalclass"
+  }, {
+    "id" : "class21",
+    "type" : "externalclass"
+  }, {
+    "id" : "class6",
+    "type" : "externalclass"
+  }, {
+    "id" : "class25",
+    "type" : "externalclass"
+  }, {
+    "id" : "class44",
+    "type" : "externalclass"
+  }, {
+    "id" : "class3",
+    "type" : "externalclass"
+  }, {
+    "id" : "class22",
+    "type" : "externalclass"
+  }, {
+    "id" : "class29",
+    "type" : "externalclass"
+  }, {
+    "id" : "class14",
+    "type" : "externalclass"
+  }, {
+    "id" : "class34",
+    "type" : "externalclass"
+  }, {
+    "id" : "class24",
+    "type" : "externalclass"
+  }, {
+    "id" : "class23",
+    "type" : "externalclass"
+  }, {
+    "id" : "class28",
+    "type" : "externalclass"
+  }, {
+    "id" : "class15",
+    "type" : "externalclass"
+  }, {
+    "id" : "class27",
+    "type" : "externalclass"
+  }, {
+    "id" : "class35",
+    "type" : "externalclass"
+  }, {
+    "id" : "class18",
+    "type" : "externalclass"
+  }, {
+    "id" : "class43",
+    "type" : "externalclass"
+  }, {
+    "id" : "class7",
+    "type" : "externalclass"
+  }, {
+    "id" : "class13",
+    "type" : "externalclass"
+  }, {
+    "id" : "thing2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing1",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "id" : "class16",
+    "label" : {
+      "IRI-based" : "QuantityValue"
+    },
+    "iri" : "https://w3id.org/sml/def#QuantityValue",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class10" ],
+    "instances" : 0
+  }, {
+    "id" : "class40",
+    "label" : {
+      "IRI-based" : "InformationObject"
+    },
+    "iri" : "https://w3id.org/sml/def#InformationObject",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class11", "class18", "class24", "class38", "class36", "class21", "class23", "class22" ],
+    "superClasses" : [ "class6" ],
+    "instances" : 0
+  }, {
+    "id" : "class20",
+    "label" : {
+      "IRI-based" : "Address"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#Address",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class45",
+    "label" : {
+      "IRI-based" : "GeometricEntity"
+    },
+    "iri" : "https://w3id.org/sml/def#GeometricEntity",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class23" ],
+    "instances" : 0
+  }, {
+    "id" : "class1",
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "iri" : "https://w3id.org/sml/def#State",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class19",
+    "label" : {
+      "IRI-based" : "ProjectRequirement"
+    },
+    "iri" : "https://data.digichecks.eu/def/ProjectRequirement",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class22" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A requirement that is specific to projects / use case. It cannot be generalized over multiple projects / use cases.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class39",
+    "label" : {
+      "IRI-based" : "VerificationMethod"
+    },
+    "iri" : "https://data.digichecks.eu/def/VerificationMethod",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class43" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of procedures to check if the subject is compliant with requirement.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class41",
+    "label" : {
+      "IRI-based" : "Parcel"
+    },
+    "iri" : "https://data.digichecks.eu/def/Parcel",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Any quantity of land capable of being described with such definiteness that its locations and boundaries may be established.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class8",
+    "label" : {
+      "IRI-based" : "PhysicalObject"
+    },
+    "iri" : "https://w3id.org/sml/def#PhysicalObject",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class6" ],
+    "instances" : 0
+  }, {
+    "id" : "class37",
+    "label" : {
+      "IRI-based" : "RelationReference"
+    },
+    "iri" : "https://w3id.org/sml/def#RelationReference",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class10" ],
+    "instances" : 0
+  }, {
+    "id" : "class32",
+    "label" : {
+      "IRI-based" : "NodeShape",
+      "en" : "Node shape"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#NodeShape",
+    "comment" : {
+      "en" : "A node shape is a shape that specifies constraint that need to be met with respect to focus nodes."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "instances" : 18,
+    "individuals" : [ {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65e60b91ebc1577ef9381cbb"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525befd34eb2f8e03f5a4"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da327fec98ce2e4c41a229"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da320fec98ce2e4c41a220"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/65d3dc1c13b8ea5093980dfc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525e1fd34eb2f8e03f5bc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d4a25fec98ce2e4c41a07d"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64d5f40dec98ce2e4c41a100"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000ca27b0605cddb2d646"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da30f3ec98ce2e4c41a20b"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6615257dfd34eb2f8e03f59a"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64da32f2ec98ce2e4c41a232"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/661525d6fd34eb2f8e03f5b4"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64eccb68d8a9bc575cd0c914"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64b000d827b0605cddb2d64c"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64ddde554ef5931bfc406a34"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/64dde72c4ef5931bfc406a64"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783",
+      "labels" : {
+        "IRI-based" : "http://hub.laces.tech/digichecks/private/production/top-level-permit-ontology/6606a7ae965733652c7f6783"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class42",
+    "label" : {
+      "IRI-based" : "ConceptType"
+    },
+    "iri" : "https://w3id.org/sml/def#ConceptType",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class7" ],
+    "instances" : 0
+  }, {
+    "id" : "class4",
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "iri" : "https://w3id.org/sml/def#Event",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class9",
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class25", "class35" ],
+    "superClasses" : [ "class29" ],
+    "instances" : 0
+  }, {
+    "id" : "class10",
+    "label" : {
+      "IRI-based" : "Objectification"
+    },
+    "iri" : "https://w3id.org/sml/def#Objectification",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class44", "class16", "class37" ],
+    "superClasses" : [ "class33" ],
+    "instances" : 0
+  }, {
+    "id" : "class11",
+    "label" : {
+      "IRI-based" : "Association"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Association",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class33",
+    "label" : {
+      "IRI-based" : "AbstractConcept"
+    },
+    "iri" : "https://w3id.org/sml/def#AbstractConcept",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class10", "class7" ],
+    "superClasses" : [ "class30" ],
+    "instances" : 0
+  }, {
+    "id" : "class30",
+    "label" : {
+      "IRI-based" : "TopConcept"
+    },
+    "iri" : "https://w3id.org/sml/def#TopConcept",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class33", "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class36",
+    "label" : {
+      "IRI-based" : "Permit"
+    },
+    "iri" : "https://data.digichecks.eu/def/Permit",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A permit is a written permission or authorisation delivered by a competent authority, entity, or person, that is legally delegated to allow someone to do something or to go somewhere.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class2",
+    "label" : {
+      "IRI-based" : "Decision"
+    },
+    "iri" : "https://data.digichecks.eu/def/Decision",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class43" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A decision is an activity of making a choice or judgement based on the available resources.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class12",
+    "label" : {
+      "IRI-based" : "ValidationReport",
+      "en" : "Validation report"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#ValidationReport",
+    "comment" : {
+      "en" : "The class of SHACL validation reports."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class31",
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Location",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class26",
+    "label" : {
+      "IRI-based" : "Geometry"
+    },
+    "iri" : "http://www.opengis.net/ont/geosparql#Geometry",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class5",
+    "label" : {
+      "IRI-based" : "enumeration"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#enumeration",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class38",
+    "label" : {
+      "IRI-based" : "MachineReadableRule"
+    },
+    "iri" : "https://data.digichecks.eu/def/MachineReadableRule",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of instructions or guidelines that are structured in a format that can be easily interpreted and processed by a computer or software program. The term \"rule\" refers here to checking rules specifically and is not to be confused with inferencing rules for deriving knowledge.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class17",
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "iri" : "https://w3id.org/sml/def#TemporalEntity",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class23" ],
+    "instances" : 0
+  }, {
+    "id" : "class21",
+    "label" : {
+      "IRI-based" : "PermitRequest"
+    },
+    "iri" : "https://data.digichecks.eu/def/PermitRequest",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A permit request is a written appeal or application made to obtain official approval for something from a designated authority.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class6",
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "iri" : "https://w3id.org/sml/def#Object",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class40", "class8" ],
+    "superClasses" : [ "class28" ],
+    "instances" : 0
+  }, {
+    "id" : "class25",
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Organization",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class9" ],
+    "instances" : 0
+  }, {
+    "id" : "class44",
+    "label" : {
+      "IRI-based" : "QualityValue"
+    },
+    "iri" : "https://w3id.org/sml/def#QualityValue",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class10" ],
+    "instances" : 0
+  }, {
+    "id" : "class3",
+    "label" : {
+      "IRI-based" : "Verification"
+    },
+    "iri" : "https://data.digichecks.eu/def/Verification",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class43" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A Verification is an activity that checks if a subject is compliant with a requirement.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class22",
+    "label" : {
+      "IRI-based" : "Requirement"
+    },
+    "iri" : "https://w3id.org/sml/def#Requirement",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class27", "class19" ],
+    "superClasses" : [ "class40" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A rule that should hold for something, defined via its attributes or relations",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class29",
+    "label" : {
+      "IRI-based" : "Participant"
+    },
+    "iri" : "http://w3id.org/gaia-x/participant#Participant",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class9" ],
+    "instances" : 0
+  }, {
+    "id" : "class14",
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "iri" : "https://w3id.org/idsa/core/Resource",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class34",
+    "label" : {
+      "IRI-based" : "Project"
+    },
+    "iri" : "https://data.digichecks.eu/def/Project",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class28" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A temporary process undertaken to solve a well-defined goal or objective with clearly defined start and end times, a set of clearly defined tasks, and a budget.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class24",
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "iri" : "https://data.digichecks.eu/def/Document",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record or acts as a reference.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class23",
+    "label" : {
+      "IRI-based" : "Representation"
+    },
+    "iri" : "https://w3id.org/sml/def#Representation",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class45", "class17" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class28",
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "iri" : "https://w3id.org/sml/def#Entity",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class34", "class43", "class6" ],
+    "superClasses" : [ "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class15",
+    "label" : {
+      "IRI-based" : "ConcreteConcept"
+    },
+    "iri" : "https://w3id.org/sml/def#ConcreteConcept",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class28", "class4", "class1" ],
+    "superClasses" : [ "class30" ],
+    "instances" : 0
+  }, {
+    "id" : "class27",
+    "label" : {
+      "IRI-based" : "GenericRequirement"
+    },
+    "iri" : "https://data.digichecks.eu/def/GenericRequirement",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class22" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A requirement that is not specific for any projects / use case.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class35",
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Person",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class9" ],
+    "instances" : 0
+  }, {
+    "id" : "class18",
+    "label" : {
+      "IRI-based" : "Allocation"
+    },
+    "iri" : "https://data.digichecks.eu/def/Allocation",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An explicit relation between subject and requirement that shows that the subject needs to fulfill the stated requirement.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class43",
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "iri" : "https://w3id.org/sml/def#Activity",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class2", "class3", "class39" ],
+    "superClasses" : [ "class28" ],
+    "instances" : 0
+  }, {
+    "id" : "class7",
+    "label" : {
+      "IRI-based" : "Type"
+    },
+    "iri" : "https://w3id.org/sml/def#Type",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class42", "class13" ],
+    "superClasses" : [ "class33" ],
+    "instances" : 0
+  }, {
+    "id" : "class13",
+    "label" : {
+      "IRI-based" : "EnumerationType"
+    },
+    "iri" : "https://w3id.org/sml/def#EnumerationType",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class7" ],
+    "instances" : 0
+  }, {
+    "id" : "thing2",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing1",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  } ],
+  "datatype" : [ {
+    "id" : "literal2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal1",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal7",
+    "type" : "rdfs:Literal"
+  } ],
+  "datatypeAttribute" : [ {
+    "id" : "literal2",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype5",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal1",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype4",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal6",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal3",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal8",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal7",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "property" : [ {
+    "id" : "property39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property1",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property84",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "id" : "property39",
+    "label" : {
+      "IRI-based" : "isExpressedAs"
+    },
+    "iri" : "https://data.digichecks.eu/def/isExpressedAs",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is a relation that determines how an object is represented similar to a target object",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property70",
+    "label" : {
+      "IRI-based" : "wasAssociatedWith"
+    },
+    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property74",
+    "label" : {
+      "IRI-based" : "hasAsOutput"
+    },
+    "iri" : "https://data.digichecks.eu/def/hasAsOutput",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is an involvement in an occurrence that indicates that the involved object has been operated upon by the occurrence.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property82",
+    "label" : {
+      "IRI-based" : "role"
+    },
+    "iri" : "https://data.digichecks.eu/def/role",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates in what capacity someone/something is linked to a project, permit, ...",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "literal3"
+  }, {
+    "id" : "property43",
+    "label" : {
+      "IRI-based" : "path",
+      "en" : "path"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#path",
+    "comment" : {
+      "en" : "Specifies the property path of a property shape."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property69",
+    "label" : {
+      "IRI-based" : "qualifiedAssociation"
+    },
+    "iri" : "http://www.w3.org/ns/prov#qualifiedAssociation",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property47",
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property64"
+  }, {
+    "id" : "property61",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "iri" : "https://w3id.org/sml/def#hasPart",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property86",
+    "label" : {
+      "IRI-based" : "decisionOutcome"
+    },
+    "iri" : "https://data.digichecks.eu/def/decisionOutcome",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Provides a list of possible decision outcomes which impact the permit request.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "literal7"
+  }, {
+    "id" : "property67",
+    "label" : {
+      "IRI-based" : "isAllocationfor"
+    },
+    "iri" : "https://data.digichecks.eu/def/isAllocationfor",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is an association to ensure that the involved object has an allocation to the corresponding requirement.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property2",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class18",
+    "range" : "class40"
+  }, {
+    "id" : "property76",
+    "label" : {
+      "IRI-based" : "isMadeBy"
+    },
+    "iri" : "https://data.digichecks.eu/def/isMadeBy",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is an involvement in an occurrence that indicates that the involved object has a role as performer of the occurrence.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property1",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class11",
+    "range" : "class40"
+  }, {
+    "id" : "property29",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class4",
+    "range" : "class15"
+  }, {
+    "id" : "property4",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class38",
+    "range" : "class40"
+  }, {
+    "id" : "property3",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class24",
+    "range" : "class40"
+  }, {
+    "id" : "property26",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class43",
+    "range" : "class28"
+  }, {
+    "id" : "property25",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class34",
+    "range" : "class28"
+  }, {
+    "id" : "property28",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class28",
+    "range" : "class15"
+  }, {
+    "id" : "property52",
+    "label" : {
+      "IRI-based" : "isPermitForRequest"
+    },
+    "iri" : "https://data.digichecks.eu/def/isPermitForRequest",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates the relation between a permit and the related request for it",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property75"
+  }, {
+    "id" : "property79",
+    "label" : {
+      "IRI-based" : "subject"
+    },
+    "iri" : "http://purl.org/dc/terms/subject",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property27",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class6",
+    "range" : "class28"
+  }, {
+    "id" : "property22",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class9",
+    "range" : "class29"
+  }, {
+    "id" : "property21",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class19",
+    "range" : "class22"
+  }, {
+    "id" : "property24",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class17",
+    "range" : "class23"
+  }, {
+    "id" : "property23",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class45",
+    "range" : "class23"
+  }, {
+    "id" : "property59",
+    "label" : {
+      "IRI-based" : "actedOnBehalfOf"
+    },
+    "iri" : "http://www.w3.org/ns/prov#actedOnBehalfOf",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property54",
+    "label" : {
+      "IRI-based" : "in",
+      "en" : "in"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#in",
+    "comment" : {
+      "en" : "Specifies a list of allowed values so that each value node must be among the members of the given list."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property63",
+    "label" : {
+      "IRI-based" : "isVerifiedIn"
+    },
+    "iri" : "https://data.digichecks.eu/def/isVerifiedIn",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is an association that indicates that the representer object represents the represented object.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property87",
+    "label" : {
+      "IRI-based" : "minCount",
+      "en" : "min count"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#minCount",
+    "comment" : {
+      "en" : "Specifies the minimum number of values in the set of value nodes."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "literal8"
+  }, {
+    "id" : "property20",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class27",
+    "range" : "class22"
+  }, {
+    "id" : "property73",
+    "label" : {
+      "IRI-based" : "isAddressFor"
+    },
+    "iri" : "https://data.digichecks.eu/def/isAddressFor",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation to check if the address is linked to a location.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property46"
+  }, {
+    "id" : "property72",
+    "label" : {
+      "IRI-based" : "isDerivedIn"
+    },
+    "iri" : "https://data.digichecks.eu/def/isDerivedIn",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is an association that indicates that the object has been derived in the source object.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property46",
+    "label" : {
+      "IRI-based" : "hasAddress"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasAddress",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property73"
+  }, {
+    "id" : "property42",
+    "label" : {
+      "IRI-based" : "class",
+      "en" : "class"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#class",
+    "comment" : {
+      "en" : "The type that all value nodes must have."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property60",
+    "label" : {
+      "IRI-based" : "isPermitFor"
+    },
+    "iri" : "https://data.digichecks.eu/def/isPermitFor",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates the link between a permit and corresponding permit request that are / were made to obtain certain permit",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property49"
+  }, {
+    "id" : "property44",
+    "label" : {
+      "IRI-based" : "datatype",
+      "en" : "datatype"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#datatype",
+    "comment" : {
+      "en" : "Specifies an RDF datatype that all value nodes must have."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property49",
+    "label" : {
+      "IRI-based" : "isRequestForPermit"
+    },
+    "iri" : "https://data.digichecks.eu/def/isRequestForPermit",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates the relation between a request and the specific permit it was requesting.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property60"
+  }, {
+    "id" : "property45",
+    "label" : {
+      "IRI-based" : "targetClass",
+      "en" : "target class"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#targetClass",
+    "comment" : {
+      "en" : "Links a shape to a class, indicating that all instances of the class must conform to the shape."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property33",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class39",
+    "range" : "class43"
+  }, {
+    "id" : "property32",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class3",
+    "range" : "class43"
+  }, {
+    "id" : "property35",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class13",
+    "range" : "class7"
+  }, {
+    "id" : "property34",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class42",
+    "range" : "class7"
+  }, {
+    "id" : "property55",
+    "label" : {
+      "IRI-based" : "property",
+      "en" : "property"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#property",
+    "comment" : {
+      "en" : "Links a shape to its property shapes."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property31",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class2",
+    "range" : "class43"
+  }, {
+    "id" : "property37",
+    "label" : {
+      "IRI-based" : "isDescribedBy"
+    },
+    "iri" : "https://w3id.org/sml/def#isDescribedBy",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation that is used to link various concepts to a resource. Many concepts require to be linked to certain proof documents / descriptions. This relation is set on Top Concept level.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property30",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class1",
+    "range" : "class15"
+  }, {
+    "id" : "property57",
+    "label" : {
+      "IRI-based" : "isInputFor"
+    },
+    "iri" : "https://data.digichecks.eu/def/isInputFor",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates that a / multiple verifications where carried out as a foundation for certain decision taken.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property85",
+    "label" : {
+      "IRI-based" : "logicalOperator"
+    },
+    "iri" : "https://data.digichecks.eu/def/logicalOperator",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Provides the possibility to indicate if certain conditions are complementary (AND) or supplementary (OR).",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "literal6"
+  }, {
+    "id" : "property53",
+    "label" : {
+      "IRI-based" : "isParcelFor"
+    },
+    "iri" : "https://data.digichecks.eu/def/isParcelFor",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates that a parcel is located at a certain location.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property68"
+  }, {
+    "id" : "property41",
+    "label" : {
+      "IRI-based" : "wasDescribedBy"
+    },
+    "iri" : "https://data.digichecks.eu/def/wasDescribedBy",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation that is used to indicate that a concept was linked to certain resource in the past. this is meant to keep track of different versions of resources, keep history on all links ever made from concept to resource.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property36",
+    "label" : {
+      "IRI-based" : "isControlledBy"
+    },
+    "iri" : "https://data.digichecks.eu/def/isControlledBy",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is an involvement in an occurrence that indicates that the involved object has a role as controller of the occurrence.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property58",
+    "label" : {
+      "IRI-based" : "or",
+      "en" : "or"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#or",
+    "comment" : {
+      "en" : "Specifies a list of shapes so that the value nodes must conform to at least one of the shapes."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property80",
+    "label" : {
+      "IRI-based" : "maxCount",
+      "en" : "max count"
+    },
+    "iri" : "http://www.w3.org/ns/shacl#maxCount",
+    "comment" : {
+      "en" : "Specifies the maximum number of values in the set of value nodes."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/shacl#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "literal1"
+  }, {
+    "id" : "property56",
+    "label" : {
+      "IRI-based" : "isSubmittedBy"
+    },
+    "iri" : "https://data.digichecks.eu/def/isSubmittedBy",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates that a permit request was made by appropriate associated person / organization that is authorized to make the specific request.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property83",
+    "label" : {
+      "IRI-based" : "comment",
+      "undefined" : "comment"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "comment" : {
+      "undefined" : "A description of the subject resource."
+    },
+    "isDefinedBy" : "http://www.w3.org/2000/01/rdf-schema#",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "datatype4"
+  }, {
+    "id" : "property65",
+    "label" : {
+      "IRI-based" : "hasSource"
+    },
+    "iri" : "https://data.digichecks.eu/def/hasSource",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is a relation that indicates the involved object has a origin or source from another object.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property48",
+    "label" : {
+      "IRI-based" : "isCollectedIn"
+    },
+    "iri" : "https://data.digichecks.eu/def/isCollectedIn",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is a relation between a single thing and a plurality that indicates that the collected object is element of the collection of objects, under the constraint that the element may not be the same object as the plural object. In other words a collection cannot be an element of itself.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property75",
+    "label" : {
+      "IRI-based" : "hasPermitRequest"
+    },
+    "iri" : "https://data.digichecks.eu/def/hasPermitRequest",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates the link from a project to a / multiple permit requests.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property52"
+  }, {
+    "id" : "property68",
+    "label" : {
+      "IRI-based" : "hasParcel"
+    },
+    "iri" : "https://data.digichecks.eu/def/hasParcel",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates the link between location and parcel.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property53"
+  }, {
+    "id" : "property38",
+    "label" : {
+      "IRI-based" : "isDecisionFor"
+    },
+    "iri" : "https://data.digichecks.eu/def/isDecisionFor",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is a relation indicating the choice or judgment made based on available resources.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property9",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class25",
+    "range" : "class9"
+  }, {
+    "id" : "property66",
+    "label" : {
+      "IRI-based" : "hasVerificationMethod"
+    },
+    "iri" : "https://data.digichecks.eu/def/hasVerificationMethod",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is an association that indicates a method to verify if the verification object has a method linked to it.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property6",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class21",
+    "range" : "class40"
+  }, {
+    "id" : "property5",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class36",
+    "range" : "class40"
+  }, {
+    "id" : "property64",
+    "label" : {
+      "IRI-based" : "isGeometryOf"
+    },
+    "iri" : "https://data.digichecks.eu/def/isGeometryOf",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates that a geometry has a location linked to it.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property47"
+  }, {
+    "id" : "property8",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class22",
+    "range" : "class40"
+  }, {
+    "id" : "property7",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class23",
+    "range" : "class40"
+  }, {
+    "id" : "property19",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class8",
+    "range" : "class6"
+  }, {
+    "id" : "property18",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class40",
+    "range" : "class6"
+  }, {
+    "id" : "property71",
+    "label" : {
+      "IRI-based" : "atLocation"
+    },
+    "iri" : "http://www.w3.org/ns/prov#atLocation",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property15",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class7",
+    "range" : "class33"
+  }, {
+    "id" : "property14",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class10",
+    "range" : "class33"
+  }, {
+    "id" : "property81",
+    "label" : {
+      "IRI-based" : "result"
+    },
+    "iri" : "https://data.digichecks.eu/def/result",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "literal2"
+  }, {
+    "id" : "property17",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class15",
+    "range" : "class30"
+  }, {
+    "id" : "property16",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class33",
+    "range" : "class30"
+  }, {
+    "id" : "property78",
+    "label" : {
+      "IRI-based" : "hasRequirement"
+    },
+    "iri" : "https://w3id.org/sml/def#hasRequirement",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property11",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class44",
+    "range" : "class10"
+  }, {
+    "id" : "property10",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class35",
+    "range" : "class9"
+  }, {
+    "id" : "property77",
+    "label" : {
+      "IRI-based" : "agent"
+    },
+    "iri" : "http://www.w3.org/ns/prov#agent",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property13",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class37",
+    "range" : "class10"
+  }, {
+    "id" : "property12",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class16",
+    "range" : "class10"
+  }, {
+    "id" : "property50",
+    "label" : {
+      "IRI-based" : "shallBeCompliantWith"
+    },
+    "iri" : "https://data.digichecks.eu/def/shallBeCompliantWith",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Is a conceptual requirement for compliancy to a criterion that indicates that a member of the class shall be conformant to a qualitative requirement. Typically an item, story or document of a kind that should be conform to the content of a document.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property84",
+    "label" : {
+      "IRI-based" : "prefLabel"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "datatype5"
+  } ]
+}
