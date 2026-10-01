@@ -46,7 +46,7 @@ If you use this ontology, please cite as:
 ```
 Coen van Gruijthuijsen, Jeroen Werbrouck, Ruben Verstraeten (2026). The DigiChecks Ontology: a Top-Level Ontology for Managing the Building Permit Process, Digital Building Permit Conference
 ```
-Paper is available https://link.springer.com/chapter/10.1007/978-3-032-18226-5_27
+Paper is available here: https://link.springer.com/chapter/10.1007/978-3-032-18226-5_27
 
 
 ## Contact
